@@ -1,0 +1,26 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../bd/design_1/ipshared/40b8/hdl/LineBuffer.vhd" \
+"../../../bd/design_1/ipshared/40b8/hdl/AXI_BayerToRGB.vhd" \
+"../../../bd/design_1/ip/design_1_AXI_BayerToRGB_0_0/sim/design_1_AXI_BayerToRGB_0_0.vhd" \
+"../../../bd/design_1/ipshared/01bf/hdl/StoredGammaCoefs.vhd" \
+"../../../bd/design_1/ipshared/01bf/hdl/AXI_GammaCorrection.vhd" \
+"../../../bd/design_1/ip/design_1_AXI_GammaCorrection_0_0/sim/design_1_AXI_GammaCorrection_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/ila_rxclk_lane/sim/ila_rxclk_lane.vhd" \
+"../../../bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/ila_rxclk/sim/ila_rxclk.vhd" \
+"../../../bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/ila_vidclk/sim/ila_vidclk.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/SyncAsync.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/SimpleFIFO.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/SyncAsyncReset.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/CRC16_behavioral.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/ECC.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/DebugLib.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/LM.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/LLP.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/MIPI_CSI_2_RX_v1_0_S_AXI_LITE.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/MIPI_CSI2_Rx.vhd" \
+"../../../bd/design_1/ipshared/84c8/hdl/MIPI_CSI2_RxTop.vhd" \
+"../../../bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/sim/design_1_MIPI_CSI_2_RX_0_1.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort
