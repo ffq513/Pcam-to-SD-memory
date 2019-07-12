@@ -1,8 +1,8 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
---Date        : Mon Jul  8 02:01:57 2019
---Host        : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
+--Date        : Fri Jul 12 11:03:32 2019
+--Host        : DESKTOP-D2IPGR4 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -34,6 +34,7 @@ entity design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     cam_gpio_tri_io : inout STD_LOGIC_VECTOR ( 0 to 0 );
     cam_iic_scl_io : inout STD_LOGIC;
     cam_iic_sda_io : inout STD_LOGIC;
@@ -44,7 +45,8 @@ entity design_1_wrapper is
     dphy_data_lp_n : in STD_LOGIC_VECTOR ( 1 downto 0 );
     dphy_data_lp_p : in STD_LOGIC_VECTOR ( 1 downto 0 );
     dphy_hs_clock_clk_hs_n : in STD_LOGIC;
-    dphy_hs_clock_clk_hs_p : in STD_LOGIC
+    dphy_hs_clock_clk_hs_p : in STD_LOGIC;
+    sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
 end design_1_wrapper;
 
@@ -57,12 +59,8 @@ architecture STRUCTURE of design_1_wrapper is
     dphy_data_hs_n : in STD_LOGIC_VECTOR ( 1 downto 0 );
     dphy_clk_lp_p : in STD_LOGIC;
     dphy_clk_lp_n : in STD_LOGIC;
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
+    sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -78,6 +76,14 @@ architecture STRUCTURE of design_1_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    dphy_hs_clock_clk_hs_n : in STD_LOGIC;
+    dphy_hs_clock_clk_hs_p : in STD_LOGIC;
     cam_iic_sda_i : in STD_LOGIC;
     cam_iic_sda_o : out STD_LOGIC;
     cam_iic_sda_t : out STD_LOGIC;
@@ -86,9 +92,7 @@ architecture STRUCTURE of design_1_wrapper is
     cam_iic_scl_t : out STD_LOGIC;
     cam_gpio_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
     cam_gpio_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
-    cam_gpio_tri_t : out STD_LOGIC_VECTOR ( 0 to 0 );
-    dphy_hs_clock_clk_hs_n : in STD_LOGIC;
-    dphy_hs_clock_clk_hs_p : in STD_LOGIC
+    cam_gpio_tri_t : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1;
   component IOBUF is
@@ -154,6 +158,7 @@ design_1_i: component design_1
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      btns_4bits_tri_i(3 downto 0) => btns_4bits_tri_i(3 downto 0),
       cam_gpio_tri_i(0) => cam_gpio_tri_i_0(0),
       cam_gpio_tri_o(0) => cam_gpio_tri_o_0(0),
       cam_gpio_tri_t(0) => cam_gpio_tri_t_0(0),
@@ -170,6 +175,7 @@ design_1_i: component design_1
       dphy_data_lp_n(1 downto 0) => dphy_data_lp_n(1 downto 0),
       dphy_data_lp_p(1 downto 0) => dphy_data_lp_p(1 downto 0),
       dphy_hs_clock_clk_hs_n => dphy_hs_clock_clk_hs_n,
-      dphy_hs_clock_clk_hs_p => dphy_hs_clock_clk_hs_p
+      dphy_hs_clock_clk_hs_p => dphy_hs_clock_clk_hs_p,
+      sws_4bits_tri_i(3 downto 0) => sws_4bits_tri_i(3 downto 0)
     );
 end STRUCTURE;

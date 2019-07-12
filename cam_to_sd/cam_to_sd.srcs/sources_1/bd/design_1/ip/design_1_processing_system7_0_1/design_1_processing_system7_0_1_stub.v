@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Mon Jul  8 01:08:45 2019
+// Date        : Sun Jul  7 03:46:21 2019
 // Host        : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Users/Usuario/Documents/Github/cam_to_sd/cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_processing_system7_0_1 -prefix
+//               design_1_processing_system7_0_1_ design_1_processing_system7_0_1_stub.v
 // Design      : design_1_processing_system7_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

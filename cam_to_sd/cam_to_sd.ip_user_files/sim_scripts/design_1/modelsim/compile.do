@@ -18,6 +18,9 @@ vlib modelsim_lib/msim/axi_data_fifo_v2_1_18
 vlib modelsim_lib/msim/axi_crossbar_v2_1_20
 vlib modelsim_lib/msim/axis_infrastructure_v1_1_0
 vlib modelsim_lib/msim/axis_data_fifo_v2_0_1
+vlib modelsim_lib/msim/axi_lite_ipif_v3_0_4
+vlib modelsim_lib/msim/interrupt_control_v3_1_4
+vlib modelsim_lib/msim/axi_gpio_v2_0_21
 vlib modelsim_lib/msim/axi_protocol_converter_v2_1_19
 vlib modelsim_lib/msim/axi_clock_converter_v2_1_18
 vlib modelsim_lib/msim/blk_mem_gen_v8_4_3
@@ -40,6 +43,9 @@ vmap axi_data_fifo_v2_1_18 modelsim_lib/msim/axi_data_fifo_v2_1_18
 vmap axi_crossbar_v2_1_20 modelsim_lib/msim/axi_crossbar_v2_1_20
 vmap axis_infrastructure_v1_1_0 modelsim_lib/msim/axis_infrastructure_v1_1_0
 vmap axis_data_fifo_v2_0_1 modelsim_lib/msim/axis_data_fifo_v2_0_1
+vmap axi_lite_ipif_v3_0_4 modelsim_lib/msim/axi_lite_ipif_v3_0_4
+vmap interrupt_control_v3_1_4 modelsim_lib/msim/interrupt_control_v3_1_4
+vmap axi_gpio_v2_0_21 modelsim_lib/msim/axi_gpio_v2_0_21
 vmap axi_protocol_converter_v2_1_19 modelsim_lib/msim/axi_protocol_converter_v2_1_19
 vmap axi_clock_converter_v2_1_18 modelsim_lib/msim/axi_clock_converter_v2_1_18
 vmap blk_mem_gen_v8_4_3 modelsim_lib/msim/blk_mem_gen_v8_4_3
@@ -162,6 +168,23 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/sim/design_1_MIPI_CSI_2_RX_0_1.vhd" \
 "../../../bd/design_1/sim/design_1.vhd" \
 
+vlog -work xil_defaultlib -64 -incr "+incdir+../../../bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/line_buffer/hdl" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/ila_rxclk_lane/hdl/verilog" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/ila_rxclk/hdl/verilog" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/ila_vidclk/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.v" \
+
+vcom -work axi_lite_ipif_v3_0_4 -64 -93 \
+"../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vcom -work interrupt_control_v3_1_4 -64 -93 \
+"../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+
+vcom -work axi_gpio_v2_0_21 -64 -93 \
+"../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
+
 vlog -work axi_protocol_converter_v2_1_19 -64 -incr "+incdir+../../../bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/line_buffer/hdl" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_v_frmbuf_wr_0_0/src" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/ila_rxclk_lane/hdl/verilog" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/ila_rxclk/hdl/verilog" "+incdir+../../../../cam_to_sd.srcs/sources_1/bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/hdl/ila_vidclk/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
 "../../../../cam_to_sd.srcs/sources_1/bd/design_1/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
@@ -184,8 +207,6 @@ vlog -work xil_defaultlib -64 -incr "+incdir+../../../bd/design_1/ip/design_1_v_
 "../../../bd/design_1/ip/design_1_auto_ds_0/sim/design_1_auto_ds_0.v" \
 "../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
 "../../../bd/design_1/ip/design_1_auto_cc_0/sim/design_1_auto_cc_0.v" \
-"../../../bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_clk_wiz.v" \
-"../../../bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

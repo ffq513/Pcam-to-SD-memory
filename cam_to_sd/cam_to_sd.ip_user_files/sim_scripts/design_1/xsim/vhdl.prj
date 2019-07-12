@@ -22,5 +22,7 @@ vhdl xil_defaultlib  \
 "../../../bd/design_1/ipshared/84c8/hdl/MIPI_CSI2_RxTop.vhd" \
 "../../../bd/design_1/ip/design_1_MIPI_CSI_2_RX_0_1/sim/design_1_MIPI_CSI_2_RX_0_1.vhd" \
 "../../../bd/design_1/sim/design_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
 
 nosort
