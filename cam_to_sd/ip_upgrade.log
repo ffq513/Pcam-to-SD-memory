@@ -1,60 +1,102 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 16:05:40 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jul  8 00:18:23 2019
 | Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_AXI_GammaCorrection_0_0'
+Upgrade Log for IP 'system_video_dynclk_0'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_AXI_GammaCorrection_0_0 (digilentinc.com:user:AXI_GammaCorrection:1.0) from (Rev. 22) to (Rev. 20)
+SUCCESS in the conversion of system_video_dynclk_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 1)) to Vivado generation flows.
 
 
 
 
 
 
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 16:05:40 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jul  8 00:18:23 2019
 | Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_AXI_BayerToRGB_0_0'
+Upgrade Log for IP 'system_rst_vid_clk_dyn_0'
 
 1. Summary
 ----------
 
-SUCCESS in the conversion of design_1_AXI_BayerToRGB_0_0 (digilentinc.com:user:AXI_BayerToRGB:1.0 (Rev. 13)) to Vivado generation flows.
+SUCCESS in the conversion of system_rst_vid_clk_dyn_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 12)) to Vivado generation flows.
 
 
 
 
 
 
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 03:27:27 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jul  8 00:18:23 2019
 | Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_processing_system7_0_1'
+Upgrade Log for IP 'system_rst_clk_wiz_0_50M_0'
 
 1. Summary
 ----------
 
-SUCCESS in the conversion of design_1_processing_system7_0_1 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
+SUCCESS in the conversion of system_rst_clk_wiz_0_50M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jul  8 00:18:23 2019
+| Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_rgb2dvi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_rgb2dvi_0_0 (digilentinc.com:ip:rgb2dvi:1.4 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jul  8 00:18:23 2019
+| Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
 
 2. Upgrade messages
 -------------------
@@ -75,302 +117,19 @@ WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default val
 
 
 
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 02:51:07 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jul  8 00:18:23 2019
 | Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_v_frmbuf_wr_0_0'
+Upgrade Log for IP 'system_clk_wiz_0_0'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_v_frmbuf_wr_0_0 (xilinx.com:ip:v_frmbuf_wr:2.1) to (Rev. 2)
-
-
-
-
-
-
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 02:51:07 2019
-| Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_ps7_0_axi_periph_1'
-
-1. Summary
-----------
-
-SUCCESS in the upgrade of design_1_ps7_0_axi_periph_1 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 18) to (Rev. 20)
-
-
-
-
-
-
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 02:51:07 2019
-| Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_processing_system7_0_1'
-
-1. Summary
-----------
-
-SUCCESS in the conversion of design_1_processing_system7_0_1 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
-
-2. Upgrade messages
--------------------
-
-WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
-WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
-WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
-WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
-WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
-WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
-WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
-WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
-WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
-WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
-
-
-
-
-
-
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 02:51:07 2019
-| Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_proc_sys_reset_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the upgrade of design_1_proc_sys_reset_0_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 12) to (Rev. 13)
-
-
-
-
-
-
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 02:51:07 2019
-| Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_mipi_dphy_0_1'
-
-1. Summary
-----------
-
-CAUTION (success, with warnings) in the upgrade of design_1_mipi_dphy_0_1 (xilinx.com:ip:mipi_dphy:4.1) from (Rev. 1) to (Rev. 3)
-
-After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
-
-2. Customization warnings
--------------------------
-
-Parameter 'C_DL0_LP_IO_SWAP' is no longer present on the upgraded IP 'design_1_mipi_dphy_0_1', and cannot be set to 'false'
-
-Parameter 'C_DL1_LP_IO_SWAP' is no longer present on the upgraded IP 'design_1_mipi_dphy_0_1', and cannot be set to 'false'
-
-Parameter 'C_DL2_LP_IO_SWAP' is no longer present on the upgraded IP 'design_1_mipi_dphy_0_1', and cannot be set to 'false'
-
-Parameter 'C_DL3_LP_IO_SWAP' is no longer present on the upgraded IP 'design_1_mipi_dphy_0_1', and cannot be set to 'false'
-
-Parameter 'C_CLK_LP_IO_SWAP' is no longer present on the upgraded IP 'design_1_mipi_dphy_0_1', and cannot be set to 'false'
-
-
-3. Debug Commands
------------------
-
-  The following debug information can be passed to Vivado as Tcl commands,
-in order to validate or debug the output of the upgrade flow.
-  You may consult any warnings from within this upgrade, and alter or remove
-the configuration parameter(s) which caused the warning; then execute the Tcl
-commands, and use the IP Customization GUI to verify the IP configuration.
-
-create_ip -vlnv xilinx.com:ip:mipi_dphy:4.1 -user_name design_1_mipi_dphy_0_1
-set_property -dict "\
-  CONFIG.CLK_LANE_IO_LOC {None} \
-  CONFIG.CLK_LANE_IO_LOC_NAME {None} \
-  CONFIG.C_CAL_MODE {AUTO} \
-  CONFIG.C_CLK_IO_SWAP {false} \
-  CONFIG.C_CLK_LANE_IO_POSITION {0} \
-  CONFIG.C_DATA_LANE0_IO_POSITION {2} \
-  CONFIG.C_DATA_LANE1_IO_POSITION {4} \
-  CONFIG.C_DATA_LANE2_IO_POSITION {6} \
-  CONFIG.C_DATA_LANE3_IO_POSITION {8} \
-  CONFIG.C_DL0_IO_SWAP {false} \
-  CONFIG.C_DL1_IO_SWAP {false} \
-  CONFIG.C_DL2_IO_SWAP {false} \
-  CONFIG.C_DL3_IO_SWAP {false} \
-  CONFIG.C_DPHY_LANES {2} \
-  CONFIG.C_DPHY_MODE {SLAVE} \
-  CONFIG.C_EN_ACT_LANES {false} \
-  CONFIG.C_EN_BUFG_ON_WR_CLK_OUT {true} \
-  CONFIG.C_EN_CLK300M {false} \
-  CONFIG.C_EN_DEBUG_REGS {false} \
-  CONFIG.C_EN_DPHY_IO {0} \
-  CONFIG.C_EN_HS_OBUFTDS {false} \
-  CONFIG.C_EN_IO_SEL {true} \
-  CONFIG.C_EN_REG_IF {true} \
-  CONFIG.C_EN_TIMEOUT_REGS {false} \
-  CONFIG.C_EN_ULPS_WAKEUP_CNT {false} \
-  CONFIG.C_ESC_CLK_PERIOD {20.000} \
-  CONFIG.C_ESC_TIMEOUT {25600} \
-  CONFIG.C_EXAMPLE_SIMULATION {false} \
-  CONFIG.C_FIFO_RD_EN_CONTROL {true} \
-  CONFIG.C_HS_LINE_RATE {928} \
-  CONFIG.C_HS_SETTLE_NS {145} \
-  CONFIG.C_HS_TIMEOUT {65541} \
-  CONFIG.C_IDLY_GROUP_NAME {mipi_dphy_idly_group} \
-  CONFIG.C_IDLY_TAP {1} \
-  CONFIG.C_INIT {100000} \
-  CONFIG.C_IS_7SERIES {true} \
-  CONFIG.C_LPX_PERIOD {50} \
-  CONFIG.C_RCVE_DESKEW_SEQ {false} \
-  CONFIG.C_SHARE_IDLYCTRL {true} \
-  CONFIG.C_SKEWCAL_FIRST_TIME {4096} \
-  CONFIG.C_SKEWCAL_PERIODIC_TIME {128} \
-  CONFIG.C_STABLE_CLK_PERIOD {200.000} \
-  CONFIG.C_USE_LANE0_TXREADYHS {true} \
-  CONFIG.C_XMIT_FIRST_DESKEW_SEQ {false} \
-  CONFIG.C_XMIT_PERIODIC_DESKEW_SEQ {false} \
-  CONFIG.Component_Name {design_1_mipi_dphy_0_1} \
-  CONFIG.DATA_LANE0_BYTE {All_Byte} \
-  CONFIG.DATA_LANE0_IO_LOC {None} \
-  CONFIG.DATA_LANE0_IO_LOC_NAME {None} \
-  CONFIG.DATA_LANE1_BYTE {All_Byte} \
-  CONFIG.DATA_LANE1_IO_LOC {None} \
-  CONFIG.DATA_LANE1_IO_LOC_NAME {None} \
-  CONFIG.DATA_LANE2_BYTE {All_Byte} \
-  CONFIG.DATA_LANE2_IO_LOC {None} \
-  CONFIG.DATA_LANE2_IO_LOC_NAME {None} \
-  CONFIG.DATA_LANE3_BYTE {All_Byte} \
-  CONFIG.DATA_LANE3_IO_LOC {None} \
-  CONFIG.DATA_LANE3_IO_LOC_NAME {None} \
-  CONFIG.DPHYRX_BOARD_INTERFACE {Custom} \
-  CONFIG.DPHYTX_BOARD_INTERFACE {Custom} \
-  CONFIG.DPHY_PRESET {None} \
-  CONFIG.HP_IO_BANK_NAME {64_(HP)} \
-  CONFIG.HP_IO_BANK_SELECTION {64} \
-  CONFIG.SupportLevel {1} \
-  CONFIG.USE_BOARD_FLOW {false} \
-  CONFIG.XIPHY_LINE_RATE_MIN {600.00} \
-  CONFIG.core_clk.ASSOCIATED_BUSIF {} \
-  CONFIG.core_clk.ASSOCIATED_RESET {core_rst} \
-  CONFIG.core_clk.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
-  CONFIG.core_clk.FREQ_HZ {200000000} \
-  CONFIG.core_clk.PHASE {0.0} \
-  CONFIG.core_rst.POLARITY {ACTIVE_HIGH} \
-  CONFIG.rx_mipi_phy_if.BOARD.ASSOCIATED_PARAM {DPHYRX_BOARD_INTERFACE} \
-  CONFIG.rxbyteclkhs.ASSOCIATED_BUSIF {} \
-  CONFIG.rxbyteclkhs.ASSOCIATED_RESET {} \
-  CONFIG.rxbyteclkhs.CLK_DOMAIN {design_1_mipi_dphy_0_1_rxbyteclkhs} \
-  CONFIG.rxbyteclkhs.FREQ_HZ {116000000.0} \
-  CONFIG.rxbyteclkhs.PHASE {0} \
-  CONFIG.s_axi.ADDR_WIDTH {7} \
-  CONFIG.s_axi.ARUSER_WIDTH {0} \
-  CONFIG.s_axi.AWUSER_WIDTH {0} \
-  CONFIG.s_axi.BUSER_WIDTH {0} \
-  CONFIG.s_axi.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
-  CONFIG.s_axi.DATA_WIDTH {32} \
-  CONFIG.s_axi.FREQ_HZ {50000000} \
-  CONFIG.s_axi.HAS_BRESP {1} \
-  CONFIG.s_axi.HAS_BURST {0} \
-  CONFIG.s_axi.HAS_CACHE {0} \
-  CONFIG.s_axi.HAS_LOCK {0} \
-  CONFIG.s_axi.HAS_PROT {0} \
-  CONFIG.s_axi.HAS_QOS {0} \
-  CONFIG.s_axi.HAS_REGION {0} \
-  CONFIG.s_axi.HAS_RRESP {1} \
-  CONFIG.s_axi.HAS_WSTRB {1} \
-  CONFIG.s_axi.ID_WIDTH {0} \
-  CONFIG.s_axi.MAX_BURST_LENGTH {1} \
-  CONFIG.s_axi.NUM_READ_OUTSTANDING {1} \
-  CONFIG.s_axi.NUM_READ_THREADS {1} \
-  CONFIG.s_axi.NUM_WRITE_OUTSTANDING {1} \
-  CONFIG.s_axi.NUM_WRITE_THREADS {1} \
-  CONFIG.s_axi.PHASE {0.0} \
-  CONFIG.s_axi.PROTOCOL {AXI4LITE} \
-  CONFIG.s_axi.READ_WRITE_MODE {READ_WRITE} \
-  CONFIG.s_axi.RUSER_BITS_PER_BYTE {0} \
-  CONFIG.s_axi.RUSER_WIDTH {0} \
-  CONFIG.s_axi.SUPPORTS_NARROW_BURST {0} \
-  CONFIG.s_axi.WUSER_BITS_PER_BYTE {0} \
-  CONFIG.s_axi.WUSER_WIDTH {0} \
-  CONFIG.s_axi_aclk.ASSOCIATED_BUSIF {s_axi} \
-  CONFIG.s_axi_aclk.ASSOCIATED_RESET {s_axi_aresetn} \
-  CONFIG.s_axi_aclk.CLK_DOMAIN {design_1_clk_wiz_0_0_clk_out1} \
-  CONFIG.s_axi_aclk.FREQ_HZ {50000000} \
-  CONFIG.s_axi_aclk.PHASE {0.0} \
-  CONFIG.s_axi_aresetn.POLARITY {ACTIVE_LOW} " [get_ips design_1_mipi_dphy_0_1]
-
-
-
-
-
-
-
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 02:51:07 2019
-| Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_clk_wiz_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the upgrade of design_1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 1) to (Rev. 3)
-
-
-
-
-
-
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jul  7 02:51:07 2019
-| Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_MIPI_CSI_2_RX_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the conversion of design_1_MIPI_CSI_2_RX_0_0 (digilentinc.com:ip:MIPI_CSI_2_RX:1.1 (Rev. 5)) to Vivado generation flows.
+SUCCESS in the conversion of system_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 1)) to Vivado generation flows.
 

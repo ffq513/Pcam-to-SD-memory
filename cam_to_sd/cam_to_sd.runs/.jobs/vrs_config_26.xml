@@ -1,11 +1,7 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
-	<Run Id="design_1_v_frmbuf_wr_0_0_synth_1" LaunchDir="C:/Users/Usuario/Documents/Github/cam_to_sd/cam_to_sd.runs/design_1_v_frmbuf_wr_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="impl_1" LaunchDir="C:/Users/Usuario/Documents/Github/cam_to_sd/cam_to_sd.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
-		<Parent Id="design_1_v_frmbuf_wr_0_0_synth_1"/>
-	</Run>
-	<Parameters>
-		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
-	</Parameters>
+	<Run Id="system_DVIClocking_0_0_synth_1" LaunchDir="C:/Users/LabSET/Documents/GitHub/Workshop_Zyboz7_and_Pcam_5c/vivado_proj/Zybo-Z7-20-pcam-5c.runs/system_DVIClocking_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_processing_system7_0_0_synth_1" LaunchDir="C:/Users/LabSET/Documents/GitHub/Workshop_Zyboz7_and_Pcam_5c/vivado_proj/Zybo-Z7-20-pcam-5c.runs/system_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_smartconnect_0_0_synth_1" LaunchDir="C:/Users/LabSET/Documents/GitHub/Workshop_Zyboz7_and_Pcam_5c/vivado_proj/Zybo-Z7-20-pcam-5c.runs/system_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 </Runs>
 
