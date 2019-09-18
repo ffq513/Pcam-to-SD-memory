@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
-| Date         : Thu Aug 15 12:43:51 2019
+| Date         : Wed Sep 18 12:34:47 2019
 | Host         : DESKTOP-D2IPGR4 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file system_wrapper_timing_summary_routed.rpt -pb system_wrapper_timing_summary_routed.pb -rpx system_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : system_wrapper

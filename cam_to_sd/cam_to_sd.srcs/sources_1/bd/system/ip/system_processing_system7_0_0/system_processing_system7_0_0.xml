@@ -14042,11 +14042,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Aug 15 15:33:10 UTC 2019</spirit:value>
+            <spirit:value>Wed Sep 18 15:24:01 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:876d1914</spirit:value>
+            <spirit:value>8:5eb57e2b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14062,11 +14062,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Aug 15 15:33:10 UTC 2019</spirit:value>
+            <spirit:value>Wed Sep 18 15:24:01 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:876d1914</spirit:value>
+            <spirit:value>8:5eb57e2b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14093,7 +14093,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:49ea6289</spirit:value>
+            <spirit:value>8:3193cf0b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14108,11 +14108,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Aug 15 15:33:10 UTC 2019</spirit:value>
+            <spirit:value>Wed Sep 18 15:24:01 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:49ea6289</spirit:value>
+            <spirit:value>8:3193cf0b</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -14135,11 +14135,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Aug 15 15:33:10 UTC 2019</spirit:value>
+            <spirit:value>Wed Sep 18 15:24:02 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:49ea6289</spirit:value>
+            <spirit:value>8:3193cf0b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -14154,11 +14154,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Aug 15 15:33:16 UTC 2019</spirit:value>
+            <spirit:value>Wed Sep 18 15:24:07 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:49ea6289</spirit:value>
+            <spirit:value>8:3193cf0b</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -14176,11 +14176,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Aug 15 15:34:30 UTC 2019</spirit:value>
+            <spirit:value>Wed Sep 18 15:26:13 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:876d1914</spirit:value>
+            <spirit:value>8:5eb57e2b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31115,12 +31115,6 @@
       <spirit:enumeration>MIO 53</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_d88af9c3</spirit:name>
-      <spirit:enumeration>&lt;Select></spirit:enumeration>
-      <spirit:enumeration>Share reset pin</spirit:enumeration>
-      <spirit:enumeration>Separate reset pins</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_da0dabdb</spirit:name>
       <spirit:enumeration>0xE0001000</spirit:enumeration>
     </spirit:choice>
@@ -35612,7 +35606,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_ENET_RESET_SELECT</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ENET_RESET_SELECT" spirit:choiceRef="choice_list_d88af9c3" spirit:order="6103">&lt;Select></spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ENET_RESET_SELECT" spirit:choiceRef="choice_list_fe5d5471" spirit:order="6103">&lt;Select></spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -37196,7 +37190,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_13_PULLUP</spirit:name>
       <spirit:displayName>PCW MIO 13 PULLUP</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_13_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29413">enabled</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_13_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29413">disabled</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_13_IOTYPE</spirit:name>
@@ -38222,7 +38216,7 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_51_PULLUP</spirit:name>
       <spirit:displayName>PCW MIO 51 PULLUP</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_51_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29451">disabled</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_51_PULLUP" spirit:choiceRef="choice_list_2d7daef4" spirit:order="29451">enabled</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_51_IOTYPE</spirit:name>

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/LabSET/Documents/GitHub/Workshop_Zyboz7_and_Pcam_5c/vivado_proj/Zybo-Z7-20-pcam-5c.runs/synth_1'
+HD_PWD='C:/Users/LabSET/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

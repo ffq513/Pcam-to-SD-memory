@@ -560,7 +560,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_MIO_12_SLEW {slow} \
    CONFIG.PCW_MIO_13_DIRECTION {inout} \
    CONFIG.PCW_MIO_13_IOTYPE {LVCMOS 3.3V} \
-   CONFIG.PCW_MIO_13_PULLUP {enabled} \
+   CONFIG.PCW_MIO_13_PULLUP {disabled} \
    CONFIG.PCW_MIO_13_SLEW {slow} \
    CONFIG.PCW_MIO_14_DIRECTION {inout} \
    CONFIG.PCW_MIO_14_IOTYPE {LVCMOS 3.3V} \
@@ -728,7 +728,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_MIO_50_SLEW {slow} \
    CONFIG.PCW_MIO_51_DIRECTION {inout} \
    CONFIG.PCW_MIO_51_IOTYPE {LVCMOS 1.8V} \
-   CONFIG.PCW_MIO_51_PULLUP {disabled} \
+   CONFIG.PCW_MIO_51_PULLUP {enabled} \
    CONFIG.PCW_MIO_51_SLEW {slow} \
    CONFIG.PCW_MIO_52_DIRECTION {inout} \
    CONFIG.PCW_MIO_52_IOTYPE {LVCMOS 1.8V} \

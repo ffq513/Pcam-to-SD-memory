@@ -33,59 +33,59 @@ preplace inst AXI_BayerToRGB_1 -pg 1 -lvl 6 -y 840 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 10 -y 330 -defaultsOSRD
 preplace inst rst_clk_wiz_0_50M -pg 1 -lvl 2 -y 700 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 10 1 NJ
-preplace netloc smartconnect_0_M02_AXI 1 3 5 NJ 690 NJ 690 NJ 690 NJ 690 2340
-preplace netloc smartconnect_0_M01_AXI 1 3 1 870
+preplace netloc smartconnect_0_M02_AXI 1 3 5 920J 680 NJ 680 NJ 680 NJ 680 2330
+preplace netloc smartconnect_0_M01_AXI 1 3 1 900
 preplace netloc dphy_data_hs_p_1 1 0 4 NJ 900 NJ 900 NJ 900 NJ
-preplace netloc s_axil_clk_50 1 1 9 200 600 580 560 920 750 1270 930 1580J 760 1930 950 2350 490 2750J 500 3100
+preplace netloc s_axil_clk_50 1 1 9 200 600 590 590 910 750 1270 940 NJ 940 1990 940 2350 490 NJ 490 3130
 preplace netloc dphy_data_lp_n_1 1 0 4 NJ 960 NJ 960 NJ 960 NJ
 preplace netloc clk_wiz_0_locked 1 1 1 N
 preplace netloc axi_vdma_0_s2mm_introut 1 8 1 N
-preplace netloc mm_clk_150 1 1 9 210 810 NJ 810 900J 740 1280 940 1570 750 1970 720 2330 500 2770 480 3110
-preplace netloc DVIClocking_0_SerialClk 1 6 4 1940 1080 NJ 1080 NJ 1080 3120J
-preplace netloc processing_system7_0_M_AXI_GP0 1 2 9 590 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 3600
-preplace netloc axi_mem_intercon_1_M00_AXI 1 9 1 3090
+preplace netloc mm_clk_150 1 1 9 210 810 NJ 810 930J 740 1300 700 1580 720 1960 720 2410 1040 2780 480 3140
+preplace netloc DVIClocking_0_SerialClk 1 6 4 1960 700 2330J 1080 NJ 1080 3150J
 preplace netloc dphy_hs_clock_1 1 0 4 NJ 840 NJ 840 NJ 840 NJ
-preplace netloc smartconnect_0_M03_AXI 1 3 5 NJ 710 NJ 710 NJ 710 NJ 710 2340
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 9 600 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 2820J 460 NJ 460 3620
+preplace netloc axi_mem_intercon_1_M00_AXI 1 9 1 3120
+preplace netloc smartconnect_0_M03_AXI 1 3 5 NJ 710 NJ 710 NJ 710 NJ 710 2360
 preplace netloc v_axi4s_vid_out_0_vid_io_out 1 9 1 N
-preplace netloc axi_vdma_0_M_AXI_MM2S 1 8 1 2720
-preplace netloc rst_vid_clk_dyn_peripheral_aresetn 1 7 1 2370
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 8 1 2770
+preplace netloc rst_vid_clk_dyn_peripheral_aresetn 1 7 1 2390
 preplace netloc dphy_clk_lp_p_1 1 0 4 NJ 860 NJ 860 NJ 860 NJ
 preplace netloc smartconnect_0_M04_AXI 1 3 2 NJ 730 1290
-preplace netloc axi_vdma_0_M_AXIS_MM2S 1 8 1 2740
-preplace netloc v_tc_0_irq 1 8 1 2780
-preplace netloc rst_clk_wiz_0_50M_peripheral_reset 1 2 2 550 1000 NJ
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 10 210 590 NJ 590 910J 650 NJ 650 NJ 650 1970 670 2310J 480 2760J 490 NJ 490 3590
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 8 1 2790
+preplace netloc v_tc_0_irq 1 8 1 2820
+preplace netloc rst_clk_wiz_0_50M_peripheral_reset 1 2 2 570 1000 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 10 210 470 NJ 470 NJ 470 NJ 470 NJ 470 1960 470 NJ 470 NJ 470 NJ 470 3610
 preplace netloc dphy_clk_lp_n_1 1 0 4 NJ 880 NJ 880 NJ 880 NJ
-preplace netloc axi_mem_intercon_M00_AXI 1 9 1 3090
 preplace netloc processing_system7_0_IIC_0 1 10 1 NJ
+preplace netloc axi_mem_intercon_M00_AXI 1 9 1 3120
 preplace netloc dphy_data_hs_n_1 1 0 4 NJ 920 NJ 920 NJ 920 NJ
 preplace netloc rgb2dvi_0_TMDS 1 10 1 NJ
-preplace netloc smartconnect_0_M00_AXI 1 3 4 900J 660 NJ 660 NJ 660 1950
-preplace netloc v_axi4s_vid_out_0_locked 1 9 1 3100
-preplace netloc rst_clk_wiz_0_50M_peripheral_aresetn 1 2 7 570 570 880 760 1250 950 1590 920 1970 940 2360 760 2790
-preplace netloc xlconcat_0_dout 1 9 1 3120
-preplace netloc v_axi4s_vid_out_0_vtg_ce 1 7 3 2380 1060 NJ 1060 3090
+preplace netloc smartconnect_0_M00_AXI 1 3 4 NJ 650 NJ 650 NJ 650 1950
+preplace netloc v_axi4s_vid_out_0_locked 1 9 1 3130
+preplace netloc rst_clk_wiz_0_50M_peripheral_aresetn 1 2 7 560 820 890 760 1260 930 1580 920 1980 950 2420 1050 2800
+preplace netloc xlconcat_0_dout 1 9 1 3150
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 7 3 2430 1090 NJ 1090 3120
 preplace netloc ref_clk_200 1 1 3 200 980 NJ 980 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 10 1 NJ
-preplace netloc AXI_GammaCorrection_0_AXI_Stream_Master 1 7 1 2380
-preplace netloc rst_clk_wiz_0_50M_interconnect_aresetn 1 2 7 560 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 2730
+preplace netloc AXI_GammaCorrection_0_AXI_Stream_Master 1 7 1 2370
+preplace netloc rst_clk_wiz_0_50M_interconnect_aresetn 1 2 7 580 320 NJ 320 NJ 320 NJ 320 NJ 320 NJ 320 2820
 preplace netloc clk_wiz_1_locked 1 4 2 NJ 570 N
 preplace netloc axi_vdma_0_mm2s_introut 1 8 1 N
 preplace netloc MIPI_D_PHY_RX_0_RxByteClkHS 1 4 1 1290
 preplace netloc clk_wiz_1_pxl_clk_5x 1 4 2 NJ 550 N
 preplace netloc processing_system7_0_GPIO_0 1 10 1 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 11 20 580 NJ 580 NJ 580 930 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 3580
-preplace netloc v_tc_0_vtiming_out 1 8 1 2740
-preplace netloc axi_vdma_0_M_AXI_S2MM 1 8 1 2740
-preplace netloc MIPI_D_PHY_RX_0_D_PHY_PPI 1 4 1 1260
-preplace netloc AXI_BayerToRGB_1_AXI_Stream_Master 1 6 1 1960
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 11 10 580 NJ 580 NJ 580 930 690 NJ 690 NJ 690 NJ 690 2400J 760 NJ 760 NJ 760 3630
+preplace netloc v_tc_0_vtiming_out 1 8 1 2770
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 8 1 2790
+preplace netloc MIPI_D_PHY_RX_0_D_PHY_PPI 1 4 1 1280
+preplace netloc AXI_BayerToRGB_1_AXI_Stream_Master 1 6 1 1970
 preplace netloc dphy_data_lp_p_1 1 0 4 NJ 940 NJ 940 NJ 940 NJ
-preplace netloc smartconnect_0_M05_AXI 1 3 1 890
+preplace netloc smartconnect_0_M05_AXI 1 3 1 880
 preplace netloc MIPI_CSI_2_RX_0_m_axis_video 1 5 1 N
-preplace netloc rst_vid_clk_dyn_peripheral_reset 1 7 2 2320 1050 2780J
-preplace netloc PixelClk_Generator_clk_out1 1 6 4 1960 680 2310 1040 2740 1070 3110J
+preplace netloc rst_vid_clk_dyn_peripheral_reset 1 7 2 2340 1070 2810J
+preplace netloc PixelClk_Generator_clk_out1 1 6 4 1950 460 2380 1060 2820 1060 3140J
 preplace netloc DVIClocking_0_aLockedOut 1 6 1 1950
-levelinfo -pg 1 0 110 380 730 1090 1430 1760 2140 2550 2940 3350 3620 -top 0 -bot 1120
+levelinfo -pg 1 -10 110 390 740 1100 1440 1780 2160 2600 2970 3380 3650 -top 0 -bot 1120
 ",
 }
 {

@@ -38,7 +38,7 @@
 #define SOME XPAR_AXI_GPIO_0_BASEADDR
 
 #define LEDPIN 7
-#define BUTTONPIN 50
+#define BUTTONPIN 13
 
 using namespace digilent;
 

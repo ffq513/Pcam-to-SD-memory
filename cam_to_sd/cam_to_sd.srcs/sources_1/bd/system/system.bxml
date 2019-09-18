@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1565883216"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1565883216"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1565883216"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1565883216"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1568820278"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1568820278"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1568820278"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1568820278"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_AXI_BayerToRGB_1_0\system_AXI_BayerToRGB_1_0.xci" Type="IP">
         <Instance HierarchyPath="AXI_BayerToRGB_1"/>
