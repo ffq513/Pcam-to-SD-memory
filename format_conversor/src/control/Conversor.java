@@ -13,10 +13,9 @@ public class Conversor implements Runnable {
 	private static String path_to_save;
 	private String file_name;
 	private String ext_file = "bmp";
-	
 
 	public static void SetParentPath(String parent_path) { Conversor.parent_path = parent_path; }
-	public static void SetPaathToSave(String path_to_save) { Conversor.path_to_save = path_to_save; }
+	public static void SetPathToSave(String path_to_save) { Conversor.path_to_save = path_to_save; }
 	
 	public Conversor(String file_name) { this.file_name = file_name; }
 	

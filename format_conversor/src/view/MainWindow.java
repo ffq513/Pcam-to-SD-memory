@@ -1,5 +1,6 @@
 package view;
 
+
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
@@ -126,7 +127,7 @@ public class MainWindow {
 						   @Override
 						   public void run() {
 							   Conversor.SetParentPath(pathToImages + "\\");
-								Conversor.SetPaathToSave(askPathToSave() + "\\");
+								Conversor.SetPathToSave(askPathToSave() + "\\");
 								Vector<Thread> threads_vector = new Vector<Thread>();
 								int filesAmount = listFiles.size();
 								for (int index = 0; index < filesAmount; index++) {
