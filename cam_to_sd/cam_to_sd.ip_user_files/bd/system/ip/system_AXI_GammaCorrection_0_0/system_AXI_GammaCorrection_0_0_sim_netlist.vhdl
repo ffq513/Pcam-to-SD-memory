@@ -1,8 +1,8 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
--- Date        : Fri Aug  9 23:36:53 2019
--- Host        : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
+-- Date        : Tue Dec  3 10:43:53 2019
+-- Host        : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top system_AXI_GammaCorrection_0_0 -prefix
 --               system_AXI_GammaCorrection_0_0_ system_AXI_GammaCorrection_0_0_sim_netlist.vhdl
 -- Design      : system_AXI_GammaCorrection_0_0
@@ -17,7 +17,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity system_AXI_GammaCorrection_0_0_StoredGammaCoefs is
   port (
     m_axis_video_tdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    sGammaReg : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    \sGammaReg__0\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axis_video_tdata : in STD_LOGIC_VECTOR ( 9 downto 0 );
     \sGammaReg_reg[0]\ : in STD_LOGIC;
     \sGammaReg_reg[1]\ : in STD_LOGIC;
@@ -29,7 +29,7 @@ end system_AXI_GammaCorrection_0_0_StoredGammaCoefs;
 architecture STRUCTURE of system_AXI_GammaCorrection_0_0_StoredGammaCoefs is
   signal p_0_in : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal p_0_out : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal p_1_in : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal \p_1_in__0\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \rStoredData[0]_i_100_n_0\ : STD_LOGIC;
   signal \rStoredData[0]_i_101_n_0\ : STD_LOGIC;
   signal \rStoredData[0]_i_102_n_0\ : STD_LOGIC;
@@ -874,10 +874,10 @@ begin
       I0 => \rStoredData[0]_i_4_n_0\,
       I1 => s_axis_video_tdata(2),
       I2 => \rStoredData[0]_i_5_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[0]_i_6_n_0\,
-      O => p_1_in(0)
+      O => \p_1_in__0\(0)
     );
 \rStoredData[0]_i_3\: unisim.vcomponents.LUT6
     generic map(
@@ -1770,10 +1770,10 @@ begin
       I0 => \rStoredData[1]_i_4_n_0\,
       I1 => s_axis_video_tdata(3),
       I2 => \rStoredData[1]_i_5_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[1]_i_6_n_0\,
-      O => p_1_in(1)
+      O => \p_1_in__0\(1)
     );
 \rStoredData[1]_i_3\: unisim.vcomponents.LUT6
     generic map(
@@ -2417,8 +2417,8 @@ begin
       INIT => X"E4"
     )
         port map (
-      I0 => sGammaReg(2),
-      I1 => p_1_in(2),
+      I0 => \sGammaReg__0\(2),
+      I1 => \p_1_in__0\(2),
       I2 => p_0_out(2),
       O => p_0_in(2)
     );
@@ -2560,10 +2560,10 @@ begin
       I0 => \rStoredData[2]_i_4_n_0\,
       I1 => s_axis_video_tdata(4),
       I2 => \rStoredData[2]_i_5_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[2]_i_6_n_0\,
-      O => p_1_in(2)
+      O => \p_1_in__0\(2)
     );
 \rStoredData[2]_i_21\: unisim.vcomponents.LUT6
     generic map(
@@ -3398,10 +3398,10 @@ begin
       I0 => \rStoredData[3]_i_4_n_0\,
       I1 => s_axis_video_tdata(5),
       I2 => \rStoredData_reg[3]_i_5_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[3]_i_6_n_0\,
-      O => p_1_in(3)
+      O => \p_1_in__0\(3)
     );
 \rStoredData[3]_i_21\: unisim.vcomponents.LUT6
     generic map(
@@ -4225,7 +4225,7 @@ begin
     )
         port map (
       I0 => p_0_out(4),
-      I1 => sGammaReg(2),
+      I1 => \sGammaReg__0\(2),
       I2 => \rStoredData[4]_i_3_n_0\,
       I3 => \rStoredData_reg[4]_i_4_n_0\,
       I4 => \sGammaReg_reg[0]\,
@@ -4447,8 +4447,8 @@ begin
     )
         port map (
       I0 => s_axis_video_tdata(6),
-      I1 => sGammaReg(0),
-      I2 => sGammaReg(1),
+      I1 => \sGammaReg__0\(0),
+      I2 => \sGammaReg__0\(1),
       I3 => \rStoredData_reg[4]_i_10_n_0\,
       I4 => s_axis_video_tdata(7),
       I5 => \rStoredData_reg[4]_i_11_n_0\,
@@ -4900,7 +4900,7 @@ begin
     )
         port map (
       I0 => p_0_out(5),
-      I1 => sGammaReg(2),
+      I1 => \sGammaReg__0\(2),
       I2 => \rStoredData[5]_i_3_n_0\,
       I3 => \rStoredData_reg[5]_i_4_n_0\,
       I4 => \sGammaReg_reg[0]\,
@@ -5152,8 +5152,8 @@ begin
       INIT => X"31223100"
     )
         port map (
-      I0 => sGammaReg(0),
-      I1 => sGammaReg(1),
+      I0 => \sGammaReg__0\(0),
+      I1 => \sGammaReg__0\(1),
       I2 => \rStoredData[5]_i_8_n_0\,
       I3 => s_axis_video_tdata(7),
       I4 => \rStoredData[5]_i_9_n_0\,
@@ -5333,7 +5333,7 @@ begin
     )
         port map (
       I0 => p_0_out(6),
-      I1 => sGammaReg(2),
+      I1 => \sGammaReg__0\(2),
       I2 => \rStoredData[6]_i_3_n_0\,
       I3 => \rStoredData[6]_i_4_n_0\,
       I4 => \sGammaReg_reg[0]\,
@@ -5473,8 +5473,8 @@ begin
       INIT => X"3131333322000000"
     )
         port map (
-      I0 => sGammaReg(0),
-      I1 => sGammaReg(1),
+      I0 => \sGammaReg__0\(0),
+      I1 => \sGammaReg__0\(1),
       I2 => \rStoredData[6]_i_8_n_0\,
       I3 => \rStoredData[6]_i_9_n_0\,
       I4 => s_axis_video_tdata(7),
@@ -5589,11 +5589,11 @@ begin
         port map (
       I0 => \rStoredData[7]_i_4_n_0\,
       I1 => \rStoredData[7]_i_5_n_0\,
-      I2 => sGammaReg(1),
-      I3 => sGammaReg(0),
+      I2 => \sGammaReg__0\(1),
+      I3 => \sGammaReg__0\(0),
       I4 => s_axis_video_tdata(9),
       I5 => \rStoredData[7]_i_6_n_0\,
-      O => p_1_in(7)
+      O => \p_1_in__0\(7)
     );
 \rStoredData[7]_i_3\: unisim.vcomponents.LUT6
     generic map(
@@ -5693,10 +5693,10 @@ begin
     );
 \rStoredData_reg[0]_i_1\: unisim.vcomponents.MUXF7
      port map (
-      I0 => p_1_in(0),
+      I0 => \p_1_in__0\(0),
       I1 => p_0_out(0),
       O => p_0_in(0),
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 \rStoredData_reg[0]_i_10\: unisim.vcomponents.MUXF8
      port map (
@@ -6044,10 +6044,10 @@ begin
     );
 \rStoredData_reg[1]_i_1\: unisim.vcomponents.MUXF7
      port map (
-      I0 => p_1_in(1),
+      I0 => \p_1_in__0\(1),
       I1 => p_0_out(1),
       O => p_0_in(1),
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 \rStoredData_reg[1]_i_10\: unisim.vcomponents.MUXF8
      port map (
@@ -6655,10 +6655,10 @@ begin
     );
 \rStoredData_reg[3]_i_1\: unisim.vcomponents.MUXF7
      port map (
-      I0 => p_1_in(3),
+      I0 => \p_1_in__0\(3),
       I1 => p_0_out(3),
       O => p_0_in(3),
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 \rStoredData_reg[3]_i_12\: unisim.vcomponents.MUXF8
      port map (
@@ -6925,10 +6925,10 @@ begin
     );
 \rStoredData_reg[7]_i_1\: unisim.vcomponents.MUXF7
      port map (
-      I0 => p_1_in(7),
+      I0 => \p_1_in__0\(7),
       I1 => p_0_out(7),
       O => p_0_in(7),
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 end STRUCTURE;
 library IEEE;
@@ -6938,7 +6938,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0 is
   port (
     m_axis_video_tdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    sGammaReg : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    \sGammaReg__0\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axis_video_tdata : in STD_LOGIC_VECTOR ( 9 downto 0 );
     \sGammaReg_reg[0]\ : in STD_LOGIC;
     \sGammaReg_reg[1]\ : in STD_LOGIC;
@@ -6950,7 +6950,7 @@ entity system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0 is
 end system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0;
 
 architecture STRUCTURE of system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0 is
-  signal \p_1_in__0\ : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal \p_1_in__0__0\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \rStoredData[0]_i_100__0_n_0\ : STD_LOGIC;
   signal \rStoredData[0]_i_101__0_n_0\ : STD_LOGIC;
   signal \rStoredData[0]_i_102__0_n_0\ : STD_LOGIC;
@@ -7811,10 +7811,10 @@ begin
       I0 => \rStoredData[0]_i_4__0_n_0\,
       I1 => s_axis_video_tdata(2),
       I2 => \rStoredData[0]_i_5__0_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[0]_i_6__0_n_0\,
-      O => \p_1_in__0\(0)
+      O => \p_1_in__0__0\(0)
     );
 \rStoredData[0]_i_3__0\: unisim.vcomponents.LUT6
     generic map(
@@ -8707,10 +8707,10 @@ begin
       I0 => \rStoredData[1]_i_4__0_n_0\,
       I1 => s_axis_video_tdata(3),
       I2 => \rStoredData[1]_i_5__0_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[1]_i_6__0_n_0\,
-      O => \p_1_in__0\(1)
+      O => \p_1_in__0__0\(1)
     );
 \rStoredData[1]_i_3__0\: unisim.vcomponents.LUT6
     generic map(
@@ -9484,8 +9484,8 @@ begin
       INIT => X"E4"
     )
         port map (
-      I0 => sGammaReg(2),
-      I1 => \p_1_in__0\(2),
+      I0 => \sGammaReg__0\(2),
+      I1 => \p_1_in__0__0\(2),
       I2 => \rStoredData_reg[2]_i_3__0_n_0\,
       O => \rStoredData[2]_i_1__0_n_0\
     );
@@ -9536,10 +9536,10 @@ begin
       I0 => \rStoredData[2]_i_4__0_n_0\,
       I1 => s_axis_video_tdata(4),
       I2 => \rStoredData[2]_i_5__0_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[2]_i_6__0_n_0\,
-      O => \p_1_in__0\(2)
+      O => \p_1_in__0__0\(2)
     );
 \rStoredData[2]_i_39__0\: unisim.vcomponents.LUT6
     generic map(
@@ -10433,10 +10433,10 @@ begin
       I0 => \rStoredData[3]_i_4__0_n_0\,
       I1 => s_axis_video_tdata(5),
       I2 => \rStoredData_reg[3]_i_5__0_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[3]_i_6__0_n_0\,
-      O => \p_1_in__0\(3)
+      O => \p_1_in__0__0\(3)
     );
 \rStoredData[3]_i_31__0\: unisim.vcomponents.LUT6
     generic map(
@@ -11248,7 +11248,7 @@ begin
     )
         port map (
       I0 => \rStoredData[4]_i_2__0_n_0\,
-      I1 => sGammaReg(2),
+      I1 => \sGammaReg__0\(2),
       I2 => \rStoredData[4]_i_3__0_n_0\,
       I3 => \rStoredData_reg[4]_i_4__0_n_0\,
       I4 => \sGammaReg_reg[0]\,
@@ -11446,8 +11446,8 @@ begin
     )
         port map (
       I0 => s_axis_video_tdata(6),
-      I1 => sGammaReg(0),
-      I2 => sGammaReg(1),
+      I1 => \sGammaReg__0\(0),
+      I2 => \sGammaReg__0\(1),
       I3 => \rStoredData_reg[4]_i_10__0_n_0\,
       I4 => s_axis_video_tdata(7),
       I5 => \rStoredData_reg[4]_i_11__0_n_0\,
@@ -11963,7 +11963,7 @@ begin
     )
         port map (
       I0 => \rStoredData_reg[5]_i_2__0_n_0\,
-      I1 => sGammaReg(2),
+      I1 => \sGammaReg__0\(2),
       I2 => \rStoredData[5]_i_3__0_n_0\,
       I3 => \rStoredData_reg[5]_i_4__0_n_0\,
       I4 => \sGammaReg_reg[0]\,
@@ -12193,8 +12193,8 @@ begin
       INIT => X"31223100"
     )
         port map (
-      I0 => sGammaReg(0),
-      I1 => sGammaReg(1),
+      I0 => \sGammaReg__0\(0),
+      I1 => \sGammaReg__0\(1),
       I2 => \rStoredData[5]_i_8__0_n_0\,
       I3 => s_axis_video_tdata(7),
       I4 => \rStoredData[5]_i_9__0_n_0\,
@@ -12372,7 +12372,7 @@ begin
     )
         port map (
       I0 => \rStoredData_reg[6]_i_2__0_n_0\,
-      I1 => sGammaReg(2),
+      I1 => \sGammaReg__0\(2),
       I2 => \rStoredData[6]_i_3__0_n_0\,
       I3 => \rStoredData[6]_i_4__0_n_0\,
       I4 => \sGammaReg_reg[0]\,
@@ -12410,8 +12410,8 @@ begin
       INIT => X"3131333322000000"
     )
         port map (
-      I0 => sGammaReg(0),
-      I1 => sGammaReg(1),
+      I0 => \sGammaReg__0\(0),
+      I1 => \sGammaReg__0\(1),
       I2 => \rStoredData[6]_i_8__0_n_0\,
       I3 => \rStoredData[6]_i_9__0_n_0\,
       I4 => s_axis_video_tdata(7),
@@ -12526,11 +12526,11 @@ begin
         port map (
       I0 => \rStoredData[7]_i_4__0_n_0\,
       I1 => \rStoredData[7]_i_5__0_n_0\,
-      I2 => sGammaReg(1),
-      I3 => sGammaReg(0),
+      I2 => \sGammaReg__0\(1),
+      I3 => \sGammaReg__0\(0),
       I4 => s_axis_video_tdata(9),
       I5 => \rStoredData[7]_i_6__0_n_0\,
-      O => \p_1_in__0\(7)
+      O => \p_1_in__0__0\(7)
     );
 \rStoredData[7]_i_3__0\: unisim.vcomponents.LUT6
     generic map(
@@ -12700,10 +12700,10 @@ begin
     );
 \rStoredData_reg[0]_i_1__0\: unisim.vcomponents.MUXF7
      port map (
-      I0 => \p_1_in__0\(0),
+      I0 => \p_1_in__0__0\(0),
       I1 => \rStoredData[0]_i_3__0_n_0\,
       O => \rStoredData_reg[0]_i_1__0_n_0\,
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 \rStoredData_reg[0]_i_20__0\: unisim.vcomponents.MUXF8
      port map (
@@ -13051,10 +13051,10 @@ begin
     );
 \rStoredData_reg[1]_i_1__0\: unisim.vcomponents.MUXF7
      port map (
-      I0 => \p_1_in__0\(1),
+      I0 => \p_1_in__0__0\(1),
       I1 => \rStoredData[1]_i_3__0_n_0\,
       O => \rStoredData_reg[1]_i_1__0_n_0\,
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 \rStoredData_reg[1]_i_20__0\: unisim.vcomponents.MUXF8
      port map (
@@ -13627,10 +13627,10 @@ begin
     );
 \rStoredData_reg[3]_i_1__0\: unisim.vcomponents.MUXF7
      port map (
-      I0 => \p_1_in__0\(3),
+      I0 => \p_1_in__0__0\(3),
       I1 => \rStoredData[3]_i_3__0_n_0\,
       O => \rStoredData_reg[3]_i_1__0_n_0\,
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 \rStoredData_reg[3]_i_20__0\: unisim.vcomponents.MUXF8
      port map (
@@ -13862,10 +13862,10 @@ begin
     );
 \rStoredData_reg[7]_i_1__0\: unisim.vcomponents.MUXF7
      port map (
-      I0 => \p_1_in__0\(7),
+      I0 => \p_1_in__0__0\(7),
       I1 => \rStoredData[7]_i_3__0_n_0\,
       O => \rStoredData_reg[7]_i_1__0_n_0\,
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 end STRUCTURE;
 library IEEE;
@@ -13880,7 +13880,7 @@ entity system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1 is
     m_axis_video_tdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axis_video_tvalid : in STD_LOGIC;
     m_axis_video_tready : in STD_LOGIC;
-    sGammaReg : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    \sGammaReg__0\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axis_video_tdata : in STD_LOGIC_VECTOR ( 9 downto 0 );
     StreamClk : in STD_LOGIC
   );
@@ -14758,8 +14758,8 @@ begin
       I0 => \rStoredData[0]_i_4__1_n_0\,
       I1 => s_axis_video_tdata(2),
       I2 => \rStoredData[0]_i_5__1_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[0]_i_6__1_n_0\,
       O => \p_1_in__1\(0)
     );
@@ -15654,8 +15654,8 @@ begin
       I0 => \rStoredData[1]_i_4__1_n_0\,
       I1 => s_axis_video_tdata(3),
       I2 => \rStoredData[1]_i_5__1_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[1]_i_6__1_n_0\,
       O => \p_1_in__1\(1)
     );
@@ -16431,7 +16431,7 @@ begin
       INIT => X"E4"
     )
         port map (
-      I0 => sGammaReg(2),
+      I0 => \sGammaReg__0\(2),
       I1 => \p_1_in__1\(2),
       I2 => \rStoredData_reg[2]_i_3__1_n_0\,
       O => \rStoredData[2]_i_1__1_n_0\
@@ -16483,8 +16483,8 @@ begin
       I0 => \rStoredData[2]_i_4__1_n_0\,
       I1 => s_axis_video_tdata(4),
       I2 => \rStoredData[2]_i_5__1_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[2]_i_6__1_n_0\,
       O => \p_1_in__1\(2)
     );
@@ -17380,8 +17380,8 @@ begin
       I0 => \rStoredData[3]_i_4__1_n_0\,
       I1 => s_axis_video_tdata(5),
       I2 => \rStoredData_reg[3]_i_5__1_n_0\,
-      I3 => sGammaReg(1),
-      I4 => sGammaReg(0),
+      I3 => \sGammaReg__0\(1),
+      I4 => \sGammaReg__0\(0),
       I5 => \rStoredData[3]_i_6__1_n_0\,
       O => \p_1_in__1\(3)
     );
@@ -18195,7 +18195,7 @@ begin
     )
         port map (
       I0 => \rStoredData[4]_i_2__1_n_0\,
-      I1 => sGammaReg(2),
+      I1 => \sGammaReg__0\(2),
       I2 => \rStoredData[4]_i_3__1_n_0\,
       I3 => \rStoredData_reg[4]_i_4__1_n_0\,
       I4 => \^rstoreddata_reg[4]_0\,
@@ -18393,8 +18393,8 @@ begin
     )
         port map (
       I0 => s_axis_video_tdata(6),
-      I1 => sGammaReg(0),
-      I2 => sGammaReg(1),
+      I1 => \sGammaReg__0\(0),
+      I2 => \sGammaReg__0\(1),
       I3 => \rStoredData_reg[4]_i_10__1_n_0\,
       I4 => s_axis_video_tdata(7),
       I5 => \rStoredData_reg[4]_i_11__1_n_0\,
@@ -18910,7 +18910,7 @@ begin
     )
         port map (
       I0 => \rStoredData_reg[5]_i_2__1_n_0\,
-      I1 => sGammaReg(2),
+      I1 => \sGammaReg__0\(2),
       I2 => \rStoredData[5]_i_3__1_n_0\,
       I3 => \rStoredData_reg[5]_i_4__1_n_0\,
       I4 => \^rstoreddata_reg[4]_0\,
@@ -19140,8 +19140,8 @@ begin
       INIT => X"31223100"
     )
         port map (
-      I0 => sGammaReg(0),
-      I1 => sGammaReg(1),
+      I0 => \sGammaReg__0\(0),
+      I1 => \sGammaReg__0\(1),
       I2 => \rStoredData[5]_i_8__1_n_0\,
       I3 => s_axis_video_tdata(7),
       I4 => \rStoredData[5]_i_9__1_n_0\,
@@ -19281,8 +19281,8 @@ begin
       INIT => X"2"
     )
         port map (
-      I0 => sGammaReg(1),
-      I1 => sGammaReg(0),
+      I0 => \sGammaReg__0\(1),
+      I1 => \sGammaReg__0\(0),
       O => \^rstoreddata_reg[4]_1\
     );
 \rStoredData[6]_i_17\: unisim.vcomponents.LUT4
@@ -19322,7 +19322,7 @@ begin
     )
         port map (
       I0 => \rStoredData_reg[6]_i_2__1_n_0\,
-      I1 => sGammaReg(2),
+      I1 => \sGammaReg__0\(2),
       I2 => \rStoredData[6]_i_3__1_n_0\,
       I3 => \rStoredData[6]_i_4__1_n_0\,
       I4 => \^rstoreddata_reg[4]_0\,
@@ -19379,8 +19379,8 @@ begin
       INIT => X"3131333322000000"
     )
         port map (
-      I0 => sGammaReg(0),
-      I1 => sGammaReg(1),
+      I0 => \sGammaReg__0\(0),
+      I1 => \sGammaReg__0\(1),
       I2 => \rStoredData[6]_i_9__1_n_0\,
       I3 => \rStoredData[6]_i_10__1_n_0\,
       I4 => s_axis_video_tdata(7),
@@ -19405,8 +19405,8 @@ begin
       INIT => X"8"
     )
         port map (
-      I0 => sGammaReg(0),
-      I1 => sGammaReg(1),
+      I0 => \sGammaReg__0\(0),
+      I1 => \sGammaReg__0\(1),
       O => \^rstoreddata_reg[4]_0\
     );
 \rStoredData[6]_i_6__1\: unisim.vcomponents.LUT6
@@ -19513,8 +19513,8 @@ begin
         port map (
       I0 => \rStoredData[7]_i_5__1_n_0\,
       I1 => \rStoredData[7]_i_6__1_n_0\,
-      I2 => sGammaReg(1),
-      I3 => sGammaReg(0),
+      I2 => \sGammaReg__0\(1),
+      I3 => \sGammaReg__0\(0),
       I4 => s_axis_video_tdata(9),
       I5 => \rStoredData[7]_i_7_n_0\,
       O => \p_1_in__1\(7)
@@ -19677,7 +19677,7 @@ begin
       I0 => \p_1_in__1\(0),
       I1 => \rStoredData[0]_i_3__1_n_0\,
       O => \rStoredData_reg[0]_i_1__1_n_0\,
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 \rStoredData_reg[0]_i_20__1\: unisim.vcomponents.MUXF8
      port map (
@@ -20028,7 +20028,7 @@ begin
       I0 => \p_1_in__1\(1),
       I1 => \rStoredData[1]_i_3__1_n_0\,
       O => \rStoredData_reg[1]_i_1__1_n_0\,
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 \rStoredData_reg[1]_i_20__1\: unisim.vcomponents.MUXF8
      port map (
@@ -20604,7 +20604,7 @@ begin
       I0 => \p_1_in__1\(3),
       I1 => \rStoredData[3]_i_3__1_n_0\,
       O => \rStoredData_reg[3]_i_1__1_n_0\,
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 \rStoredData_reg[3]_i_20__1\: unisim.vcomponents.MUXF8
      port map (
@@ -20839,7 +20839,7 @@ begin
       I0 => \p_1_in__1\(7),
       I1 => \rStoredData[7]_i_4__1_n_0\,
       O => \rStoredData_reg[7]_i_2_n_0\,
-      S => sGammaReg(2)
+      S => \sGammaReg__0\(2)
     );
 end STRUCTURE;
 library IEEE;
@@ -20848,54 +20848,36 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity system_AXI_GammaCorrection_0_0_AXI_GammaCorrection is
   port (
-    StreamClk : in STD_LOGIC;
-    sStreamReset_n : in STD_LOGIC;
-    s_axis_video_tready : out STD_LOGIC;
-    s_axis_video_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axis_video_tvalid : in STD_LOGIC;
-    s_axis_video_tuser : in STD_LOGIC;
-    s_axis_video_tlast : in STD_LOGIC;
-    m_axis_video_tready : in STD_LOGIC;
-    m_axis_video_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_video_tvalid : out STD_LOGIC;
-    m_axis_video_tuser : out STD_LOGIC;
-    m_axis_video_tlast : out STD_LOGIC;
-    AxiLiteClk : in STD_LOGIC;
-    aAxiLiteReset_n : in STD_LOGIC;
-    S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S_AXI_AWPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S_AXI_AWVALID : in STD_LOGIC;
     S_AXI_AWREADY : out STD_LOGIC;
-    S_AXI_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S_AXI_WVALID : in STD_LOGIC;
     S_AXI_WREADY : out STD_LOGIC;
-    S_AXI_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_BVALID : out STD_LOGIC;
-    S_AXI_BREADY : in STD_LOGIC;
-    S_AXI_ARADDR : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S_AXI_ARPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S_AXI_ARVALID : in STD_LOGIC;
     S_AXI_ARREADY : out STD_LOGIC;
-    S_AXI_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axis_video_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_video_tlast : out STD_LOGIC;
+    m_axis_video_tuser : out STD_LOGIC;
+    m_axis_video_tvalid : out STD_LOGIC;
+    S_AXI_BVALID : out STD_LOGIC;
     S_AXI_RVALID : out STD_LOGIC;
-    S_AXI_RREADY : in STD_LOGIC
+    AxiLiteClk : in STD_LOGIC;
+    S_AXI_WDATA : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axis_video_tdata : in STD_LOGIC_VECTOR ( 29 downto 0 );
+    StreamClk : in STD_LOGIC;
+    s_axis_video_tvalid : in STD_LOGIC;
+    m_axis_video_tready : in STD_LOGIC;
+    S_AXI_WVALID : in STD_LOGIC;
+    S_AXI_AWVALID : in STD_LOGIC;
+    S_AXI_WSTRB : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S_AXI_ARVALID : in STD_LOGIC;
+    s_axis_video_tlast : in STD_LOGIC;
+    sStreamReset_n : in STD_LOGIC;
+    s_axis_video_tuser : in STD_LOGIC;
+    aAxiLiteReset_n : in STD_LOGIC;
+    S_AXI_BREADY : in STD_LOGIC;
+    S_AXI_RREADY : in STD_LOGIC;
+    S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection : entity is 3;
-  attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection : entity is 32;
-  attribute kAXI_InputDataWidth : integer;
-  attribute kAXI_InputDataWidth of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection : entity is 32;
-  attribute kAXI_OutputDataWidth : integer;
-  attribute kAXI_OutputDataWidth of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection : entity is 24;
-  attribute kInputColorWidth : integer;
-  attribute kInputColorWidth of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection : entity is 10;
 end system_AXI_GammaCorrection_0_0_AXI_GammaCorrection;
 
 architecture STRUCTURE of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection is
-  signal \<const0>\ : STD_LOGIC;
   signal \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_0\ : STD_LOGIC;
   signal \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_1\ : STD_LOGIC;
   signal \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_2\ : STD_LOGIC;
@@ -20914,16 +20896,15 @@ architecture STRUCTURE of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection is
   signal axi_wready0 : STD_LOGIC;
   signal \^m_axis_video_tlast\ : STD_LOGIC;
   signal m_axis_video_tlast_i_1_n_0 : STD_LOGIC;
-  signal \^m_axis_video_tready\ : STD_LOGIC;
   signal \^m_axis_video_tuser\ : STD_LOGIC;
   signal m_axis_video_tuser_i_1_n_0 : STD_LOGIC;
   signal \^m_axis_video_tvalid\ : STD_LOGIC;
   signal p_1_in : STD_LOGIC_VECTOR ( 2 to 2 );
   signal sAXI_OutputValid_i_1_n_0 : STD_LOGIC;
-  signal sGammaReg : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \sGammaReg[0]_i_1_n_0\ : STD_LOGIC;
   signal \sGammaReg[1]_i_1_n_0\ : STD_LOGIC;
   signal \sGammaReg[2]_i_1_n_0\ : STD_LOGIC;
+  signal \sGammaReg__0\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of axi_arready_i_1 : label is "soft_lutpair65";
   attribute SOFT_HLUTNM of \axi_awaddr[2]_i_1\ : label is "soft_lutpair64";
@@ -20934,60 +20915,18 @@ architecture STRUCTURE of system_AXI_GammaCorrection_0_0_AXI_GammaCorrection is
 begin
   S_AXI_ARREADY <= \^s_axi_arready\;
   S_AXI_AWREADY <= \^s_axi_awready\;
-  S_AXI_BRESP(1) <= \<const0>\;
-  S_AXI_BRESP(0) <= \<const0>\;
   S_AXI_BVALID <= \^s_axi_bvalid\;
-  S_AXI_RDATA(31) <= \<const0>\;
-  S_AXI_RDATA(30) <= \<const0>\;
-  S_AXI_RDATA(29) <= \<const0>\;
-  S_AXI_RDATA(28) <= \<const0>\;
-  S_AXI_RDATA(27) <= \<const0>\;
-  S_AXI_RDATA(26) <= \<const0>\;
-  S_AXI_RDATA(25) <= \<const0>\;
-  S_AXI_RDATA(24) <= \<const0>\;
-  S_AXI_RDATA(23) <= \<const0>\;
-  S_AXI_RDATA(22) <= \<const0>\;
-  S_AXI_RDATA(21) <= \<const0>\;
-  S_AXI_RDATA(20) <= \<const0>\;
-  S_AXI_RDATA(19) <= \<const0>\;
-  S_AXI_RDATA(18) <= \<const0>\;
-  S_AXI_RDATA(17) <= \<const0>\;
-  S_AXI_RDATA(16) <= \<const0>\;
-  S_AXI_RDATA(15) <= \<const0>\;
-  S_AXI_RDATA(14) <= \<const0>\;
-  S_AXI_RDATA(13) <= \<const0>\;
-  S_AXI_RDATA(12) <= \<const0>\;
-  S_AXI_RDATA(11) <= \<const0>\;
-  S_AXI_RDATA(10) <= \<const0>\;
-  S_AXI_RDATA(9) <= \<const0>\;
-  S_AXI_RDATA(8) <= \<const0>\;
-  S_AXI_RDATA(7) <= \<const0>\;
-  S_AXI_RDATA(6) <= \<const0>\;
-  S_AXI_RDATA(5) <= \<const0>\;
-  S_AXI_RDATA(4) <= \<const0>\;
-  S_AXI_RDATA(3) <= \<const0>\;
-  S_AXI_RDATA(2) <= \<const0>\;
-  S_AXI_RDATA(1) <= \<const0>\;
-  S_AXI_RDATA(0) <= \<const0>\;
-  S_AXI_RRESP(1) <= \<const0>\;
-  S_AXI_RRESP(0) <= \<const0>\;
   S_AXI_RVALID <= \^s_axi_rvalid\;
   S_AXI_WREADY <= \^s_axi_wready\;
-  \^m_axis_video_tready\ <= m_axis_video_tready;
   m_axis_video_tlast <= \^m_axis_video_tlast\;
   m_axis_video_tuser <= \^m_axis_video_tuser\;
   m_axis_video_tvalid <= \^m_axis_video_tvalid\;
-  s_axis_video_tready <= \^m_axis_video_tready\;
-GND: unisim.vcomponents.GND
-     port map (
-      G => \<const0>\
-    );
 \GammaStorageCoefsGeneration[0].StoredGammaCoefsInst\: entity work.system_AXI_GammaCorrection_0_0_StoredGammaCoefs
      port map (
       E(0) => \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_0\,
       StreamClk => StreamClk,
       m_axis_video_tdata(7 downto 0) => m_axis_video_tdata(7 downto 0),
-      sGammaReg(2 downto 0) => sGammaReg(2 downto 0),
+      \sGammaReg__0\(2 downto 0) => \sGammaReg__0\(2 downto 0),
       \sGammaReg_reg[0]\ => \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_1\,
       \sGammaReg_reg[1]\ => \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_2\,
       s_axis_video_tdata(9 downto 0) => s_axis_video_tdata(9 downto 0)
@@ -20997,7 +20936,7 @@ GND: unisim.vcomponents.GND
       E(0) => \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_0\,
       StreamClk => StreamClk,
       m_axis_video_tdata(7 downto 0) => m_axis_video_tdata(15 downto 8),
-      sGammaReg(2 downto 0) => sGammaReg(2 downto 0),
+      \sGammaReg__0\(2 downto 0) => \sGammaReg__0\(2 downto 0),
       \sGammaReg_reg[0]\ => \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_1\,
       \sGammaReg_reg[1]\ => \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_2\,
       s_axis_video_tdata(9 downto 0) => s_axis_video_tdata(19 downto 10)
@@ -21007,10 +20946,10 @@ GND: unisim.vcomponents.GND
       E(0) => \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_0\,
       StreamClk => StreamClk,
       m_axis_video_tdata(7 downto 0) => m_axis_video_tdata(23 downto 16),
-      m_axis_video_tready => \^m_axis_video_tready\,
+      m_axis_video_tready => m_axis_video_tready,
       \rStoredData_reg[4]_0\ => \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_1\,
       \rStoredData_reg[4]_1\ => \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_2\,
-      sGammaReg(2 downto 0) => sGammaReg(2 downto 0),
+      \sGammaReg__0\(2 downto 0) => \sGammaReg__0\(2 downto 0),
       s_axis_video_tdata(9 downto 0) => s_axis_video_tdata(29 downto 20),
       s_axis_video_tvalid => s_axis_video_tvalid
     );
@@ -21036,7 +20975,7 @@ axi_arready_reg: unisim.vcomponents.FDRE
       INIT => X"FFBF0080"
     )
         port map (
-      I0 => S_AXI_AWADDR(2),
+      I0 => S_AXI_AWADDR(0),
       I1 => S_AXI_AWVALID,
       I2 => S_AXI_WVALID,
       I3 => \^s_axi_awready\,
@@ -21141,7 +21080,7 @@ m_axis_video_tlast_i_1: unisim.vcomponents.LUT5
     )
         port map (
       I0 => \^m_axis_video_tlast\,
-      I1 => \^m_axis_video_tready\,
+      I1 => m_axis_video_tready,
       I2 => s_axis_video_tvalid,
       I3 => s_axis_video_tlast,
       I4 => sStreamReset_n,
@@ -21161,7 +21100,7 @@ m_axis_video_tuser_i_1: unisim.vcomponents.LUT5
     )
         port map (
       I0 => \^m_axis_video_tuser\,
-      I1 => \^m_axis_video_tready\,
+      I1 => m_axis_video_tready,
       I2 => s_axis_video_tvalid,
       I3 => s_axis_video_tuser,
       I4 => sStreamReset_n,
@@ -21181,7 +21120,7 @@ sAXI_OutputValid_i_1: unisim.vcomponents.LUT4
     )
         port map (
       I0 => \^m_axis_video_tvalid\,
-      I1 => \^m_axis_video_tready\,
+      I1 => m_axis_video_tready,
       I2 => s_axis_video_tvalid,
       I3 => sStreamReset_n,
       O => sAXI_OutputValid_i_1_n_0
@@ -21194,37 +21133,7 @@ sAXI_OutputValid_reg: unisim.vcomponents.FDRE
       Q => \^m_axis_video_tvalid\,
       R => '0'
     );
-\sGammaReg[0]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => S_AXI_WDATA(0),
-      I1 => p_1_in(2),
-      I2 => sGammaReg(0),
-      O => \sGammaReg[0]_i_1_n_0\
-    );
-\sGammaReg[1]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => S_AXI_WDATA(1),
-      I1 => p_1_in(2),
-      I2 => sGammaReg(1),
-      O => \sGammaReg[1]_i_1_n_0\
-    );
-\sGammaReg[2]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"B8"
-    )
-        port map (
-      I0 => S_AXI_WDATA(2),
-      I1 => p_1_in(2),
-      I2 => sGammaReg(2),
-      O => \sGammaReg[2]_i_1_n_0\
-    );
-\sGammaReg[2]_i_2\: unisim.vcomponents.LUT6
+sGammaReg: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0000800000000000"
     )
@@ -21237,12 +21146,42 @@ sAXI_OutputValid_reg: unisim.vcomponents.FDRE
       I5 => S_AXI_WSTRB(0),
       O => p_1_in(2)
     );
+\sGammaReg[0]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"B8"
+    )
+        port map (
+      I0 => S_AXI_WDATA(0),
+      I1 => p_1_in(2),
+      I2 => \sGammaReg__0\(0),
+      O => \sGammaReg[0]_i_1_n_0\
+    );
+\sGammaReg[1]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"B8"
+    )
+        port map (
+      I0 => S_AXI_WDATA(1),
+      I1 => p_1_in(2),
+      I2 => \sGammaReg__0\(1),
+      O => \sGammaReg[1]_i_1_n_0\
+    );
+\sGammaReg[2]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"B8"
+    )
+        port map (
+      I0 => S_AXI_WDATA(2),
+      I1 => p_1_in(2),
+      I2 => \sGammaReg__0\(2),
+      O => \sGammaReg[2]_i_1_n_0\
+    );
 \sGammaReg_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => AxiLiteClk,
       CE => '1',
       D => \sGammaReg[0]_i_1_n_0\,
-      Q => sGammaReg(0),
+      Q => \sGammaReg__0\(0),
       R => axi_awready_i_1_n_0
     );
 \sGammaReg_reg[1]\: unisim.vcomponents.FDRE
@@ -21250,7 +21189,7 @@ sAXI_OutputValid_reg: unisim.vcomponents.FDRE
       C => AxiLiteClk,
       CE => '1',
       D => \sGammaReg[1]_i_1_n_0\,
-      Q => sGammaReg(1),
+      Q => \sGammaReg__0\(1),
       R => axi_awready_i_1_n_0
     );
 \sGammaReg_reg[2]\: unisim.vcomponents.FDRE
@@ -21258,7 +21197,7 @@ sAXI_OutputValid_reg: unisim.vcomponents.FDRE
       C => AxiLiteClk,
       CE => '1',
       D => \sGammaReg[2]_i_1_n_0\,
-      Q => sGammaReg(2),
+      Q => \sGammaReg__0\(2),
       R => axi_awready_i_1_n_0
     );
 end STRUCTURE;
@@ -21315,16 +21254,8 @@ entity system_AXI_GammaCorrection_0_0 is
 end system_AXI_GammaCorrection_0_0;
 
 architecture STRUCTURE of system_AXI_GammaCorrection_0_0 is
-  attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of U0 : label is 3;
-  attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of U0 : label is 32;
-  attribute kAXI_InputDataWidth : integer;
-  attribute kAXI_InputDataWidth of U0 : label is 32;
-  attribute kAXI_OutputDataWidth : integer;
-  attribute kAXI_OutputDataWidth of U0 : label is 24;
-  attribute kInputColorWidth : integer;
-  attribute kInputColorWidth of U0 : label is 10;
+  signal \<const0>\ : STD_LOGIC;
+  signal \^m_axis_video_tready\ : STD_LOGIC;
   attribute x_interface_info : string;
   attribute x_interface_info of AxiLiteClk : signal is "xilinx.com:signal:clock:1.0 AxiLiteClk CLK";
   attribute x_interface_parameter : string;
@@ -21368,39 +21299,74 @@ architecture STRUCTURE of system_AXI_GammaCorrection_0_0 is
   attribute x_interface_info of m_axis_video_tdata : signal is "xilinx.com:interface:axis:1.0 AXI_Stream_Master TDATA";
   attribute x_interface_info of s_axis_video_tdata : signal is "xilinx.com:interface:axis:1.0 AXI_Slave_Interface TDATA";
 begin
+  S_AXI_BRESP(1) <= \<const0>\;
+  S_AXI_BRESP(0) <= \<const0>\;
+  S_AXI_RDATA(31) <= \<const0>\;
+  S_AXI_RDATA(30) <= \<const0>\;
+  S_AXI_RDATA(29) <= \<const0>\;
+  S_AXI_RDATA(28) <= \<const0>\;
+  S_AXI_RDATA(27) <= \<const0>\;
+  S_AXI_RDATA(26) <= \<const0>\;
+  S_AXI_RDATA(25) <= \<const0>\;
+  S_AXI_RDATA(24) <= \<const0>\;
+  S_AXI_RDATA(23) <= \<const0>\;
+  S_AXI_RDATA(22) <= \<const0>\;
+  S_AXI_RDATA(21) <= \<const0>\;
+  S_AXI_RDATA(20) <= \<const0>\;
+  S_AXI_RDATA(19) <= \<const0>\;
+  S_AXI_RDATA(18) <= \<const0>\;
+  S_AXI_RDATA(17) <= \<const0>\;
+  S_AXI_RDATA(16) <= \<const0>\;
+  S_AXI_RDATA(15) <= \<const0>\;
+  S_AXI_RDATA(14) <= \<const0>\;
+  S_AXI_RDATA(13) <= \<const0>\;
+  S_AXI_RDATA(12) <= \<const0>\;
+  S_AXI_RDATA(11) <= \<const0>\;
+  S_AXI_RDATA(10) <= \<const0>\;
+  S_AXI_RDATA(9) <= \<const0>\;
+  S_AXI_RDATA(8) <= \<const0>\;
+  S_AXI_RDATA(7) <= \<const0>\;
+  S_AXI_RDATA(6) <= \<const0>\;
+  S_AXI_RDATA(5) <= \<const0>\;
+  S_AXI_RDATA(4) <= \<const0>\;
+  S_AXI_RDATA(3) <= \<const0>\;
+  S_AXI_RDATA(2) <= \<const0>\;
+  S_AXI_RDATA(1) <= \<const0>\;
+  S_AXI_RDATA(0) <= \<const0>\;
+  S_AXI_RRESP(1) <= \<const0>\;
+  S_AXI_RRESP(0) <= \<const0>\;
+  \^m_axis_video_tready\ <= m_axis_video_tready;
+  s_axis_video_tready <= \^m_axis_video_tready\;
+GND: unisim.vcomponents.GND
+     port map (
+      G => \<const0>\
+    );
 U0: entity work.system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
      port map (
       AxiLiteClk => AxiLiteClk,
-      S_AXI_ARADDR(2 downto 0) => S_AXI_ARADDR(2 downto 0),
-      S_AXI_ARPROT(2 downto 0) => S_AXI_ARPROT(2 downto 0),
       S_AXI_ARREADY => S_AXI_ARREADY,
       S_AXI_ARVALID => S_AXI_ARVALID,
-      S_AXI_AWADDR(2 downto 0) => S_AXI_AWADDR(2 downto 0),
-      S_AXI_AWPROT(2 downto 0) => S_AXI_AWPROT(2 downto 0),
+      S_AXI_AWADDR(0) => S_AXI_AWADDR(2),
       S_AXI_AWREADY => S_AXI_AWREADY,
       S_AXI_AWVALID => S_AXI_AWVALID,
       S_AXI_BREADY => S_AXI_BREADY,
-      S_AXI_BRESP(1 downto 0) => S_AXI_BRESP(1 downto 0),
       S_AXI_BVALID => S_AXI_BVALID,
-      S_AXI_RDATA(31 downto 0) => S_AXI_RDATA(31 downto 0),
       S_AXI_RREADY => S_AXI_RREADY,
-      S_AXI_RRESP(1 downto 0) => S_AXI_RRESP(1 downto 0),
       S_AXI_RVALID => S_AXI_RVALID,
-      S_AXI_WDATA(31 downto 0) => S_AXI_WDATA(31 downto 0),
+      S_AXI_WDATA(2 downto 0) => S_AXI_WDATA(2 downto 0),
       S_AXI_WREADY => S_AXI_WREADY,
-      S_AXI_WSTRB(3 downto 0) => S_AXI_WSTRB(3 downto 0),
+      S_AXI_WSTRB(0) => S_AXI_WSTRB(0),
       S_AXI_WVALID => S_AXI_WVALID,
       StreamClk => StreamClk,
       aAxiLiteReset_n => aAxiLiteReset_n,
       m_axis_video_tdata(23 downto 0) => m_axis_video_tdata(23 downto 0),
       m_axis_video_tlast => m_axis_video_tlast,
-      m_axis_video_tready => m_axis_video_tready,
+      m_axis_video_tready => \^m_axis_video_tready\,
       m_axis_video_tuser => m_axis_video_tuser,
       m_axis_video_tvalid => m_axis_video_tvalid,
       sStreamReset_n => sStreamReset_n,
-      s_axis_video_tdata(31 downto 0) => s_axis_video_tdata(31 downto 0),
+      s_axis_video_tdata(29 downto 0) => s_axis_video_tdata(29 downto 0),
       s_axis_video_tlast => s_axis_video_tlast,
-      s_axis_video_tready => s_axis_video_tready,
       s_axis_video_tuser => s_axis_video_tuser,
       s_axis_video_tvalid => s_axis_video_tvalid
     );

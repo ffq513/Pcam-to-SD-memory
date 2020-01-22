@@ -1,0 +1,1285 @@
+
+*** Running vivado
+    with args -log system_edge_detect_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_edge_detect_0_0.tcl
+
+
+****** Vivado v2018.2.2 (64-bit)
+  **** SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+  **** IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system_edge_detect_0_0.tcl -notrace
+Command: synth_design -top system_edge_detect_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12348 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 436.344 ; gain = 98.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_edge_detect_0_0' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ip/system_edge_detect_0_0/synth/system_edge_detect_0_0.vhd:81]
+INFO: [Synth 8-3491] module 'edge_detect' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:12' bound to instance 'U0' of component 'edge_detect' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ip/system_edge_detect_0_0/synth/system_edge_detect_0_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'edge_detect' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:37]
+INFO: [Synth 8-3491] module 'AXIvideo2Mat' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:12' bound to instance 'AXIvideo2Mat_U0' of component 'AXIvideo2Mat' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:421]
+INFO: [Synth 8-638] synthesizing module 'AXIvideo2Mat' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:45]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:86]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:89]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:138]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:140]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:146]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:163]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:180]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:185]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:187]
+INFO: [Synth 8-256] done synthesizing module 'AXIvideo2Mat' (1#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/AXIvideo2Mat.vhd:45]
+INFO: [Synth 8-3491] module 'CvtColor' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:12' bound to instance 'CvtColor_U0' of component 'CvtColor' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'CvtColor' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:45]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:78]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:81]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:85]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:99]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:131]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mul_mbkb' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mul_mbkb.vhd:32' bound to instance 'edge_detect_mul_mbkb_U11' of component 'edge_detect_mul_mbkb' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mul_mbkb' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mul_mbkb.vhd:45]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mul_mbkb_DSP48_0' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mul_mbkb.vhd:6' bound to instance 'edge_detect_mul_mbkb_DSP48_0_U' of component 'edge_detect_mul_mbkb_DSP48_0' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mul_mbkb.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mul_mbkb_DSP48_0' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mul_mbkb.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mul_mbkb_DSP48_0' (2#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mul_mbkb.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mul_mbkb' (3#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mul_mbkb.vhd:45]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 23 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mac_mcud' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mcud.vhd:42' bound to instance 'edge_detect_mac_mcud_U12' of component 'edge_detect_mac_mcud' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mac_mcud' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mcud.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 23 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mac_mcud_DSP48_1' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mcud.vhd:12' bound to instance 'edge_detect_mac_mcud_DSP48_1_U' of component 'edge_detect_mac_mcud_DSP48_1' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mcud.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mac_mcud_DSP48_1' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mcud.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mac_mcud_DSP48_1' (4#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mcud.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mac_mcud' (5#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mcud.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 20 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mac_mdEe' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mdEe.vhd:42' bound to instance 'edge_detect_mac_mdEe_U13' of component 'edge_detect_mac_mdEe' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mac_mdEe' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mdEe.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 20 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mac_mdEe_DSP48_2' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mdEe.vhd:12' bound to instance 'edge_detect_mac_mdEe_DSP48_2_U' of component 'edge_detect_mac_mdEe_DSP48_2' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mdEe.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mac_mdEe_DSP48_2' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mdEe.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mac_mdEe_DSP48_2' (6#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mdEe.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mac_mdEe' (7#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mdEe.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'CvtColor' (8#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:45]
+INFO: [Synth 8-3491] module 'Sobel' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Sobel.vhd:12' bound to instance 'Sobel_U0' of component 'Sobel' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:483]
+INFO: [Synth 8-638] synthesizing module 'Sobel' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Sobel.vhd:45]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Sobel.vhd:57]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Sobel.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Sobel.vhd:78]
+INFO: [Synth 8-3491] module 'Filter2D' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:12' bound to instance 'grp_Filter2D_fu_26' of component 'Filter2D' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Sobel.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'Filter2D' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:41]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:87]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:90]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:93]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:111]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:114]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:252]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_0_val_3_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:510]
+INFO: [Synth 8-638] synthesizing module 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:104]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg_ram' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:13' bound to instance 'Filter2D_k_buf_0_eOg_ram_U' of component 'Filter2D_k_buf_0_eOg_ram' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'Filter2D_k_buf_0_eOg_ram' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:33]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1280 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Filter2D_k_buf_0_eOg_ram' (9#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D_k_buf_0_eOg' (10#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:104]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_0_val_4_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:526]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_0_val_5_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:542]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_1_val_3_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:558]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_1_val_4_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:574]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_1_val_5_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:590]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_2_val_3_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:606]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_2_val_4_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:622]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_2_val_5_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:638]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U23' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:654]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mux_3ncg' (11#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U24' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:670]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U25' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:686]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U26' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:702]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U27' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:718]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U28' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:734]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U29' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:750]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U30' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:766]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U31' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:782]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U32' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:798]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U33' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:814]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U34' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:830]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U35' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:846]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U36' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:862]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U37' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:878]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U38' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:894]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U39' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:910]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'edge_detect_mux_3ncg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mux_3ncg.vhd:13' bound to instance 'edge_detect_mux_3ncg_U40' of component 'edge_detect_mux_3ncg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:926]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D' (12#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Sobel' (13#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Sobel.vhd:45]
+INFO: [Synth 8-3491] module 'CvtColor_1' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor_1.vhd:12' bound to instance 'CvtColor_1_U0' of component 'CvtColor_1' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:514]
+INFO: [Synth 8-638] synthesizing module 'CvtColor_1' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor_1.vhd:45]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor_1.vhd:70]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor_1.vhd:73]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor_1.vhd:77]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor_1.vhd:89]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor_1.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'CvtColor_1' (14#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor_1.vhd:45]
+INFO: [Synth 8-3491] module 'Mat2AXIvideo' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:12' bound to instance 'Mat2AXIvideo_U0' of component 'Mat2AXIvideo' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:545]
+INFO: [Synth 8-638] synthesizing module 'Mat2AXIvideo' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:42]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:72]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:75]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:152]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:164]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:185]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:251]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:285]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:401]
+INFO: [Synth 8-256] done synthesizing module 'Mat2AXIvideo' (15#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Mat2AXIvideo.vhd:42]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img0_data_stream_0_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:573]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:69]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A_shiftReg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:13' bound to instance 'U_fifo_w8_d1_A_shiftReg' of component 'fifo_w8_d1_A_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:26]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A_shiftReg' (16#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A' (17#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:69]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img0_data_stream_1_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:586]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img0_data_stream_2_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:599]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img1_data_stream_0_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:612]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img1_data_stream_1_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:625]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img1_data_stream_2_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:638]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img2_data_stream_0_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:651]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img2_data_stream_1_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:664]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img2_data_stream_2_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:677]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img3_data_stream_0_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:690]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img3_data_stream_1_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:703]
+INFO: [Synth 8-3491] module 'fifo_w8_d1_A' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/fifo_w8_d1_A.vhd:50' bound to instance 'img3_data_stream_2_s_U' of component 'fifo_w8_d1_A' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:716]
+INFO: [Synth 8-3491] module 'start_for_CvtColoocq' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColoocq.vhd:50' bound to instance 'start_for_CvtColoocq_U' of component 'start_for_CvtColoocq' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:729]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColoocq' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColoocq.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_CvtColoocq_shiftReg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColoocq.vhd:13' bound to instance 'U_start_for_CvtColoocq_shiftReg' of component 'start_for_CvtColoocq_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColoocq.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColoocq_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColoocq.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColoocq_shiftReg' (18#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColoocq.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColoocq' (19#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColoocq.vhd:69]
+INFO: [Synth 8-3491] module 'start_for_Sobel_U0' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Sobel_U0.vhd:50' bound to instance 'start_for_Sobel_U0_U' of component 'start_for_Sobel_U0' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:742]
+INFO: [Synth 8-638] synthesizing module 'start_for_Sobel_U0' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Sobel_U0.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_Sobel_U0_shiftReg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Sobel_U0.vhd:13' bound to instance 'U_start_for_Sobel_U0_shiftReg' of component 'start_for_Sobel_U0_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Sobel_U0.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'start_for_Sobel_U0_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Sobel_U0.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_Sobel_U0_shiftReg' (20#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Sobel_U0.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_Sobel_U0' (21#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Sobel_U0.vhd:69]
+INFO: [Synth 8-3491] module 'start_for_CvtColopcA' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColopcA.vhd:50' bound to instance 'start_for_CvtColopcA_U' of component 'start_for_CvtColopcA' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:755]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColopcA' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColopcA.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_CvtColopcA_shiftReg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColopcA.vhd:13' bound to instance 'U_start_for_CvtColopcA_shiftReg' of component 'start_for_CvtColopcA_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColopcA.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColopcA_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColopcA.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColopcA_shiftReg' (22#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColopcA.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColopcA' (23#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_CvtColopcA.vhd:69]
+INFO: [Synth 8-3491] module 'start_for_Mat2AXIqcK' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Mat2AXIqcK.vhd:50' bound to instance 'start_for_Mat2AXIqcK_U' of component 'start_for_Mat2AXIqcK' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:768]
+INFO: [Synth 8-638] synthesizing module 'start_for_Mat2AXIqcK' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Mat2AXIqcK.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_Mat2AXIqcK_shiftReg' declared at 'c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Mat2AXIqcK.vhd:13' bound to instance 'U_start_for_Mat2AXIqcK_shiftReg' of component 'start_for_Mat2AXIqcK_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Mat2AXIqcK.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'start_for_Mat2AXIqcK_shiftReg' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Mat2AXIqcK.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_Mat2AXIqcK_shiftReg' (24#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Mat2AXIqcK.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_Mat2AXIqcK' (25#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/start_for_Mat2AXIqcK.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect' (26#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'system_edge_detect_0_0' (27#1) [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ip/system_edge_detect_0_0/synth/system_edge_detect_0_0.vhd:81]
+WARNING: [Synth 8-3331] design fifo_w8_d1_A_shiftReg has unconnected port a[0]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[0]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[0]
+WARNING: [Synth 8-3331] design Filter2D_k_buf_0_eOg has unconnected port reset
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 504.469 ; gain = 167.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 504.469 ; gain = 167.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 504.469 ; gain = 167.082
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ip/system_edge_detect_0_0/constraints/edge_detect_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ip/system_edge_detect_0_0/constraints/edge_detect_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/system_edge_detect_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/system_edge_detect_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 870.305 ; gain = 1.801
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 870.305 ; gain = 532.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 870.305 ; gain = 532.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/system_edge_detect_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 870.305 ; gain = 532.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond5_fu_290_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_302_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_last_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_user_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_2539_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2533_reg[10:0]' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:537]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_2545_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2533_reg[10:0]' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:553]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_3_addr_reg_2555_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2533_reg[10:0]' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:569]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_4_addr_reg_2561_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2533_reg[10:0]' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:585]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_5_addr_reg_2567_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2533_reg[10:0]' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:601]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_3_addr_reg_2573_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2533_reg[10:0]' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:617]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_4_addr_reg_2579_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2533_reg[10:0]' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:633]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_5_addr_reg_2585_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2533_reg[10:0]' [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:649]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_4_addr_reg_2539_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:537]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_5_addr_reg_2545_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:553]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_1_val_3_addr_reg_2555_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:569]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_1_val_4_addr_reg_2561_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:585]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_1_val_5_addr_reg_2567_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:601]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_2_val_3_addr_reg_2573_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:617]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_2_val_4_addr_reg_2579_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:633]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_2_val_5_addr_reg_2585_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/Filter2D.vhd:649]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond390_i_fu_561_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "not_i_i_i_fu_2101_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "not_i_i_i1_fu_2138_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "not_i_i_i2_fu_2175_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_7_fu_551_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond389_i_fu_853_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp1_fu_875_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_fu_595_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_116_0_1_fu_607_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_2_fu_601_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond4_fu_168_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_180_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_user_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_192_p2" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 870.305 ; gain = 532.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 9     
+	   4 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 8     
+	   3 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
+	   6 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 21    
++---XORs : 
+	   2 Input      2 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 7     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               24 Bit    Registers := 8     
+	               11 Bit    Registers := 6     
+	               10 Bit    Registers := 10    
+	                8 Bit    Registers := 76    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 33    
+	                1 Bit    Registers := 123   
++---RAMs : 
+	              10K Bit         RAMs := 9     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 14    
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 65    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 20    
+	   4 Input      2 Bit        Muxes := 11    
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 132   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 13    
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 31    
+Module CvtColor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module Filter2D_k_buf_0_eOg_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              10K Bit         RAMs := 1     
+Module edge_detect_mux_3ncg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module Filter2D 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 5     
+	   4 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 3     
+	   6 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 5     
++---XORs : 
+	   2 Input      2 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 48    
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 27    
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 13    
+Module Sobel 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module CvtColor_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 20    
+Module fifo_w8_d1_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module fifo_w8_d1_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_CvtColoocq_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_CvtColoocq 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_Sobel_U0_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Sobel_U0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_CvtColopcA_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_CvtColopcA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_Mat2AXIqcK_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Mat2AXIqcK 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "exitcond_fu_302_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond5_fu_290_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element r_V_i_reg_308_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:242]
+WARNING: [Synth 8-6014] Unused sequential element tmp_94_reg_298_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:440]
+WARNING: [Synth 8-6014] Unused sequential element tmp_94_reg_298_pp0_iter2_reg_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:440]
+WARNING: [Synth 8-6014] Unused sequential element tmp_95_reg_303_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:441]
+WARNING: [Synth 8-6014] Unused sequential element tmp_95_reg_303_pp0_iter2_reg_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:441]
+WARNING: [Synth 8-6014] Unused sequential element tmp_93_reg_293_reg was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/CvtColor.vhd:449]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mdEe.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mdEe.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mcud.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ipshared/28d3/hdl/vhdl/edge_detect_mac_mcud.vhd:32]
+DSP Report: Generating DSP r_V_i_reg_308_reg, operation Mode is: ((A:0x1322d0)*B2)'.
+DSP Report: register tmp_93_reg_293_reg is absorbed into DSP r_V_i_reg_308_reg.
+DSP Report: register r_V_i_reg_308_reg is absorbed into DSP r_V_i_reg_308_reg.
+DSP Report: operator edge_detect_mul_mbkb_U11/edge_detect_mul_mbkb_DSP48_0_U/p_cvt is absorbed into DSP r_V_i_reg_308_reg.
+DSP Report: Generating DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p, operation Mode is: PCIN+(A:0x74bc6)*B''.
+DSP Report: register B is absorbed into DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p.
+DSP Report: register B is absorbed into DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p.
+DSP Report: operator edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p is absorbed into DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p.
+DSP Report: operator edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/m is absorbed into DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p.
+DSP Report: Generating DSP edge_detect_mac_mcud_U12/edge_detect_mac_mcud_DSP48_1_U/p, operation Mode is: C+(A:0x259168)*B''.
+DSP Report: register B is absorbed into DSP edge_detect_mac_mcud_U12/edge_detect_mac_mcud_DSP48_1_U/p.
+DSP Report: register B is absorbed into DSP edge_detect_mac_mcud_U12/edge_detect_mac_mcud_DSP48_1_U/p.
+DSP Report: operator edge_detect_mac_mcud_U12/edge_detect_mac_mcud_DSP48_1_U/p is absorbed into DSP edge_detect_mac_mcud_U12/edge_detect_mac_mcud_DSP48_1_U/p.
+DSP Report: operator edge_detect_mac_mcud_U12/edge_detect_mac_mcud_DSP48_1_U/m is absorbed into DSP edge_detect_mac_mcud_U12/edge_detect_mac_mcud_DSP48_1_U/p.
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/icmp_fu_595_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/exitcond389_i_fu_853_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/icmp1_fu_875_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/exitcond390_i_fu_561_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/tmp_2_fu_601_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/tmp_116_0_1_fu_607_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_180_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond4_fu_168_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_192_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[0]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TDEST[0]
+INFO: [Synth 8-3886] merging instance 'U0/Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_3_addr_reg_2533_reg[0]' (FDE) to 'U0/Sobel_U0/grp_Filter2D_fu_26/tmp_44_reg_2515_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_3_addr_reg_2533_reg[1]' (FDE) to 'U0/Sobel_U0/grp_Filter2D_fu_26/tmp_44_reg_2515_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/Sobel_U0/grp_Filter2D_fu_26/row_assign_9_0_0_t_reg_2481_reg[0]' (FDE) to 'U0/Sobel_U0/grp_Filter2D_fu_26/row_assign_9_0_2_t_reg_2495_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\CvtColor_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Sobel_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\CvtColor_1_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'U0/Sobel_U0/grp_Filter2D_fu_26/tmp_54_reg_2662_reg[2]' (FDE) to 'U0/Sobel_U0/grp_Filter2D_fu_26/isneg_reg_2651_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXIvideo2Mat_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Mat2AXIvideo_U0/ap_done_reg_reg )
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/ap_done_reg_reg) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/ap_done_reg_reg) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[28]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[27]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[26]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[25]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[24]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[23]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[22]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[21]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[20]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[19]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[18]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[17]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[16]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[15]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[14]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[13]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[12]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[11]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[10]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[9]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[8]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_313_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_290_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_290_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_290_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_290_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_290_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_290_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_290_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_290_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_294_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_294_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_294_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_294_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_294_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_294_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_294_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_294_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_278_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_278_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_278_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_278_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_278_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_278_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_278_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_278_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_282_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_282_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_282_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_282_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_282_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_282_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_282_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_282_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_302_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_302_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_302_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_302_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_302_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_302_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_302_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_302_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_306_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_306_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_306_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_306_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_306_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_306_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_306_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_306_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_6_reg_2611_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_6_reg_2611_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_6_reg_2611_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_6_reg_2611_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_6_reg_2611_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_6_reg_2611_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_6_reg_2611_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_6_reg_2611_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_fu_194_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_fu_194_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_fu_194_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_fu_194_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_fu_194_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_fu_194_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_fu_194_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_fu_194_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_1_fu_198_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_1_fu_198_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_1_fu_198_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_1_fu_198_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/src_kernel_win_1_va_1_fu_198_reg[3]) is unused and will be removed from module edge_detect.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_1_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][0]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_1_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][1]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_1_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][2]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_1_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][3]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_1_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][4]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_1_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][5]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_1_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][6]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_1_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][7]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[8]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[8]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[9]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[9]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[10]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[10]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[11]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[11]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[12]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[12]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[13]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[13]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[14]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[14]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[15]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[15]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[23]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 870.305 ; gain = 532.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|CvtColor    | ((A:0x1322d0)*B2)'   | 21     | 8      | -      | -      | 29     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|CvtColor    | PCIN+(A:0x74bc6)*B'' | 20     | 9      | -      | -      | 29     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|CvtColor    | C+(A:0x259168)*B''   | 23     | 9      | 30     | -      | 30     | 0    | 2    | 0    | -    | -     | 0    | 0    | 
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/i_2_55/Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_3_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_2_56/Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_4_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_2_57/Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_5_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 912.789 ; gain = 575.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 916.195 ; gain = 578.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_0_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][0]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_0_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][1]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_0_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][2]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_0_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][3]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_0_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][4]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_0_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][5]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_0_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][6]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'U0/img3_data_stream_0_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][7]' (FDE) to 'U0/img3_data_stream_2_s_U/U_fifo_w8_d1_A_shiftReg/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[0]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[0]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[1]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[1]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[2]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[2]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[3]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[3]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[4]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[4]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[5]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[5]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[6]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[6]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[7]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_B_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[7]' (FDE) to 'U0/Mat2AXIvideo_U0/AXI_video_strm_V_data_V_1_payload_A_reg[23]'
+INFO: [Synth 8-4480] The timing for the instance U0/Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_3_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_4_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_5_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 941.512 ; gain = 604.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 941.512 ; gain = 604.125
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 941.512 ; gain = 604.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 941.512 ; gain = 604.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 941.512 ; gain = 604.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 941.512 ; gain = 604.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 941.512 ; gain = 604.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    15|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     1|
+|4     |DSP48E1_3 |     1|
+|5     |LUT1      |    25|
+|6     |LUT2      |    69|
+|7     |LUT3      |   161|
+|8     |LUT4      |   112|
+|9     |LUT5      |   179|
+|10    |LUT6      |   216|
+|11    |RAMB18E1  |     3|
+|12    |FDRE      |   663|
+|13    |FDSE      |    46|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+-----------------------------+------+
+|      |Instance                               |Module                       |Cells |
++------+---------------------------------------+-----------------------------+------+
+|1     |top                                    |                             |  1492|
+|2     |  U0                                   |edge_detect                  |  1492|
+|3     |    AXIvideo2Mat_U0                    |AXIvideo2Mat                 |   422|
+|4     |    CvtColor_1_U0                      |CvtColor_1                   |    80|
+|5     |    CvtColor_U0                        |CvtColor                     |   125|
+|6     |      edge_detect_mac_mcud_U12         |edge_detect_mac_mcud         |     5|
+|7     |        edge_detect_mac_mcud_DSP48_1_U |edge_detect_mac_mcud_DSP48_1 |     5|
+|8     |      edge_detect_mac_mdEe_U13         |edge_detect_mac_mdEe         |     1|
+|9     |        edge_detect_mac_mdEe_DSP48_2_U |edge_detect_mac_mdEe_DSP48_2 |     1|
+|10    |    Mat2AXIvideo_U0                    |Mat2AXIvideo                 |   172|
+|11    |    Sobel_U0                           |Sobel                        |   508|
+|12    |      grp_Filter2D_fu_26               |Filter2D                     |   504|
+|13    |        k_buf_0_val_3_U                |Filter2D_k_buf_0_eOg         |    17|
+|14    |          Filter2D_k_buf_0_eOg_ram_U   |Filter2D_k_buf_0_eOg_ram_19  |    17|
+|15    |        k_buf_0_val_4_U                |Filter2D_k_buf_0_eOg_16      |    18|
+|16    |          Filter2D_k_buf_0_eOg_ram_U   |Filter2D_k_buf_0_eOg_ram_18  |    18|
+|17    |        k_buf_0_val_5_U                |Filter2D_k_buf_0_eOg_17      |    70|
+|18    |          Filter2D_k_buf_0_eOg_ram_U   |Filter2D_k_buf_0_eOg_ram     |    70|
+|19    |    img0_data_stream_0_s_U             |fifo_w8_d1_A                 |    16|
+|20    |      U_fifo_w8_d1_A_shiftReg          |fifo_w8_d1_A_shiftReg_15     |     8|
+|21    |    img0_data_stream_1_s_U             |fifo_w8_d1_A_0               |    16|
+|22    |      U_fifo_w8_d1_A_shiftReg          |fifo_w8_d1_A_shiftReg_14     |     8|
+|23    |    img0_data_stream_2_s_U             |fifo_w8_d1_A_1               |    16|
+|24    |      U_fifo_w8_d1_A_shiftReg          |fifo_w8_d1_A_shiftReg_13     |     8|
+|25    |    img1_data_stream_0_s_U             |fifo_w8_d1_A_2               |    16|
+|26    |      U_fifo_w8_d1_A_shiftReg          |fifo_w8_d1_A_shiftReg_12     |     8|
+|27    |    img1_data_stream_1_s_U             |fifo_w8_d1_A_3               |     8|
+|28    |    img1_data_stream_2_s_U             |fifo_w8_d1_A_4               |     8|
+|29    |    img2_data_stream_0_s_U             |fifo_w8_d1_A_5               |    17|
+|30    |      U_fifo_w8_d1_A_shiftReg          |fifo_w8_d1_A_shiftReg_11     |     8|
+|31    |    img2_data_stream_1_s_U             |fifo_w8_d1_A_6               |     8|
+|32    |    img2_data_stream_2_s_U             |fifo_w8_d1_A_7               |     8|
+|33    |    img3_data_stream_0_s_U             |fifo_w8_d1_A_8               |     8|
+|34    |    img3_data_stream_1_s_U             |fifo_w8_d1_A_9               |     8|
+|35    |    img3_data_stream_2_s_U             |fifo_w8_d1_A_10              |    16|
+|36    |      U_fifo_w8_d1_A_shiftReg          |fifo_w8_d1_A_shiftReg        |     8|
+|37    |    start_for_CvtColoocq_U             |start_for_CvtColoocq         |    11|
+|38    |    start_for_CvtColopcA_U             |start_for_CvtColopcA         |    10|
+|39    |    start_for_Mat2AXIqcK_U             |start_for_Mat2AXIqcK         |     9|
+|40    |    start_for_Sobel_U0_U               |start_for_Sobel_U0           |    10|
++------+---------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 941.512 ; gain = 604.125
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 380 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 941.512 ; gain = 238.289
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 941.512 ; gain = 604.125
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+271 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 941.512 ; gain = 615.598
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/system_edge_detect_0_0_synth_1/system_edge_detect_0_0.dcp' has been generated.

@@ -89,7 +89,7 @@ public class Conversor implements Runnable {
 	}
 	
 	/**
-	 * 
+	 * This method changes the extension of a file
 	 * @param fileName
 	 * @param newExt
 	 * @return newFileName

@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: digilentinc.com:user:AXI_GammaCorrection:1.0
--- IP Revision: 22
+-- IP Revision: 20
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -139,7 +139,7 @@ ARCHITECTURE system_AXI_GammaCorrection_0_0_arch OF system_AXI_GammaCorrection_0
     );
   END COMPONENT AXI_GammaCorrection;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF system_AXI_GammaCorrection_0_0_arch: ARCHITECTURE IS "AXI_GammaCorrection,Vivado 2018.2";
+  ATTRIBUTE X_CORE_INFO OF system_AXI_GammaCorrection_0_0_arch: ARCHITECTURE IS "AXI_GammaCorrection,Vivado 2018.2.2";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF system_AXI_GammaCorrection_0_0_arch : ARCHITECTURE IS "system_AXI_GammaCorrection_0_0,AXI_GammaCorrection,{}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;

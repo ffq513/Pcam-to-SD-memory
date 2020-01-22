@@ -1,8 +1,8 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
-// Date        : Fri Aug  9 23:36:53 2019
-// Host        : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
+// Date        : Tue Dec  3 10:43:53 2019
+// Host        : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top system_AXI_GammaCorrection_0_0 -prefix
 //               system_AXI_GammaCorrection_0_0_ system_AXI_GammaCorrection_0_0_stub.v
 // Design      : system_AXI_GammaCorrection_0_0

@@ -1,8 +1,8 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
--- Date        : Fri Jun 28 17:33:50 2019
--- Host        : DESKTOP-D2IPGR4 running 64-bit major release  (build 9200)
+-- Date        : Mon Dec  2 14:46:04 2019
+-- Host        : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top system_clk_wiz_0_0 -prefix
 --               system_clk_wiz_0_0_ system_clk_wiz_0_0_stub.vhdl
 -- Design      : system_clk_wiz_0_0

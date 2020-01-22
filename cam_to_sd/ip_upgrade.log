@@ -1,5 +1,597 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Sat Dec 14 18:24:28 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_image_filter_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_image_filter_0_1 (xilinx.com:hls:image_filter:1.0) from (Rev. 1912141800) to (Rev. 1912141818)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_image_filter_0_1'.
+
+
+-Upgrade has removed interface 'INPUT_STREAM_V_data_V'
+
+-Upgrade has removed interface 'INPUT_STREAM_V_dest_V'
+
+-Upgrade has removed interface 'INPUT_STREAM_V_id_V'
+
+-Upgrade has removed interface 'INPUT_STREAM_V_keep_V'
+
+-Upgrade has removed interface 'INPUT_STREAM_V_last_V'
+
+-Upgrade has removed interface 'INPUT_STREAM_V_strb_V'
+
+-Upgrade has removed interface 'INPUT_STREAM_V_user_V'
+
+-Upgrade has removed interface 'OUTPUT_STREAM_V_data_V'
+
+-Upgrade has removed interface 'OUTPUT_STREAM_V_dest_V'
+
+-Upgrade has removed interface 'OUTPUT_STREAM_V_id_V'
+
+-Upgrade has removed interface 'OUTPUT_STREAM_V_keep_V'
+
+-Upgrade has removed interface 'OUTPUT_STREAM_V_last_V'
+
+-Upgrade has removed interface 'OUTPUT_STREAM_V_strb_V'
+
+-Upgrade has removed interface 'OUTPUT_STREAM_V_user_V'
+
+-Upgrade has removed interface 'ap_rst'
+
+-Upgrade has added interface 'INPUT_STREAM' (xilinx.com:interface:axis:1.0)
+
+-Upgrade has added interface 'OUTPUT_STREAM' (xilinx.com:interface:axis:1.0)
+
+-Upgrade has added interface 'ap_rst_n' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_image_filter_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'INPUT_STREAM_V_data_V_dout'
+
+-Upgrade has removed port 'INPUT_STREAM_V_data_V_empty_n'
+
+-Upgrade has removed port 'INPUT_STREAM_V_data_V_read'
+
+-Upgrade has removed port 'INPUT_STREAM_V_dest_V_dout'
+
+-Upgrade has removed port 'INPUT_STREAM_V_dest_V_empty_n'
+
+-Upgrade has removed port 'INPUT_STREAM_V_dest_V_read'
+
+-Upgrade has removed port 'INPUT_STREAM_V_id_V_dout'
+
+-Upgrade has removed port 'INPUT_STREAM_V_id_V_empty_n'
+
+-Upgrade has removed port 'INPUT_STREAM_V_id_V_read'
+
+-Upgrade has removed port 'INPUT_STREAM_V_keep_V_dout'
+
+-Upgrade has removed port 'INPUT_STREAM_V_keep_V_empty_n'
+
+-Upgrade has removed port 'INPUT_STREAM_V_keep_V_read'
+
+-Upgrade has removed port 'INPUT_STREAM_V_last_V_dout'
+
+-Upgrade has removed port 'INPUT_STREAM_V_last_V_empty_n'
+
+-Upgrade has removed port 'INPUT_STREAM_V_last_V_read'
+
+-Upgrade has removed port 'INPUT_STREAM_V_strb_V_dout'
+
+-Upgrade has removed port 'INPUT_STREAM_V_strb_V_empty_n'
+
+-Upgrade has removed port 'INPUT_STREAM_V_strb_V_read'
+
+-Upgrade has removed port 'INPUT_STREAM_V_user_V_dout'
+
+-Upgrade has removed port 'INPUT_STREAM_V_user_V_empty_n'
+
+-Upgrade has removed port 'INPUT_STREAM_V_user_V_read'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_data_V_din'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_data_V_full_n'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_data_V_write'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_dest_V_din'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_dest_V_full_n'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_dest_V_write'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_id_V_din'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_id_V_full_n'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_id_V_write'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_keep_V_din'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_keep_V_full_n'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_keep_V_write'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_last_V_din'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_last_V_full_n'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_last_V_write'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_strb_V_din'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_strb_V_full_n'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_strb_V_write'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_user_V_din'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_user_V_full_n'
+
+-Upgrade has removed port 'OUTPUT_STREAM_V_user_V_write'
+
+-Upgrade has removed port 'ap_rst'
+
+-Upgrade has added port 'INPUT_STREAM_TDATA'
+
+-Upgrade has added port 'INPUT_STREAM_TDEST'
+
+-Upgrade has added port 'INPUT_STREAM_TID'
+
+-Upgrade has added port 'INPUT_STREAM_TKEEP'
+
+-Upgrade has added port 'INPUT_STREAM_TLAST'
+
+-Upgrade has added port 'INPUT_STREAM_TREADY'
+
+-Upgrade has added port 'INPUT_STREAM_TSTRB'
+
+-Upgrade has added port 'INPUT_STREAM_TUSER'
+
+-Upgrade has added port 'INPUT_STREAM_TVALID'
+
+-Upgrade has added port 'OUTPUT_STREAM_TDATA'
+
+-Upgrade has added port 'OUTPUT_STREAM_TDEST'
+
+-Upgrade has added port 'OUTPUT_STREAM_TID'
+
+-Upgrade has added port 'OUTPUT_STREAM_TKEEP'
+
+-Upgrade has added port 'OUTPUT_STREAM_TLAST'
+
+-Upgrade has added port 'OUTPUT_STREAM_TREADY'
+
+-Upgrade has added port 'OUTPUT_STREAM_TSTRB'
+
+-Upgrade has added port 'OUTPUT_STREAM_TUSER'
+
+-Upgrade has added port 'OUTPUT_STREAM_TVALID'
+
+-Upgrade has added port 'ap_rst_n'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Sat Dec 14 18:04:37 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_image_filter_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_image_filter_0_1 (xilinx.com:hls:image_filter:1.0) from (Rev. 1912140520) to (Rev. 1912141800)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_image_filter_0_1'.
+
+
+-Upgrade has removed interface 'INPUT_STREAM'
+
+-Upgrade has removed interface 'OUTPUT_STREAM'
+
+-Upgrade has removed interface 'ap_rst_n'
+
+-Upgrade has added interface 'INPUT_STREAM_V_data_V' (xilinx.com:interface:acc_fifo_read:1.0)
+
+-Upgrade has added interface 'INPUT_STREAM_V_dest_V' (xilinx.com:interface:acc_fifo_read:1.0)
+
+-Upgrade has added interface 'INPUT_STREAM_V_id_V' (xilinx.com:interface:acc_fifo_read:1.0)
+
+-Upgrade has added interface 'INPUT_STREAM_V_keep_V' (xilinx.com:interface:acc_fifo_read:1.0)
+
+-Upgrade has added interface 'INPUT_STREAM_V_last_V' (xilinx.com:interface:acc_fifo_read:1.0)
+
+-Upgrade has added interface 'INPUT_STREAM_V_strb_V' (xilinx.com:interface:acc_fifo_read:1.0)
+
+-Upgrade has added interface 'INPUT_STREAM_V_user_V' (xilinx.com:interface:acc_fifo_read:1.0)
+
+-Upgrade has added interface 'OUTPUT_STREAM_V_data_V' (xilinx.com:interface:acc_fifo_write:1.0)
+
+-Upgrade has added interface 'OUTPUT_STREAM_V_dest_V' (xilinx.com:interface:acc_fifo_write:1.0)
+
+-Upgrade has added interface 'OUTPUT_STREAM_V_id_V' (xilinx.com:interface:acc_fifo_write:1.0)
+
+-Upgrade has added interface 'OUTPUT_STREAM_V_keep_V' (xilinx.com:interface:acc_fifo_write:1.0)
+
+-Upgrade has added interface 'OUTPUT_STREAM_V_last_V' (xilinx.com:interface:acc_fifo_write:1.0)
+
+-Upgrade has added interface 'OUTPUT_STREAM_V_strb_V' (xilinx.com:interface:acc_fifo_write:1.0)
+
+-Upgrade has added interface 'OUTPUT_STREAM_V_user_V' (xilinx.com:interface:acc_fifo_write:1.0)
+
+-Upgrade has added interface 'ap_rst' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_image_filter_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'INPUT_STREAM_TDATA'
+
+-Upgrade has removed port 'INPUT_STREAM_TDEST'
+
+-Upgrade has removed port 'INPUT_STREAM_TID'
+
+-Upgrade has removed port 'INPUT_STREAM_TKEEP'
+
+-Upgrade has removed port 'INPUT_STREAM_TLAST'
+
+-Upgrade has removed port 'INPUT_STREAM_TREADY'
+
+-Upgrade has removed port 'INPUT_STREAM_TSTRB'
+
+-Upgrade has removed port 'INPUT_STREAM_TUSER'
+
+-Upgrade has removed port 'INPUT_STREAM_TVALID'
+
+-Upgrade has removed port 'OUTPUT_STREAM_TDATA'
+
+-Upgrade has removed port 'OUTPUT_STREAM_TDEST'
+
+-Upgrade has removed port 'OUTPUT_STREAM_TID'
+
+-Upgrade has removed port 'OUTPUT_STREAM_TKEEP'
+
+-Upgrade has removed port 'OUTPUT_STREAM_TLAST'
+
+-Upgrade has removed port 'OUTPUT_STREAM_TREADY'
+
+-Upgrade has removed port 'OUTPUT_STREAM_TSTRB'
+
+-Upgrade has removed port 'OUTPUT_STREAM_TUSER'
+
+-Upgrade has removed port 'OUTPUT_STREAM_TVALID'
+
+-Upgrade has removed port 'ap_rst_n'
+
+-Upgrade has added port 'INPUT_STREAM_V_data_V_dout'
+
+-Upgrade has added port 'INPUT_STREAM_V_data_V_empty_n'
+
+-Upgrade has added port 'INPUT_STREAM_V_data_V_read'
+
+-Upgrade has added port 'INPUT_STREAM_V_dest_V_dout'
+
+-Upgrade has added port 'INPUT_STREAM_V_dest_V_empty_n'
+
+-Upgrade has added port 'INPUT_STREAM_V_dest_V_read'
+
+-Upgrade has added port 'INPUT_STREAM_V_id_V_dout'
+
+-Upgrade has added port 'INPUT_STREAM_V_id_V_empty_n'
+
+-Upgrade has added port 'INPUT_STREAM_V_id_V_read'
+
+-Upgrade has added port 'INPUT_STREAM_V_keep_V_dout'
+
+-Upgrade has added port 'INPUT_STREAM_V_keep_V_empty_n'
+
+-Upgrade has added port 'INPUT_STREAM_V_keep_V_read'
+
+-Upgrade has added port 'INPUT_STREAM_V_last_V_dout'
+
+-Upgrade has added port 'INPUT_STREAM_V_last_V_empty_n'
+
+-Upgrade has added port 'INPUT_STREAM_V_last_V_read'
+
+-Upgrade has added port 'INPUT_STREAM_V_strb_V_dout'
+
+-Upgrade has added port 'INPUT_STREAM_V_strb_V_empty_n'
+
+-Upgrade has added port 'INPUT_STREAM_V_strb_V_read'
+
+-Upgrade has added port 'INPUT_STREAM_V_user_V_dout'
+
+-Upgrade has added port 'INPUT_STREAM_V_user_V_empty_n'
+
+-Upgrade has added port 'INPUT_STREAM_V_user_V_read'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_data_V_din'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_data_V_full_n'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_data_V_write'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_dest_V_din'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_dest_V_full_n'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_dest_V_write'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_id_V_din'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_id_V_full_n'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_id_V_write'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_keep_V_din'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_keep_V_full_n'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_keep_V_write'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_last_V_din'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_last_V_full_n'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_last_V_write'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_strb_V_din'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_strb_V_full_n'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_strb_V_write'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_user_V_din'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_user_V_full_n'
+
+-Upgrade has added port 'OUTPUT_STREAM_V_user_V_write'
+
+-Upgrade has added port 'ap_rst'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Tue Dec  3 00:40:03 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_AXI_GammaCorrection_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_AXI_GammaCorrection_0_0 (digilentinc.com:user:AXI_GammaCorrection:1.0) from (Rev. 22) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Mon Dec  2 14:42:58 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_video_dynclk_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_video_dynclk_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Mon Dec  2 14:42:58 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_smartconnect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_smartconnect_0_0 (xilinx.com:ip:smartconnect:1.0 (Rev. 9)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_smartconnect_0_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_smartconnect_0_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Mon Dec  2 14:42:58 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_rst_vid_clk_dyn_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_rst_vid_clk_dyn_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Mon Dec  2 14:42:58 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_rst_clk_wiz_0_50M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_rst_clk_wiz_0_50M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Mon Dec  2 14:42:58 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_rgb2dvi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_rgb2dvi_0_0 (digilentinc.com:ip:rgb2dvi:1.4 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Mon Dec  2 14:42:58 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Mon Dec  2 14:42:58 2019
+| Host         : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 | Date         : Mon Jul  8 00:18:23 2019
 | Host         : DESKTOP-544KMV7 running 64-bit major release  (build 9200)

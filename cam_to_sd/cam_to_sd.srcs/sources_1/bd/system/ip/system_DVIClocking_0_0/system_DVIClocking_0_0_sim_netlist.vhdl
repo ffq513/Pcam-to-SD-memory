@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
--- Date        : Sun Aug 11 22:54:07 2019
--- Host        : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
+-- Date        : Sat Dec 14 21:08:44 2019
+-- Host        : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               C:/Users/Usuario/Documents/Github/Workshop_Zyboz7_and_Pcam_5c/vivado_proj/Zybo-Z7-20-pcam-5c.srcs/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0_sim_netlist.vhdl
+--               C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.srcs/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0_sim_netlist.vhdl
 -- Design      : system_DVIClocking_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -164,7 +164,7 @@ entity system_DVIClocking_0_0 is
   attribute ip_definition_source : string;
   attribute ip_definition_source of system_DVIClocking_0_0 : entity is "module_ref";
   attribute x_core_info : string;
-  attribute x_core_info of system_DVIClocking_0_0 : entity is "DVIClocking,Vivado 2018.2";
+  attribute x_core_info of system_DVIClocking_0_0 : entity is "DVIClocking,Vivado 2018.2.2";
 end system_DVIClocking_0_0;
 
 architecture STRUCTURE of system_DVIClocking_0_0 is

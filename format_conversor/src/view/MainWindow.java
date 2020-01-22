@@ -42,7 +42,7 @@ public class MainWindow {
 	private List<String> listFiles = null;
 	private String pathToImages;
 
-	/**
+	/*
 	 * Launch the application.
 	 * @param args
 	 */
@@ -55,7 +55,7 @@ public class MainWindow {
 		}
 	}
 
-	/**
+	/*
 	 * Open the window.
 	 */
 	public void open() {
@@ -71,12 +71,12 @@ public class MainWindow {
 		}
 	}
 
-	/**
+	/*
 	 * Create contents of the window.
 	 */
 	protected void createContents() {
 		shell = new Shell(SWT.MIN | SWT.CLOSE | SWT.TITLE);
-		shell.setSize(332, 130);
+		shell.setSize(332, 160);
 		shell.setText("Conversor");
 		shell.setLayout(new FormLayout());
 		
@@ -113,7 +113,7 @@ public class MainWindow {
 		btnSearch.setText("Buscar");
 	}
 	
-	/**
+	/*
 	 * Assign behavioral to events
 	 */
 	protected void assignEvents() {
@@ -176,7 +176,7 @@ public class MainWindow {
 		});
 	}
 	
-	/**
+	/*
 	 * This function ...
 	 * @param path
 	 */
@@ -193,7 +193,7 @@ public class MainWindow {
 		}
 	}
 	
-	/**
+	/*
 	 * This function request to an user where to save the image
 	 * @return String
 	 */

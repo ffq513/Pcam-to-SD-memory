@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\josen\Documents\GitHub\Pcam_to_SD_Memory\cam_to_sd\cam_to_sd.sdk\fsbl\Debug\fsbl.elf
+	C:\Users\josen\Documents\GitHub\Pcam_to_SD_Memory\cam_to_sd\cam_to_sd.sdk\system_wrapper_hw_platform_0\system_wrapper.bit
+	C:\Users\josen\Documents\GitHub\Pcam_to_SD_Memory\cam_to_sd\cam_to_sd.sdk\capturer\Debug\capturer.elf
+}

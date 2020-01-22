@@ -1,8 +1,8 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
-// Date        : Fri Aug  9 23:36:53 2019
-// Host        : DESKTOP-544KMV7 running 64-bit major release  (build 9200)
+// Date        : Tue Dec  3 10:43:53 2019
+// Host        : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top system_AXI_GammaCorrection_0_0 -prefix
 //               system_AXI_GammaCorrection_0_0_ system_AXI_GammaCorrection_0_0_sim_netlist.v
 // Design      : system_AXI_GammaCorrection_0_0
@@ -12,93 +12,76 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* C_S_AXI_ADDR_WIDTH = "3" *) (* C_S_AXI_DATA_WIDTH = "32" *) (* kAXI_InputDataWidth = "32" *) 
-(* kAXI_OutputDataWidth = "24" *) (* kInputColorWidth = "10" *) 
 module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
-   (StreamClk,
-    sStreamReset_n,
-    s_axis_video_tready,
-    s_axis_video_tdata,
-    s_axis_video_tvalid,
-    s_axis_video_tuser,
-    s_axis_video_tlast,
-    m_axis_video_tready,
-    m_axis_video_tdata,
-    m_axis_video_tvalid,
-    m_axis_video_tuser,
-    m_axis_video_tlast,
-    AxiLiteClk,
-    aAxiLiteReset_n,
-    S_AXI_AWADDR,
-    S_AXI_AWPROT,
-    S_AXI_AWVALID,
-    S_AXI_AWREADY,
-    S_AXI_WDATA,
-    S_AXI_WSTRB,
-    S_AXI_WVALID,
+   (S_AXI_AWREADY,
     S_AXI_WREADY,
-    S_AXI_BRESP,
-    S_AXI_BVALID,
-    S_AXI_BREADY,
-    S_AXI_ARADDR,
-    S_AXI_ARPROT,
-    S_AXI_ARVALID,
     S_AXI_ARREADY,
-    S_AXI_RDATA,
-    S_AXI_RRESP,
+    m_axis_video_tdata,
+    m_axis_video_tlast,
+    m_axis_video_tuser,
+    m_axis_video_tvalid,
+    S_AXI_BVALID,
     S_AXI_RVALID,
-    S_AXI_RREADY);
-  input StreamClk;
-  input sStreamReset_n;
-  output s_axis_video_tready;
-  input [31:0]s_axis_video_tdata;
-  input s_axis_video_tvalid;
-  input s_axis_video_tuser;
-  input s_axis_video_tlast;
-  input m_axis_video_tready;
-  output [23:0]m_axis_video_tdata;
-  output m_axis_video_tvalid;
-  output m_axis_video_tuser;
-  output m_axis_video_tlast;
-  input AxiLiteClk;
-  input aAxiLiteReset_n;
-  input [2:0]S_AXI_AWADDR;
-  input [2:0]S_AXI_AWPROT;
-  input S_AXI_AWVALID;
+    AxiLiteClk,
+    S_AXI_WDATA,
+    s_axis_video_tdata,
+    StreamClk,
+    s_axis_video_tvalid,
+    m_axis_video_tready,
+    S_AXI_WVALID,
+    S_AXI_AWVALID,
+    S_AXI_WSTRB,
+    S_AXI_ARVALID,
+    s_axis_video_tlast,
+    sStreamReset_n,
+    s_axis_video_tuser,
+    aAxiLiteReset_n,
+    S_AXI_BREADY,
+    S_AXI_RREADY,
+    S_AXI_AWADDR);
   output S_AXI_AWREADY;
-  input [31:0]S_AXI_WDATA;
-  input [3:0]S_AXI_WSTRB;
-  input S_AXI_WVALID;
   output S_AXI_WREADY;
-  output [1:0]S_AXI_BRESP;
-  output S_AXI_BVALID;
-  input S_AXI_BREADY;
-  input [2:0]S_AXI_ARADDR;
-  input [2:0]S_AXI_ARPROT;
-  input S_AXI_ARVALID;
   output S_AXI_ARREADY;
-  output [31:0]S_AXI_RDATA;
-  output [1:0]S_AXI_RRESP;
+  output [23:0]m_axis_video_tdata;
+  output m_axis_video_tlast;
+  output m_axis_video_tuser;
+  output m_axis_video_tvalid;
+  output S_AXI_BVALID;
   output S_AXI_RVALID;
+  input AxiLiteClk;
+  input [2:0]S_AXI_WDATA;
+  input [29:0]s_axis_video_tdata;
+  input StreamClk;
+  input s_axis_video_tvalid;
+  input m_axis_video_tready;
+  input S_AXI_WVALID;
+  input S_AXI_AWVALID;
+  input [0:0]S_AXI_WSTRB;
+  input S_AXI_ARVALID;
+  input s_axis_video_tlast;
+  input sStreamReset_n;
+  input s_axis_video_tuser;
+  input aAxiLiteReset_n;
+  input S_AXI_BREADY;
   input S_AXI_RREADY;
+  input [0:0]S_AXI_AWADDR;
 
-  wire \<const0> ;
   wire AxiLiteClk;
   wire \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_0 ;
   wire \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_1 ;
   wire \GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_2 ;
   wire S_AXI_ARREADY;
   wire S_AXI_ARVALID;
-  wire [2:0]S_AXI_AWADDR;
+  wire [0:0]S_AXI_AWADDR;
   wire S_AXI_AWREADY;
   wire S_AXI_AWVALID;
   wire S_AXI_BREADY;
   wire S_AXI_BVALID;
   wire S_AXI_RREADY;
   wire S_AXI_RVALID;
-  wire [31:0]S_AXI_WDATA;
+  wire [2:0]S_AXI_WDATA;
   wire S_AXI_WREADY;
-  wire [3:0]S_AXI_WSTRB;
+  wire [0:0]S_AXI_WSTRB;
   wire S_AXI_WVALID;
   wire StreamClk;
   wire aAxiLiteReset_n;
@@ -119,60 +102,21 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
   wire m_axis_video_tvalid;
   wire [2:2]p_1_in;
   wire sAXI_OutputValid_i_1_n_0;
-  wire [2:0]sGammaReg;
   wire \sGammaReg[0]_i_1_n_0 ;
   wire \sGammaReg[1]_i_1_n_0 ;
   wire \sGammaReg[2]_i_1_n_0 ;
+  wire [2:0]sGammaReg__0;
   wire sStreamReset_n;
-  wire [31:0]s_axis_video_tdata;
+  wire [29:0]s_axis_video_tdata;
   wire s_axis_video_tlast;
   wire s_axis_video_tuser;
   wire s_axis_video_tvalid;
 
-  assign S_AXI_BRESP[1] = \<const0> ;
-  assign S_AXI_BRESP[0] = \<const0> ;
-  assign S_AXI_RDATA[31] = \<const0> ;
-  assign S_AXI_RDATA[30] = \<const0> ;
-  assign S_AXI_RDATA[29] = \<const0> ;
-  assign S_AXI_RDATA[28] = \<const0> ;
-  assign S_AXI_RDATA[27] = \<const0> ;
-  assign S_AXI_RDATA[26] = \<const0> ;
-  assign S_AXI_RDATA[25] = \<const0> ;
-  assign S_AXI_RDATA[24] = \<const0> ;
-  assign S_AXI_RDATA[23] = \<const0> ;
-  assign S_AXI_RDATA[22] = \<const0> ;
-  assign S_AXI_RDATA[21] = \<const0> ;
-  assign S_AXI_RDATA[20] = \<const0> ;
-  assign S_AXI_RDATA[19] = \<const0> ;
-  assign S_AXI_RDATA[18] = \<const0> ;
-  assign S_AXI_RDATA[17] = \<const0> ;
-  assign S_AXI_RDATA[16] = \<const0> ;
-  assign S_AXI_RDATA[15] = \<const0> ;
-  assign S_AXI_RDATA[14] = \<const0> ;
-  assign S_AXI_RDATA[13] = \<const0> ;
-  assign S_AXI_RDATA[12] = \<const0> ;
-  assign S_AXI_RDATA[11] = \<const0> ;
-  assign S_AXI_RDATA[10] = \<const0> ;
-  assign S_AXI_RDATA[9] = \<const0> ;
-  assign S_AXI_RDATA[8] = \<const0> ;
-  assign S_AXI_RDATA[7] = \<const0> ;
-  assign S_AXI_RDATA[6] = \<const0> ;
-  assign S_AXI_RDATA[5] = \<const0> ;
-  assign S_AXI_RDATA[4] = \<const0> ;
-  assign S_AXI_RDATA[3] = \<const0> ;
-  assign S_AXI_RDATA[2] = \<const0> ;
-  assign S_AXI_RDATA[1] = \<const0> ;
-  assign S_AXI_RDATA[0] = \<const0> ;
-  assign S_AXI_RRESP[1] = \<const0> ;
-  assign S_AXI_RRESP[0] = \<const0> ;
-  assign s_axis_video_tready = m_axis_video_tready;
-  GND GND
-       (.G(\<const0> ));
   system_AXI_GammaCorrection_0_0_StoredGammaCoefs \GammaStorageCoefsGeneration[0].StoredGammaCoefsInst 
        (.E(\GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_0 ),
         .StreamClk(StreamClk),
         .m_axis_video_tdata(m_axis_video_tdata[7:0]),
-        .sGammaReg(sGammaReg),
+        .sGammaReg__0(sGammaReg__0),
         .\sGammaReg_reg[0] (\GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_1 ),
         .\sGammaReg_reg[1] (\GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_2 ),
         .s_axis_video_tdata(s_axis_video_tdata[9:0]));
@@ -180,7 +124,7 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
        (.E(\GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_0 ),
         .StreamClk(StreamClk),
         .m_axis_video_tdata(m_axis_video_tdata[15:8]),
-        .sGammaReg(sGammaReg),
+        .sGammaReg__0(sGammaReg__0),
         .\sGammaReg_reg[0] (\GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_1 ),
         .\sGammaReg_reg[1] (\GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_2 ),
         .s_axis_video_tdata(s_axis_video_tdata[19:10]));
@@ -191,7 +135,7 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
         .m_axis_video_tready(m_axis_video_tready),
         .\rStoredData_reg[4]_0 (\GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_1 ),
         .\rStoredData_reg[4]_1 (\GammaStorageCoefsGeneration[2].StoredGammaCoefsInst_n_2 ),
-        .sGammaReg(sGammaReg),
+        .sGammaReg__0(sGammaReg__0),
         .s_axis_video_tdata(s_axis_video_tdata[29:20]),
         .s_axis_video_tvalid(s_axis_video_tvalid));
   (* SOFT_HLUTNM = "soft_lutpair65" *) 
@@ -211,7 +155,7 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
   LUT5 #(
     .INIT(32'hFFBF0080)) 
     \axi_awaddr[2]_i_1 
-       (.I0(S_AXI_AWADDR[2]),
+       (.I0(S_AXI_AWADDR),
         .I1(S_AXI_AWVALID),
         .I2(S_AXI_WVALID),
         .I3(S_AXI_AWREADY),
@@ -330,12 +274,22 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
         .D(sAXI_OutputValid_i_1_n_0),
         .Q(m_axis_video_tvalid),
         .R(1'b0));
+  LUT6 #(
+    .INIT(64'h0000800000000000)) 
+    sGammaReg
+       (.I0(S_AXI_WVALID),
+        .I1(S_AXI_AWVALID),
+        .I2(S_AXI_AWREADY),
+        .I3(S_AXI_WREADY),
+        .I4(axi_awaddr),
+        .I5(S_AXI_WSTRB),
+        .O(p_1_in));
   LUT3 #(
     .INIT(8'hB8)) 
     \sGammaReg[0]_i_1 
        (.I0(S_AXI_WDATA[0]),
         .I1(p_1_in),
-        .I2(sGammaReg[0]),
+        .I2(sGammaReg__0[0]),
         .O(\sGammaReg[0]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT3 #(
@@ -343,7 +297,7 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
     \sGammaReg[1]_i_1 
        (.I0(S_AXI_WDATA[1]),
         .I1(p_1_in),
-        .I2(sGammaReg[1]),
+        .I2(sGammaReg__0[1]),
         .O(\sGammaReg[1]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT3 #(
@@ -351,48 +305,38 @@ module system_AXI_GammaCorrection_0_0_AXI_GammaCorrection
     \sGammaReg[2]_i_1 
        (.I0(S_AXI_WDATA[2]),
         .I1(p_1_in),
-        .I2(sGammaReg[2]),
+        .I2(sGammaReg__0[2]),
         .O(\sGammaReg[2]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000800000000000)) 
-    \sGammaReg[2]_i_2 
-       (.I0(S_AXI_WVALID),
-        .I1(S_AXI_AWVALID),
-        .I2(S_AXI_AWREADY),
-        .I3(S_AXI_WREADY),
-        .I4(axi_awaddr),
-        .I5(S_AXI_WSTRB[0]),
-        .O(p_1_in));
   FDRE \sGammaReg_reg[0] 
        (.C(AxiLiteClk),
         .CE(1'b1),
         .D(\sGammaReg[0]_i_1_n_0 ),
-        .Q(sGammaReg[0]),
+        .Q(sGammaReg__0[0]),
         .R(axi_awready_i_1_n_0));
   FDRE \sGammaReg_reg[1] 
        (.C(AxiLiteClk),
         .CE(1'b1),
         .D(\sGammaReg[1]_i_1_n_0 ),
-        .Q(sGammaReg[1]),
+        .Q(sGammaReg__0[1]),
         .R(axi_awready_i_1_n_0));
   FDRE \sGammaReg_reg[2] 
        (.C(AxiLiteClk),
         .CE(1'b1),
         .D(\sGammaReg[2]_i_1_n_0 ),
-        .Q(sGammaReg[2]),
+        .Q(sGammaReg__0[2]),
         .R(axi_awready_i_1_n_0));
 endmodule
 
 module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
    (m_axis_video_tdata,
-    sGammaReg,
+    sGammaReg__0,
     s_axis_video_tdata,
     \sGammaReg_reg[0] ,
     \sGammaReg_reg[1] ,
     E,
     StreamClk);
   output [7:0]m_axis_video_tdata;
-  input [2:0]sGammaReg;
+  input [2:0]sGammaReg__0;
   input [9:0]s_axis_video_tdata;
   input \sGammaReg_reg[0] ;
   input \sGammaReg_reg[1] ;
@@ -404,7 +348,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
   wire [7:0]m_axis_video_tdata;
   wire [7:0]p_0_in;
   wire [7:0]p_0_out;
-  wire [7:0]p_1_in;
+  wire [7:0]p_1_in__0;
   wire \rStoredData[0]_i_100_n_0 ;
   wire \rStoredData[0]_i_101_n_0 ;
   wire \rStoredData[0]_i_102_n_0 ;
@@ -950,7 +894,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
   wire \rStoredData_reg[5]_i_28_n_0 ;
   wire \rStoredData_reg[5]_i_4_n_0 ;
   wire \rStoredData_reg[6]_i_12_n_0 ;
-  wire [2:0]sGammaReg;
+  wire [2:0]sGammaReg__0;
   wire \sGammaReg_reg[0] ;
   wire \sGammaReg_reg[1] ;
   wire [9:0]s_axis_video_tdata;
@@ -1151,10 +1095,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
        (.I0(\rStoredData[0]_i_4_n_0 ),
         .I1(s_axis_video_tdata[2]),
         .I2(\rStoredData[0]_i_5_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[0]_i_6_n_0 ),
-        .O(p_1_in[0]));
+        .O(p_1_in__0[0]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \rStoredData[0]_i_3 
@@ -1840,10 +1784,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
        (.I0(\rStoredData[1]_i_4_n_0 ),
         .I1(s_axis_video_tdata[3]),
         .I2(\rStoredData[1]_i_5_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[1]_i_6_n_0 ),
-        .O(p_1_in[1]));
+        .O(p_1_in__0[1]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \rStoredData[1]_i_3 
@@ -2337,8 +2281,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
   LUT3 #(
     .INIT(8'hE4)) 
     \rStoredData[2]_i_1 
-       (.I0(sGammaReg[2]),
-        .I1(p_1_in[2]),
+       (.I0(sGammaReg__0[2]),
+        .I1(p_1_in__0[2]),
         .I2(p_0_out[2]),
         .O(p_0_in[2]));
   LUT6 #(
@@ -2447,10 +2391,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
        (.I0(\rStoredData[2]_i_4_n_0 ),
         .I1(s_axis_video_tdata[4]),
         .I2(\rStoredData[2]_i_5_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[2]_i_6_n_0 ),
-        .O(p_1_in[2]));
+        .O(p_1_in__0[2]));
   LUT6 #(
     .INIT(64'h30BBFC88FF00FF00)) 
     \rStoredData[2]_i_21 
@@ -3092,10 +3036,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
        (.I0(\rStoredData[3]_i_4_n_0 ),
         .I1(s_axis_video_tdata[5]),
         .I2(\rStoredData_reg[3]_i_5_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[3]_i_6_n_0 ),
-        .O(p_1_in[3]));
+        .O(p_1_in__0[3]));
   LUT6 #(
     .INIT(64'hAFAFAFAF0FC000C0)) 
     \rStoredData[3]_i_21 
@@ -3733,7 +3677,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
     .INIT(64'hBBBBBBBBBBB8B8B8)) 
     \rStoredData[4]_i_1 
        (.I0(p_0_out[4]),
-        .I1(sGammaReg[2]),
+        .I1(sGammaReg__0[2]),
         .I2(\rStoredData[4]_i_3_n_0 ),
         .I3(\rStoredData_reg[4]_i_4_n_0 ),
         .I4(\sGammaReg_reg[0] ),
@@ -3907,8 +3851,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
     .INIT(64'h0E020E0E0E020202)) 
     \rStoredData[4]_i_3 
        (.I0(s_axis_video_tdata[6]),
-        .I1(sGammaReg[0]),
-        .I2(sGammaReg[1]),
+        .I1(sGammaReg__0[0]),
+        .I2(sGammaReg__0[1]),
         .I3(\rStoredData_reg[4]_i_10_n_0 ),
         .I4(s_axis_video_tdata[7]),
         .I5(\rStoredData_reg[4]_i_11_n_0 ),
@@ -4261,7 +4205,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
     .INIT(64'hBBBBBBBBBBB8B8B8)) 
     \rStoredData[5]_i_1 
        (.I0(p_0_out[5]),
-        .I1(sGammaReg[2]),
+        .I1(sGammaReg__0[2]),
         .I2(\rStoredData[5]_i_3_n_0 ),
         .I3(\rStoredData_reg[5]_i_4_n_0 ),
         .I4(\sGammaReg_reg[0] ),
@@ -4455,8 +4399,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
   LUT5 #(
     .INIT(32'h31223100)) 
     \rStoredData[5]_i_3 
-       (.I0(sGammaReg[0]),
-        .I1(sGammaReg[1]),
+       (.I0(sGammaReg__0[0]),
+        .I1(sGammaReg__0[1]),
         .I2(\rStoredData[5]_i_8_n_0 ),
         .I3(s_axis_video_tdata[7]),
         .I4(\rStoredData[5]_i_9_n_0 ),
@@ -4597,7 +4541,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
     .INIT(64'hBBBBBBBBBBB8B8B8)) 
     \rStoredData[6]_i_1 
        (.I0(p_0_out[6]),
-        .I1(sGammaReg[2]),
+        .I1(sGammaReg__0[2]),
         .I2(\rStoredData[6]_i_3_n_0 ),
         .I3(\rStoredData[6]_i_4_n_0 ),
         .I4(\sGammaReg_reg[0] ),
@@ -4706,8 +4650,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
   LUT6 #(
     .INIT(64'h3131333322000000)) 
     \rStoredData[6]_i_3 
-       (.I0(sGammaReg[0]),
-        .I1(sGammaReg[1]),
+       (.I0(sGammaReg__0[0]),
+        .I1(sGammaReg__0[1]),
         .I2(\rStoredData[6]_i_8_n_0 ),
         .I3(\rStoredData[6]_i_9_n_0 ),
         .I4(s_axis_video_tdata[7]),
@@ -4796,11 +4740,11 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
     \rStoredData[7]_i_2 
        (.I0(\rStoredData[7]_i_4_n_0 ),
         .I1(\rStoredData[7]_i_5_n_0 ),
-        .I2(sGammaReg[1]),
-        .I3(sGammaReg[0]),
+        .I2(sGammaReg__0[1]),
+        .I3(sGammaReg__0[0]),
         .I4(s_axis_video_tdata[9]),
         .I5(\rStoredData[7]_i_6_n_0 ),
-        .O(p_1_in[7]));
+        .O(p_1_in__0[7]));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFE000)) 
     \rStoredData[7]_i_3 
@@ -4877,10 +4821,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
         .Q(m_axis_video_tdata[0]),
         .R(1'b0));
   MUXF7 \rStoredData_reg[0]_i_1 
-       (.I0(p_1_in[0]),
+       (.I0(p_1_in__0[0]),
         .I1(p_0_out[0]),
         .O(p_0_in[0]),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
   MUXF8 \rStoredData_reg[0]_i_10 
        (.I0(\rStoredData_reg[0]_i_29_n_0 ),
         .I1(\rStoredData_reg[0]_i_30_n_0 ),
@@ -5128,10 +5072,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
         .Q(m_axis_video_tdata[1]),
         .R(1'b0));
   MUXF7 \rStoredData_reg[1]_i_1 
-       (.I0(p_1_in[1]),
+       (.I0(p_1_in__0[1]),
         .I1(p_0_out[1]),
         .O(p_0_in[1]),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
   MUXF8 \rStoredData_reg[1]_i_10 
        (.I0(\rStoredData_reg[1]_i_29_n_0 ),
         .I1(\rStoredData_reg[1]_i_30_n_0 ),
@@ -5565,10 +5509,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
         .Q(m_axis_video_tdata[3]),
         .R(1'b0));
   MUXF7 \rStoredData_reg[3]_i_1 
-       (.I0(p_1_in[3]),
+       (.I0(p_1_in__0[3]),
         .I1(p_0_out[3]),
         .O(p_0_in[3]),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
   MUXF8 \rStoredData_reg[3]_i_12 
        (.I0(\rStoredData_reg[3]_i_32_n_0 ),
         .I1(\rStoredData_reg[3]_i_33_n_0 ),
@@ -5759,23 +5703,23 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs
         .Q(m_axis_video_tdata[7]),
         .R(1'b0));
   MUXF7 \rStoredData_reg[7]_i_1 
-       (.I0(p_1_in[7]),
+       (.I0(p_1_in__0[7]),
         .I1(p_0_out[7]),
         .O(p_0_in[7]),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
 endmodule
 
 (* ORIG_REF_NAME = "StoredGammaCoefs" *) 
 module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
    (m_axis_video_tdata,
-    sGammaReg,
+    sGammaReg__0,
     s_axis_video_tdata,
     \sGammaReg_reg[0] ,
     \sGammaReg_reg[1] ,
     E,
     StreamClk);
   output [7:0]m_axis_video_tdata;
-  input [2:0]sGammaReg;
+  input [2:0]sGammaReg__0;
   input [9:0]s_axis_video_tdata;
   input \sGammaReg_reg[0] ;
   input \sGammaReg_reg[1] ;
@@ -5785,7 +5729,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
   wire [0:0]E;
   wire StreamClk;
   wire [7:0]m_axis_video_tdata;
-  wire [7:0]p_1_in__0;
+  wire [7:0]p_1_in__0__0;
   wire \rStoredData[0]_i_100__0_n_0 ;
   wire \rStoredData[0]_i_101__0_n_0 ;
   wire \rStoredData[0]_i_102__0_n_0 ;
@@ -6347,7 +6291,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
   wire \rStoredData_reg[6]_i_12__0_n_0 ;
   wire \rStoredData_reg[6]_i_2__0_n_0 ;
   wire \rStoredData_reg[7]_i_1__0_n_0 ;
-  wire [2:0]sGammaReg;
+  wire [2:0]sGammaReg__0;
   wire \sGammaReg_reg[0] ;
   wire \sGammaReg_reg[1] ;
   wire [9:0]s_axis_video_tdata;
@@ -6548,10 +6492,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
        (.I0(\rStoredData[0]_i_4__0_n_0 ),
         .I1(s_axis_video_tdata[2]),
         .I2(\rStoredData[0]_i_5__0_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[0]_i_6__0_n_0 ),
-        .O(p_1_in__0[0]));
+        .O(p_1_in__0__0[0]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \rStoredData[0]_i_3__0 
@@ -7237,10 +7181,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
        (.I0(\rStoredData[1]_i_4__0_n_0 ),
         .I1(s_axis_video_tdata[3]),
         .I2(\rStoredData[1]_i_5__0_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[1]_i_6__0_n_0 ),
-        .O(p_1_in__0[1]));
+        .O(p_1_in__0__0[1]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \rStoredData[1]_i_3__0 
@@ -7834,8 +7778,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
   LUT3 #(
     .INIT(8'hE4)) 
     \rStoredData[2]_i_1__0 
-       (.I0(sGammaReg[2]),
-        .I1(p_1_in__0[2]),
+       (.I0(sGammaReg__0[2]),
+        .I1(p_1_in__0__0[2]),
         .I2(\rStoredData_reg[2]_i_3__0_n_0 ),
         .O(\rStoredData[2]_i_1__0_n_0 ));
   LUT6 #(
@@ -7874,10 +7818,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
        (.I0(\rStoredData[2]_i_4__0_n_0 ),
         .I1(s_axis_video_tdata[4]),
         .I2(\rStoredData[2]_i_5__0_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[2]_i_6__0_n_0 ),
-        .O(p_1_in__0[2]));
+        .O(p_1_in__0__0[2]));
   LUT6 #(
     .INIT(64'hB9B999B95423462B)) 
     \rStoredData[2]_i_39__0 
@@ -8567,10 +8511,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
        (.I0(\rStoredData[3]_i_4__0_n_0 ),
         .I1(s_axis_video_tdata[5]),
         .I2(\rStoredData_reg[3]_i_5__0_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[3]_i_6__0_n_0 ),
-        .O(p_1_in__0[3]));
+        .O(p_1_in__0__0[3]));
   LUT6 #(
     .INIT(64'h033F373FFFFFFFFF)) 
     \rStoredData[3]_i_31__0 
@@ -9197,7 +9141,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
     .INIT(64'hBBBBBBBBBBB8B8B8)) 
     \rStoredData[4]_i_1__0 
        (.I0(\rStoredData[4]_i_2__0_n_0 ),
-        .I1(sGammaReg[2]),
+        .I1(sGammaReg__0[2]),
         .I2(\rStoredData[4]_i_3__0_n_0 ),
         .I3(\rStoredData_reg[4]_i_4__0_n_0 ),
         .I4(\sGammaReg_reg[0] ),
@@ -9353,8 +9297,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
     .INIT(64'h0E020E0E0E020202)) 
     \rStoredData[4]_i_3__0 
        (.I0(s_axis_video_tdata[6]),
-        .I1(sGammaReg[0]),
-        .I2(sGammaReg[1]),
+        .I1(sGammaReg__0[0]),
+        .I2(sGammaReg__0[1]),
         .I3(\rStoredData_reg[4]_i_10__0_n_0 ),
         .I4(s_axis_video_tdata[7]),
         .I5(\rStoredData_reg[4]_i_11__0_n_0 ),
@@ -9755,7 +9699,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
     .INIT(64'hBBBBBBBBBBB8B8B8)) 
     \rStoredData[5]_i_1__0 
        (.I0(\rStoredData_reg[5]_i_2__0_n_0 ),
-        .I1(sGammaReg[2]),
+        .I1(sGammaReg__0[2]),
         .I2(\rStoredData[5]_i_3__0_n_0 ),
         .I3(\rStoredData_reg[5]_i_4__0_n_0 ),
         .I4(\sGammaReg_reg[0] ),
@@ -9935,8 +9879,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
   LUT5 #(
     .INIT(32'h31223100)) 
     \rStoredData[5]_i_3__0 
-       (.I0(sGammaReg[0]),
-        .I1(sGammaReg[1]),
+       (.I0(sGammaReg__0[0]),
+        .I1(sGammaReg__0[1]),
         .I2(\rStoredData[5]_i_8__0_n_0 ),
         .I3(s_axis_video_tdata[7]),
         .I4(\rStoredData[5]_i_9__0_n_0 ),
@@ -10074,7 +10018,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
     .INIT(64'hBBBBBBBBBBB8B8B8)) 
     \rStoredData[6]_i_1__0 
        (.I0(\rStoredData_reg[6]_i_2__0_n_0 ),
-        .I1(sGammaReg[2]),
+        .I1(sGammaReg__0[2]),
         .I2(\rStoredData[6]_i_3__0_n_0 ),
         .I3(\rStoredData[6]_i_4__0_n_0 ),
         .I4(\sGammaReg_reg[0] ),
@@ -10103,8 +10047,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
   LUT6 #(
     .INIT(64'h3131333322000000)) 
     \rStoredData[6]_i_3__0 
-       (.I0(sGammaReg[0]),
-        .I1(sGammaReg[1]),
+       (.I0(sGammaReg__0[0]),
+        .I1(sGammaReg__0[1]),
         .I2(\rStoredData[6]_i_8__0_n_0 ),
         .I3(\rStoredData[6]_i_9__0_n_0 ),
         .I4(s_axis_video_tdata[7]),
@@ -10193,11 +10137,11 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
     \rStoredData[7]_i_2__0 
        (.I0(\rStoredData[7]_i_4__0_n_0 ),
         .I1(\rStoredData[7]_i_5__0_n_0 ),
-        .I2(sGammaReg[1]),
-        .I3(sGammaReg[0]),
+        .I2(sGammaReg__0[1]),
+        .I3(sGammaReg__0[0]),
         .I4(s_axis_video_tdata[9]),
         .I5(\rStoredData[7]_i_6__0_n_0 ),
-        .O(p_1_in__0[7]));
+        .O(p_1_in__0__0[7]));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFE000)) 
     \rStoredData[7]_i_3__0 
@@ -10324,10 +10268,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
         .O(\rStoredData_reg[0]_i_19__0_n_0 ),
         .S(s_axis_video_tdata[7]));
   MUXF7 \rStoredData_reg[0]_i_1__0 
-       (.I0(p_1_in__0[0]),
+       (.I0(p_1_in__0__0[0]),
         .I1(\rStoredData[0]_i_3__0_n_0 ),
         .O(\rStoredData_reg[0]_i_1__0_n_0 ),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
   MUXF8 \rStoredData_reg[0]_i_20__0 
        (.I0(\rStoredData_reg[0]_i_49__0_n_0 ),
         .I1(\rStoredData_reg[0]_i_50__0_n_0 ),
@@ -10575,10 +10519,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
         .O(\rStoredData_reg[1]_i_19__0_n_0 ),
         .S(s_axis_video_tdata[7]));
   MUXF7 \rStoredData_reg[1]_i_1__0 
-       (.I0(p_1_in__0[1]),
+       (.I0(p_1_in__0__0[1]),
         .I1(\rStoredData[1]_i_3__0_n_0 ),
         .O(\rStoredData_reg[1]_i_1__0_n_0 ),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
   MUXF8 \rStoredData_reg[1]_i_20__0 
        (.I0(\rStoredData_reg[1]_i_49__0_n_0 ),
         .I1(\rStoredData_reg[1]_i_50__0_n_0 ),
@@ -10987,10 +10931,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
         .O(\rStoredData_reg[3]_i_19__0_n_0 ),
         .S(s_axis_video_tdata[7]));
   MUXF7 \rStoredData_reg[3]_i_1__0 
-       (.I0(p_1_in__0[3]),
+       (.I0(p_1_in__0__0[3]),
         .I1(\rStoredData[3]_i_3__0_n_0 ),
         .O(\rStoredData_reg[3]_i_1__0_n_0 ),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
   MUXF8 \rStoredData_reg[3]_i_20__0 
        (.I0(\rStoredData_reg[3]_i_51__0_n_0 ),
         .I1(\rStoredData_reg[3]_i_52__0_n_0 ),
@@ -11156,10 +11100,10 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_0
         .Q(m_axis_video_tdata[7]),
         .R(1'b0));
   MUXF7 \rStoredData_reg[7]_i_1__0 
-       (.I0(p_1_in__0[7]),
+       (.I0(p_1_in__0__0[7]),
         .I1(\rStoredData[7]_i_3__0_n_0 ),
         .O(\rStoredData_reg[7]_i_1__0_n_0 ),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
 endmodule
 
 (* ORIG_REF_NAME = "StoredGammaCoefs" *) 
@@ -11170,7 +11114,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
     m_axis_video_tdata,
     s_axis_video_tvalid,
     m_axis_video_tready,
-    sGammaReg,
+    sGammaReg__0,
     s_axis_video_tdata,
     StreamClk);
   output [0:0]E;
@@ -11179,7 +11123,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
   output [7:0]m_axis_video_tdata;
   input s_axis_video_tvalid;
   input m_axis_video_tready;
-  input [2:0]sGammaReg;
+  input [2:0]sGammaReg__0;
   input [9:0]s_axis_video_tdata;
   input StreamClk;
 
@@ -11751,7 +11695,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
   wire \rStoredData_reg[6]_i_13_n_0 ;
   wire \rStoredData_reg[6]_i_2__1_n_0 ;
   wire \rStoredData_reg[7]_i_2_n_0 ;
-  wire [2:0]sGammaReg;
+  wire [2:0]sGammaReg__0;
   wire [9:0]s_axis_video_tdata;
   wire s_axis_video_tvalid;
 
@@ -11951,8 +11895,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
        (.I0(\rStoredData[0]_i_4__1_n_0 ),
         .I1(s_axis_video_tdata[2]),
         .I2(\rStoredData[0]_i_5__1_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[0]_i_6__1_n_0 ),
         .O(p_1_in__1[0]));
   LUT6 #(
@@ -12640,8 +12584,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
        (.I0(\rStoredData[1]_i_4__1_n_0 ),
         .I1(s_axis_video_tdata[3]),
         .I2(\rStoredData[1]_i_5__1_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[1]_i_6__1_n_0 ),
         .O(p_1_in__1[1]));
   LUT6 #(
@@ -13237,7 +13181,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
   LUT3 #(
     .INIT(8'hE4)) 
     \rStoredData[2]_i_1__1 
-       (.I0(sGammaReg[2]),
+       (.I0(sGammaReg__0[2]),
         .I1(p_1_in__1[2]),
         .I2(\rStoredData_reg[2]_i_3__1_n_0 ),
         .O(\rStoredData[2]_i_1__1_n_0 ));
@@ -13277,8 +13221,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
        (.I0(\rStoredData[2]_i_4__1_n_0 ),
         .I1(s_axis_video_tdata[4]),
         .I2(\rStoredData[2]_i_5__1_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[2]_i_6__1_n_0 ),
         .O(p_1_in__1[2]));
   LUT6 #(
@@ -13970,8 +13914,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
        (.I0(\rStoredData[3]_i_4__1_n_0 ),
         .I1(s_axis_video_tdata[5]),
         .I2(\rStoredData_reg[3]_i_5__1_n_0 ),
-        .I3(sGammaReg[1]),
-        .I4(sGammaReg[0]),
+        .I3(sGammaReg__0[1]),
+        .I4(sGammaReg__0[0]),
         .I5(\rStoredData[3]_i_6__1_n_0 ),
         .O(p_1_in__1[3]));
   LUT6 #(
@@ -14600,7 +14544,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
     .INIT(64'hBBBBBBBBBBB8B8B8)) 
     \rStoredData[4]_i_1__1 
        (.I0(\rStoredData[4]_i_2__1_n_0 ),
-        .I1(sGammaReg[2]),
+        .I1(sGammaReg__0[2]),
         .I2(\rStoredData[4]_i_3__1_n_0 ),
         .I3(\rStoredData_reg[4]_i_4__1_n_0 ),
         .I4(\rStoredData_reg[4]_0 ),
@@ -14756,8 +14700,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
     .INIT(64'h0E020E0E0E020202)) 
     \rStoredData[4]_i_3__1 
        (.I0(s_axis_video_tdata[6]),
-        .I1(sGammaReg[0]),
-        .I2(sGammaReg[1]),
+        .I1(sGammaReg__0[0]),
+        .I2(sGammaReg__0[1]),
         .I3(\rStoredData_reg[4]_i_10__1_n_0 ),
         .I4(s_axis_video_tdata[7]),
         .I5(\rStoredData_reg[4]_i_11__1_n_0 ),
@@ -15158,7 +15102,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
     .INIT(64'hBBBBBBBBBBB8B8B8)) 
     \rStoredData[5]_i_1__1 
        (.I0(\rStoredData_reg[5]_i_2__1_n_0 ),
-        .I1(sGammaReg[2]),
+        .I1(sGammaReg__0[2]),
         .I2(\rStoredData[5]_i_3__1_n_0 ),
         .I3(\rStoredData_reg[5]_i_4__1_n_0 ),
         .I4(\rStoredData_reg[4]_0 ),
@@ -15339,8 +15283,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
   LUT5 #(
     .INIT(32'h31223100)) 
     \rStoredData[5]_i_3__1 
-       (.I0(sGammaReg[0]),
-        .I1(sGammaReg[1]),
+       (.I0(sGammaReg__0[0]),
+        .I1(sGammaReg__0[1]),
         .I2(\rStoredData[5]_i_8__1_n_0 ),
         .I3(s_axis_video_tdata[7]),
         .I4(\rStoredData[5]_i_9__1_n_0 ),
@@ -15447,8 +15391,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
   LUT2 #(
     .INIT(4'h2)) 
     \rStoredData[6]_i_16 
-       (.I0(sGammaReg[1]),
-        .I1(sGammaReg[0]),
+       (.I0(sGammaReg__0[1]),
+        .I1(sGammaReg__0[0]),
         .O(\rStoredData_reg[4]_1 ));
   (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT4 #(
@@ -15479,7 +15423,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
     .INIT(64'hBBBBBBBBBBB8B8B8)) 
     \rStoredData[6]_i_1__1 
        (.I0(\rStoredData_reg[6]_i_2__1_n_0 ),
-        .I1(sGammaReg[2]),
+        .I1(sGammaReg__0[2]),
         .I2(\rStoredData[6]_i_3__1_n_0 ),
         .I3(\rStoredData[6]_i_4__1_n_0 ),
         .I4(\rStoredData_reg[4]_0 ),
@@ -15523,8 +15467,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
   LUT6 #(
     .INIT(64'h3131333322000000)) 
     \rStoredData[6]_i_3__1 
-       (.I0(sGammaReg[0]),
-        .I1(sGammaReg[1]),
+       (.I0(sGammaReg__0[0]),
+        .I1(sGammaReg__0[1]),
         .I2(\rStoredData[6]_i_9__1_n_0 ),
         .I3(\rStoredData[6]_i_10__1_n_0 ),
         .I4(s_axis_video_tdata[7]),
@@ -15544,8 +15488,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
   LUT2 #(
     .INIT(4'h8)) 
     \rStoredData[6]_i_5__1 
-       (.I0(sGammaReg[0]),
-        .I1(sGammaReg[1]),
+       (.I0(sGammaReg__0[0]),
+        .I1(sGammaReg__0[1]),
         .O(\rStoredData_reg[4]_0 ));
   LUT6 #(
     .INIT(64'hEE62CC6200000000)) 
@@ -15626,8 +15570,8 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
     \rStoredData[7]_i_3__1 
        (.I0(\rStoredData[7]_i_5__1_n_0 ),
         .I1(\rStoredData[7]_i_6__1_n_0 ),
-        .I2(sGammaReg[1]),
-        .I3(sGammaReg[0]),
+        .I2(sGammaReg__0[1]),
+        .I3(sGammaReg__0[0]),
         .I4(s_axis_video_tdata[9]),
         .I5(\rStoredData[7]_i_7_n_0 ),
         .O(p_1_in__1[7]));
@@ -15750,7 +15694,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
        (.I0(p_1_in__1[0]),
         .I1(\rStoredData[0]_i_3__1_n_0 ),
         .O(\rStoredData_reg[0]_i_1__1_n_0 ),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
   MUXF8 \rStoredData_reg[0]_i_20__1 
        (.I0(\rStoredData_reg[0]_i_49__1_n_0 ),
         .I1(\rStoredData_reg[0]_i_50__1_n_0 ),
@@ -16001,7 +15945,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
        (.I0(p_1_in__1[1]),
         .I1(\rStoredData[1]_i_3__1_n_0 ),
         .O(\rStoredData_reg[1]_i_1__1_n_0 ),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
   MUXF8 \rStoredData_reg[1]_i_20__1 
        (.I0(\rStoredData_reg[1]_i_49__1_n_0 ),
         .I1(\rStoredData_reg[1]_i_50__1_n_0 ),
@@ -16413,7 +16357,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
        (.I0(p_1_in__1[3]),
         .I1(\rStoredData[3]_i_3__1_n_0 ),
         .O(\rStoredData_reg[3]_i_1__1_n_0 ),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
   MUXF8 \rStoredData_reg[3]_i_20__1 
        (.I0(\rStoredData_reg[3]_i_51__1_n_0 ),
         .I1(\rStoredData_reg[3]_i_52__1_n_0 ),
@@ -16582,7 +16526,7 @@ module system_AXI_GammaCorrection_0_0_StoredGammaCoefs_1
        (.I0(p_1_in__1[7]),
         .I1(\rStoredData[7]_i_4__1_n_0 ),
         .O(\rStoredData_reg[7]_i_2_n_0 ),
-        .S(sGammaReg[2]));
+        .S(sGammaReg__0[2]));
 endmodule
 
 (* CHECK_LICENSE_TYPE = "system_AXI_GammaCorrection_0_0,AXI_GammaCorrection,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
@@ -16656,21 +16600,16 @@ module system_AXI_GammaCorrection_0_0
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Lite_Reg_Intf RVALID" *) output S_AXI_RVALID;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Lite_Reg_Intf RREADY" *) input S_AXI_RREADY;
 
+  wire \<const0> ;
   wire AxiLiteClk;
-  wire [2:0]S_AXI_ARADDR;
-  wire [2:0]S_AXI_ARPROT;
   wire S_AXI_ARREADY;
   wire S_AXI_ARVALID;
   wire [2:0]S_AXI_AWADDR;
-  wire [2:0]S_AXI_AWPROT;
   wire S_AXI_AWREADY;
   wire S_AXI_AWVALID;
   wire S_AXI_BREADY;
-  wire [1:0]S_AXI_BRESP;
   wire S_AXI_BVALID;
-  wire [31:0]S_AXI_RDATA;
   wire S_AXI_RREADY;
-  wire [1:0]S_AXI_RRESP;
   wire S_AXI_RVALID;
   wire [31:0]S_AXI_WDATA;
   wire S_AXI_WREADY;
@@ -16686,35 +16625,62 @@ module system_AXI_GammaCorrection_0_0
   wire sStreamReset_n;
   wire [31:0]s_axis_video_tdata;
   wire s_axis_video_tlast;
-  wire s_axis_video_tready;
   wire s_axis_video_tuser;
   wire s_axis_video_tvalid;
 
-  (* C_S_AXI_ADDR_WIDTH = "3" *) 
-  (* C_S_AXI_DATA_WIDTH = "32" *) 
-  (* kAXI_InputDataWidth = "32" *) 
-  (* kAXI_OutputDataWidth = "24" *) 
-  (* kInputColorWidth = "10" *) 
+  assign S_AXI_BRESP[1] = \<const0> ;
+  assign S_AXI_BRESP[0] = \<const0> ;
+  assign S_AXI_RDATA[31] = \<const0> ;
+  assign S_AXI_RDATA[30] = \<const0> ;
+  assign S_AXI_RDATA[29] = \<const0> ;
+  assign S_AXI_RDATA[28] = \<const0> ;
+  assign S_AXI_RDATA[27] = \<const0> ;
+  assign S_AXI_RDATA[26] = \<const0> ;
+  assign S_AXI_RDATA[25] = \<const0> ;
+  assign S_AXI_RDATA[24] = \<const0> ;
+  assign S_AXI_RDATA[23] = \<const0> ;
+  assign S_AXI_RDATA[22] = \<const0> ;
+  assign S_AXI_RDATA[21] = \<const0> ;
+  assign S_AXI_RDATA[20] = \<const0> ;
+  assign S_AXI_RDATA[19] = \<const0> ;
+  assign S_AXI_RDATA[18] = \<const0> ;
+  assign S_AXI_RDATA[17] = \<const0> ;
+  assign S_AXI_RDATA[16] = \<const0> ;
+  assign S_AXI_RDATA[15] = \<const0> ;
+  assign S_AXI_RDATA[14] = \<const0> ;
+  assign S_AXI_RDATA[13] = \<const0> ;
+  assign S_AXI_RDATA[12] = \<const0> ;
+  assign S_AXI_RDATA[11] = \<const0> ;
+  assign S_AXI_RDATA[10] = \<const0> ;
+  assign S_AXI_RDATA[9] = \<const0> ;
+  assign S_AXI_RDATA[8] = \<const0> ;
+  assign S_AXI_RDATA[7] = \<const0> ;
+  assign S_AXI_RDATA[6] = \<const0> ;
+  assign S_AXI_RDATA[5] = \<const0> ;
+  assign S_AXI_RDATA[4] = \<const0> ;
+  assign S_AXI_RDATA[3] = \<const0> ;
+  assign S_AXI_RDATA[2] = \<const0> ;
+  assign S_AXI_RDATA[1] = \<const0> ;
+  assign S_AXI_RDATA[0] = \<const0> ;
+  assign S_AXI_RRESP[1] = \<const0> ;
+  assign S_AXI_RRESP[0] = \<const0> ;
+  assign s_axis_video_tready = m_axis_video_tready;
+  GND GND
+       (.G(\<const0> ));
   system_AXI_GammaCorrection_0_0_AXI_GammaCorrection U0
        (.AxiLiteClk(AxiLiteClk),
-        .S_AXI_ARADDR(S_AXI_ARADDR),
-        .S_AXI_ARPROT(S_AXI_ARPROT),
         .S_AXI_ARREADY(S_AXI_ARREADY),
         .S_AXI_ARVALID(S_AXI_ARVALID),
-        .S_AXI_AWADDR(S_AXI_AWADDR),
-        .S_AXI_AWPROT(S_AXI_AWPROT),
+        .S_AXI_AWADDR(S_AXI_AWADDR[2]),
         .S_AXI_AWREADY(S_AXI_AWREADY),
         .S_AXI_AWVALID(S_AXI_AWVALID),
         .S_AXI_BREADY(S_AXI_BREADY),
-        .S_AXI_BRESP(S_AXI_BRESP),
         .S_AXI_BVALID(S_AXI_BVALID),
-        .S_AXI_RDATA(S_AXI_RDATA),
         .S_AXI_RREADY(S_AXI_RREADY),
-        .S_AXI_RRESP(S_AXI_RRESP),
         .S_AXI_RVALID(S_AXI_RVALID),
-        .S_AXI_WDATA(S_AXI_WDATA),
+        .S_AXI_WDATA(S_AXI_WDATA[2:0]),
         .S_AXI_WREADY(S_AXI_WREADY),
-        .S_AXI_WSTRB(S_AXI_WSTRB),
+        .S_AXI_WSTRB(S_AXI_WSTRB[0]),
         .S_AXI_WVALID(S_AXI_WVALID),
         .StreamClk(StreamClk),
         .aAxiLiteReset_n(aAxiLiteReset_n),
@@ -16724,9 +16690,8 @@ module system_AXI_GammaCorrection_0_0
         .m_axis_video_tuser(m_axis_video_tuser),
         .m_axis_video_tvalid(m_axis_video_tvalid),
         .sStreamReset_n(sStreamReset_n),
-        .s_axis_video_tdata(s_axis_video_tdata),
+        .s_axis_video_tdata(s_axis_video_tdata[29:0]),
         .s_axis_video_tlast(s_axis_video_tlast),
-        .s_axis_video_tready(s_axis_video_tready),
         .s_axis_video_tuser(s_axis_video_tuser),
         .s_axis_video_tvalid(s_axis_video_tvalid));
 endmodule
