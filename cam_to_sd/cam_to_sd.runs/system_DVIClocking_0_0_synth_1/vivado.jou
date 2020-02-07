@@ -2,8 +2,8 @@
 # Vivado v2018.2.2 (64-bit)
 # SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
 # IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Sat Dec 14 21:07:39 2019
-# Process ID: 8812
+# Start of session at: Tue Feb  4 17:46:56 2020
+# Process ID: 1292
 # Current directory: C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/system_DVIClocking_0_0_synth_1
 # Command line: vivado.exe -log system_DVIClocking_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_DVIClocking_0_0.tcl
 # Log file: C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/system_DVIClocking_0_0_synth_1/system_DVIClocking_0_0.vds

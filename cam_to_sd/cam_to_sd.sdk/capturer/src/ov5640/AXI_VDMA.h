@@ -119,7 +119,8 @@ public:
 	void copyDataFrame(u8* buffer_data, int pxl_size)
 	{
 		XAxiVdma_ChannelStop(&(drv_inst_.WriteChannel));
-		while (XAxiVdma_ChannelIsRunning(&(drv_inst_.WriteChannel)));
+		while (XAxiVdma_ChannelIsRunning(&(drv_inst_.WriteChannel))){};
+
 		uint32_t frame_base_addr = context_.WriteCfg.FrameStoreStartAddr[0];
 		for (int buffer_pos = 0; buffer_pos < pxl_size; buffer_pos = buffer_pos + 3, frame_base_addr = frame_base_addr + 3)
 		{

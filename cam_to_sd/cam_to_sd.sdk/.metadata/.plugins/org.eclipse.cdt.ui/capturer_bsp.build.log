@@ -1,4 +1,4 @@
-00:15:59 **** Auto Build of project capturer_bsp ****
+16:28:13 **** Auto Build of project capturer_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_5/src"
 make -C ps7_cortexa9_0/libsrc/axivdma_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
@@ -131,5 +131,5 @@ make -C ps7_cortexa9_0/libsrc/xilffs_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm
 "Compiling XilFFs Library"
 'Finished building libraries'
 
-00:16:25 Build Finished (took 25s.462ms)
+16:28:40 Build Finished (took 26s.478ms)
 

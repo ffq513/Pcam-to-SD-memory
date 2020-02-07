@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
---Date        : Sat Dec 14 21:03:42 2019
+--Date        : Tue Feb  4 17:42:08 2020
 --Host        : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -752,11 +752,10 @@ entity system is
     hdmi_tx_clk_n : out STD_LOGIC;
     hdmi_tx_clk_p : out STD_LOGIC;
     hdmi_tx_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    hdmi_tx_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    reset_rtl_0 : in STD_LOGIC
+    hdmi_tx_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=25,numReposBlks=21,numNonXlnxBlks=5,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=5,da_clkrst_cnt=2,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=22,numReposBlks=18,numNonXlnxBlks=5,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_board_cnt=5,da_clkrst_cnt=2,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of system : entity is "system.hwdef";
 end system;
@@ -1445,7 +1444,26 @@ architecture STRUCTURE of system is
     M05_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     M05_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M05_AXI_rvalid : in STD_LOGIC;
-    M05_AXI_rready : out STD_LOGIC
+    M05_AXI_rready : out STD_LOGIC;
+    M06_AXI_awaddr : out STD_LOGIC_VECTOR ( 8 downto 0 );
+    M06_AXI_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M06_AXI_awvalid : out STD_LOGIC;
+    M06_AXI_awready : in STD_LOGIC;
+    M06_AXI_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M06_AXI_wstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M06_AXI_wvalid : out STD_LOGIC;
+    M06_AXI_wready : in STD_LOGIC;
+    M06_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M06_AXI_bvalid : in STD_LOGIC;
+    M06_AXI_bready : out STD_LOGIC;
+    M06_AXI_araddr : out STD_LOGIC_VECTOR ( 8 downto 0 );
+    M06_AXI_arprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M06_AXI_arvalid : out STD_LOGIC;
+    M06_AXI_arready : in STD_LOGIC;
+    M06_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    M06_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M06_AXI_rvalid : in STD_LOGIC;
+    M06_AXI_rready : out STD_LOGIC
   );
   end component system_smartconnect_0_0;
   component system_video_dynclk_0 is
@@ -1511,97 +1529,6 @@ architecture STRUCTURE of system is
     S_AXI_RREADY : in STD_LOGIC
   );
   end component system_AXI_GammaCorrection_0_0;
-  component system_rst_clk_wiz_0_150M_0 is
-  port (
-    slowest_sync_clk : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
-    aux_reset_in : in STD_LOGIC;
-    mb_debug_sys_rst : in STD_LOGIC;
-    dcm_locked : in STD_LOGIC;
-    mb_reset : out STD_LOGIC;
-    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component system_rst_clk_wiz_0_150M_0;
-  component system_image_filter_0_1 is
-  port (
-    INPUT_STREAM_TVALID : in STD_LOGIC;
-    INPUT_STREAM_TREADY : out STD_LOGIC;
-    INPUT_STREAM_TDATA : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    INPUT_STREAM_TKEEP : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    INPUT_STREAM_TSTRB : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    INPUT_STREAM_TUSER : in STD_LOGIC_VECTOR ( 0 to 0 );
-    INPUT_STREAM_TLAST : in STD_LOGIC_VECTOR ( 0 to 0 );
-    INPUT_STREAM_TID : in STD_LOGIC_VECTOR ( 0 to 0 );
-    INPUT_STREAM_TDEST : in STD_LOGIC_VECTOR ( 0 to 0 );
-    OUTPUT_STREAM_TVALID : out STD_LOGIC;
-    OUTPUT_STREAM_TREADY : in STD_LOGIC;
-    OUTPUT_STREAM_TDATA : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    OUTPUT_STREAM_TKEEP : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    OUTPUT_STREAM_TSTRB : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    OUTPUT_STREAM_TUSER : out STD_LOGIC_VECTOR ( 0 to 0 );
-    OUTPUT_STREAM_TLAST : out STD_LOGIC_VECTOR ( 0 to 0 );
-    OUTPUT_STREAM_TID : out STD_LOGIC_VECTOR ( 0 to 0 );
-    OUTPUT_STREAM_TDEST : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ap_clk : in STD_LOGIC;
-    ap_rst_n : in STD_LOGIC;
-    ap_start : in STD_LOGIC;
-    ap_done : out STD_LOGIC;
-    ap_ready : out STD_LOGIC;
-    ap_idle : out STD_LOGIC
-  );
-  end component system_image_filter_0_1;
-  component system_ila_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe5 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe9 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe10 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe11 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe12 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe13 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe14 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe15 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe16 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe17 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe18 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe19 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe20 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe21 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe22 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe23 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe24 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe25 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe26 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe27 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    probe28 : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    probe29 : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    probe30 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe31 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe32 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe33 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe34 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe35 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe36 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe37 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe38 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe39 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe40 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe41 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe42 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe43 : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component system_ila_0_0;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TLAST : STD_LOGIC;
   signal AXI_BayerToRGB_1_AXI_Stream_Master_TREADY : STD_LOGIC;
@@ -1714,15 +1641,6 @@ architecture STRUCTURE of system is
   signal dphy_data_lp_p_1 : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal dphy_hs_clock_1_CLK_N : STD_LOGIC;
   signal dphy_hs_clock_1_CLK_P : STD_LOGIC;
-  signal image_filter_0_OUTPUT_STREAM_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
-  signal image_filter_0_OUTPUT_STREAM_TKEEP : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal image_filter_0_OUTPUT_STREAM_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal image_filter_0_OUTPUT_STREAM_TREADY : STD_LOGIC;
-  signal image_filter_0_OUTPUT_STREAM_TUSER : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal image_filter_0_OUTPUT_STREAM_TVALID : STD_LOGIC;
-  signal image_filter_0_ap_done : STD_LOGIC;
-  signal image_filter_0_ap_idle : STD_LOGIC;
-  signal image_filter_0_ap_ready : STD_LOGIC;
   signal mm_clk_150 : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -1795,12 +1713,10 @@ architecture STRUCTURE of system is
   signal processing_system7_0_M_AXI_GP0_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_M_AXI_GP0_WVALID : STD_LOGIC;
   signal ref_clk_200 : STD_LOGIC;
-  signal reset_rtl_0_1 : STD_LOGIC;
   signal rgb2dvi_0_TMDS_CLK_N : STD_LOGIC;
   signal rgb2dvi_0_TMDS_CLK_P : STD_LOGIC;
   signal rgb2dvi_0_TMDS_DATA_N : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal rgb2dvi_0_TMDS_DATA_P : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal rst_clk_wiz_0_150M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_clk_wiz_0_50M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_clk_wiz_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_clk_wiz_0_50M_peripheral_reset : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1961,11 +1877,6 @@ architecture STRUCTURE of system is
   signal NLW_axi_vdma_0_m_axis_mm2s_tkeep_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_axi_vdma_0_mm2s_frame_ptr_out_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_axi_vdma_0_s2mm_frame_ptr_out_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
-  signal NLW_ila_0_probe0_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_image_filter_0_ap_start_UNCONNECTED : STD_LOGIC;
-  signal NLW_image_filter_0_OUTPUT_STREAM_TDEST_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_image_filter_0_OUTPUT_STREAM_TID_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_image_filter_0_OUTPUT_STREAM_TSTRB_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP0_AWREADY_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_S_AXI_HP0_BVALID_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_S_AXI_HP0_WREADY_UNCONNECTED : STD_LOGIC;
@@ -1987,15 +1898,16 @@ architecture STRUCTURE of system is
   signal NLW_processing_system7_0_S_AXI_HP2_RRESP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP2_WACOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP2_WCOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_rst_clk_wiz_0_150M_mb_reset_UNCONNECTED : STD_LOGIC;
-  signal NLW_rst_clk_wiz_0_150M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_rst_clk_wiz_0_150M_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_rst_clk_wiz_0_150M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_clk_wiz_0_50M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_clk_wiz_0_50M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_vid_clk_dyn_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_vid_clk_dyn_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_vid_clk_dyn_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_smartconnect_0_M06_AXI_arvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M06_AXI_awvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M06_AXI_bready_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M06_AXI_rready_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M06_AXI_wvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_smartconnect_0_M02_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_smartconnect_0_M02_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_smartconnect_0_M02_AXI_wstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -2003,6 +1915,12 @@ architecture STRUCTURE of system is
   signal NLW_smartconnect_0_M03_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_smartconnect_0_M05_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_smartconnect_0_M05_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_smartconnect_0_M06_AXI_araddr_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_smartconnect_0_M06_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_smartconnect_0_M06_AXI_awaddr_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal NLW_smartconnect_0_M06_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_smartconnect_0_M06_AXI_wdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_smartconnect_0_M06_AXI_wstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_v_axi4s_vid_out_0_overflow_UNCONNECTED : STD_LOGIC;
   signal NLW_v_axi4s_vid_out_0_underflow_UNCONNECTED : STD_LOGIC;
   signal NLW_v_axi4s_vid_out_0_vid_field_id_UNCONNECTED : STD_LOGIC;
@@ -2038,8 +1956,6 @@ architecture STRUCTURE of system is
   attribute X_INTERFACE_INFO of dphy_hs_clock_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 dphy_hs_clock CLK_P";
   attribute X_INTERFACE_INFO of hdmi_tx_clk_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_tx CLK_N";
   attribute X_INTERFACE_INFO of hdmi_tx_clk_p : signal is "digilentinc.com:interface:tmds:1.0 hdmi_tx CLK_P";
-  attribute X_INTERFACE_INFO of reset_rtl_0 : signal is "xilinx.com:signal:reset:1.0 RST.RESET_RTL_0 RST";
-  attribute X_INTERFACE_PARAMETER of reset_rtl_0 : signal is "XIL_INTERFACENAME RST.RESET_RTL_0, POLARITY ACTIVE_LOW";
   attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
   attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
@@ -2075,7 +1991,6 @@ begin
   processing_system7_0_GPIO_0_TRI_I(0) <= cam_gpio_tri_i(0);
   processing_system7_0_IIC_0_SCL_I <= cam_iic_scl_i;
   processing_system7_0_IIC_0_SDA_I <= cam_iic_sda_i;
-  reset_rtl_0_1 <= reset_rtl_0;
 AXI_BayerToRGB_1: component system_AXI_BayerToRGB_1_0
      port map (
       StreamClk => mm_clk_150,
@@ -2412,12 +2327,12 @@ axi_vdma_0: component system_axi_vdma_0_0
       s_axi_lite_wready => smartconnect_0_M02_AXI_WREADY,
       s_axi_lite_wvalid => smartconnect_0_M02_AXI_WVALID,
       s_axis_s2mm_aclk => mm_clk_150,
-      s_axis_s2mm_tdata(23 downto 0) => image_filter_0_OUTPUT_STREAM_TDATA(23 downto 0),
-      s_axis_s2mm_tkeep(2 downto 0) => image_filter_0_OUTPUT_STREAM_TKEEP(2 downto 0),
-      s_axis_s2mm_tlast => image_filter_0_OUTPUT_STREAM_TLAST(0),
-      s_axis_s2mm_tready => image_filter_0_OUTPUT_STREAM_TREADY,
-      s_axis_s2mm_tuser(0) => image_filter_0_OUTPUT_STREAM_TUSER(0),
-      s_axis_s2mm_tvalid => image_filter_0_OUTPUT_STREAM_TVALID
+      s_axis_s2mm_tdata(23 downto 0) => AXI_GammaCorrection_0_AXI_Stream_Master_TDATA(23 downto 0),
+      s_axis_s2mm_tkeep(2 downto 0) => B"111",
+      s_axis_s2mm_tlast => AXI_GammaCorrection_0_AXI_Stream_Master_TLAST,
+      s_axis_s2mm_tready => AXI_GammaCorrection_0_AXI_Stream_Master_TREADY,
+      s_axis_s2mm_tuser(0) => AXI_GammaCorrection_0_AXI_Stream_Master_TUSER,
+      s_axis_s2mm_tvalid => AXI_GammaCorrection_0_AXI_Stream_Master_TVALID
     );
 clk_wiz_0: component system_clk_wiz_0_0
      port map (
@@ -2426,82 +2341,6 @@ clk_wiz_0: component system_clk_wiz_0_0
       clk_out2 => mm_clk_150,
       clk_out3 => ref_clk_200,
       locked => clk_wiz_0_locked
-    );
-ila_0: component system_ila_0_0
-     port map (
-      clk => mm_clk_150,
-      probe0(0) => NLW_ila_0_probe0_UNCONNECTED(0),
-      probe1(0) => image_filter_0_ap_done,
-      probe10(31 downto 0) => B"00000000000000000000000000000000",
-      probe11(0) => '0',
-      probe12(0) => '0',
-      probe13(1 downto 0) => B"00",
-      probe14(31 downto 0) => B"00000000000000000000000000000000",
-      probe15(3 downto 0) => B"1111",
-      probe16(0) => '0',
-      probe17(2 downto 0) => B"000",
-      probe18(2 downto 0) => B"000",
-      probe19(0) => '0',
-      probe2(1) => image_filter_0_ap_ready,
-      probe2(0) => image_filter_0_ap_ready,
-      probe20(0) => '0',
-      probe21(7 downto 0) => B"00000000",
-      probe22(0) => '0',
-      probe23(2 downto 0) => B"010",
-      probe24(1 downto 0) => B"01",
-      probe25(0) => '0',
-      probe26(0) => '0',
-      probe27(7 downto 0) => B"00000000",
-      probe28(2 downto 0) => B"010",
-      probe29(1 downto 0) => B"01",
-      probe3(0) => image_filter_0_ap_idle,
-      probe30(0) => '0',
-      probe31(3 downto 0) => B"0011",
-      probe32(3 downto 0) => B"0011",
-      probe33(3 downto 0) => B"0000",
-      probe34(3 downto 0) => B"0000",
-      probe35(0) => '0',
-      probe36(3 downto 0) => B"0000",
-      probe37(3 downto 0) => B"0000",
-      probe38(0) => '0',
-      probe39(0) => '0',
-      probe4(0) => '0',
-      probe40(0) => '0',
-      probe41(0) => '0',
-      probe42(0) => '0',
-      probe43(0) => '0',
-      probe5(0) => '0',
-      probe6(0) => '0',
-      probe7(0) => '0',
-      probe8(0) => '0',
-      probe9(0) => '0'
-    );
-image_filter_0: component system_image_filter_0_1
-     port map (
-      INPUT_STREAM_TDATA(23 downto 0) => AXI_GammaCorrection_0_AXI_Stream_Master_TDATA(23 downto 0),
-      INPUT_STREAM_TDEST(0) => '0',
-      INPUT_STREAM_TID(0) => '0',
-      INPUT_STREAM_TKEEP(2 downto 0) => B"111",
-      INPUT_STREAM_TLAST(0) => AXI_GammaCorrection_0_AXI_Stream_Master_TLAST,
-      INPUT_STREAM_TREADY => AXI_GammaCorrection_0_AXI_Stream_Master_TREADY,
-      INPUT_STREAM_TSTRB(2 downto 0) => B"111",
-      INPUT_STREAM_TUSER(0) => AXI_GammaCorrection_0_AXI_Stream_Master_TUSER,
-      INPUT_STREAM_TVALID => AXI_GammaCorrection_0_AXI_Stream_Master_TVALID,
-      OUTPUT_STREAM_TDATA(23 downto 0) => image_filter_0_OUTPUT_STREAM_TDATA(23 downto 0),
-      OUTPUT_STREAM_TDEST(0) => NLW_image_filter_0_OUTPUT_STREAM_TDEST_UNCONNECTED(0),
-      OUTPUT_STREAM_TID(0) => NLW_image_filter_0_OUTPUT_STREAM_TID_UNCONNECTED(0),
-      OUTPUT_STREAM_TKEEP(2 downto 0) => image_filter_0_OUTPUT_STREAM_TKEEP(2 downto 0),
-      OUTPUT_STREAM_TLAST(0) => image_filter_0_OUTPUT_STREAM_TLAST(0),
-      OUTPUT_STREAM_TREADY => image_filter_0_OUTPUT_STREAM_TREADY,
-      OUTPUT_STREAM_TSTRB(2 downto 0) => NLW_image_filter_0_OUTPUT_STREAM_TSTRB_UNCONNECTED(2 downto 0),
-      OUTPUT_STREAM_TUSER(0) => image_filter_0_OUTPUT_STREAM_TUSER(0),
-      OUTPUT_STREAM_TVALID => image_filter_0_OUTPUT_STREAM_TVALID,
-      ap_clk => mm_clk_150,
-      ap_done => image_filter_0_ap_done,
-      ap_idle => image_filter_0_ap_idle,
-      ap_ready => image_filter_0_ap_ready,
-      ap_rst_n => rst_clk_wiz_0_50M_peripheral_aresetn(0),
-      ap_start => NLW_image_filter_0_ap_start_UNCONNECTED
     );
 processing_system7_0: component system_processing_system7_0_0
      port map (
@@ -2682,19 +2521,6 @@ rgb2dvi_0: component system_rgb2dvi_0_0
       vid_pVDE => v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO,
       vid_pVSync => v_axi4s_vid_out_0_vid_io_out_VSYNC
     );
-rst_clk_wiz_0_150M: component system_rst_clk_wiz_0_150M_0
-     port map (
-      aux_reset_in => '1',
-      bus_struct_reset(0) => NLW_rst_clk_wiz_0_150M_bus_struct_reset_UNCONNECTED(0),
-      dcm_locked => clk_wiz_0_locked,
-      ext_reset_in => reset_rtl_0_1,
-      interconnect_aresetn(0) => NLW_rst_clk_wiz_0_150M_interconnect_aresetn_UNCONNECTED(0),
-      mb_debug_sys_rst => '0',
-      mb_reset => NLW_rst_clk_wiz_0_150M_mb_reset_UNCONNECTED,
-      peripheral_aresetn(0) => rst_clk_wiz_0_150M_peripheral_aresetn(0),
-      peripheral_reset(0) => NLW_rst_clk_wiz_0_150M_peripheral_reset_UNCONNECTED(0),
-      slowest_sync_clk => mm_clk_150
-    );
 rst_clk_wiz_0_50M: component system_rst_clk_wiz_0_50M_0
      port map (
       aux_reset_in => '1',
@@ -2837,6 +2663,25 @@ smartconnect_0: component system_smartconnect_0_0
       M05_AXI_wready => smartconnect_0_M05_AXI_WREADY,
       M05_AXI_wstrb(3 downto 0) => smartconnect_0_M05_AXI_WSTRB(3 downto 0),
       M05_AXI_wvalid => smartconnect_0_M05_AXI_WVALID,
+      M06_AXI_araddr(8 downto 0) => NLW_smartconnect_0_M06_AXI_araddr_UNCONNECTED(8 downto 0),
+      M06_AXI_arprot(2 downto 0) => NLW_smartconnect_0_M06_AXI_arprot_UNCONNECTED(2 downto 0),
+      M06_AXI_arready => '0',
+      M06_AXI_arvalid => NLW_smartconnect_0_M06_AXI_arvalid_UNCONNECTED,
+      M06_AXI_awaddr(8 downto 0) => NLW_smartconnect_0_M06_AXI_awaddr_UNCONNECTED(8 downto 0),
+      M06_AXI_awprot(2 downto 0) => NLW_smartconnect_0_M06_AXI_awprot_UNCONNECTED(2 downto 0),
+      M06_AXI_awready => '0',
+      M06_AXI_awvalid => NLW_smartconnect_0_M06_AXI_awvalid_UNCONNECTED,
+      M06_AXI_bready => NLW_smartconnect_0_M06_AXI_bready_UNCONNECTED,
+      M06_AXI_bresp(1 downto 0) => B"00",
+      M06_AXI_bvalid => '0',
+      M06_AXI_rdata(31 downto 0) => B"00000000000000000000000000000000",
+      M06_AXI_rready => NLW_smartconnect_0_M06_AXI_rready_UNCONNECTED,
+      M06_AXI_rresp(1 downto 0) => B"00",
+      M06_AXI_rvalid => '0',
+      M06_AXI_wdata(31 downto 0) => NLW_smartconnect_0_M06_AXI_wdata_UNCONNECTED(31 downto 0),
+      M06_AXI_wready => '0',
+      M06_AXI_wstrb(3 downto 0) => NLW_smartconnect_0_M06_AXI_wstrb_UNCONNECTED(3 downto 0),
+      M06_AXI_wvalid => NLW_smartconnect_0_M06_AXI_wvalid_UNCONNECTED,
       S00_AXI_araddr(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
       S00_AXI_arburst(1 downto 0) => processing_system7_0_M_AXI_GP0_ARBURST(1 downto 0),
       S00_AXI_arcache(3 downto 0) => processing_system7_0_M_AXI_GP0_ARCACHE(3 downto 0),

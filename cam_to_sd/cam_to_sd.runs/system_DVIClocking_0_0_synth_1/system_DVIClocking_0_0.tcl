@@ -26,13 +26,10 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.cache/wt [current_project]
 set_property parent.project_path C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_FIFO XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_repo_paths {
-  d:/Xilinx/Library
-  c:/Users/josen/AppData/Roaming/Xilinx/Vivado/canny_filter/solution1/impl/ip
-} [current_project]
+set_property ip_repo_paths d:/Xilinx/Library [current_project]
 set_property ip_output_repo c:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {

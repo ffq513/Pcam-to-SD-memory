@@ -12,12 +12,12 @@ public class Conversor implements Runnable {
 	private static String parent_path;
 	private static String path_to_save;
 	private String file_name;
-	private String ext_file = "bmp";
+	private String ext_file = "png";
 
 	public static void SetParentPath(String parent_path) { Conversor.parent_path = parent_path; }
 	public static void SetPathToSave(String path_to_save) { Conversor.path_to_save = path_to_save; }
 	
-	public Conversor(String file_name) { this.file_name = file_name; }
+	public Conversor(String file_name, String ext) { this.file_name = file_name; ext_file = ext; }
 	
 	@Override
 	public void run() {
@@ -36,19 +36,26 @@ public class Conversor implements Runnable {
 	 */
 	private BufferedImage convert() {
 		File file = new File(parent_path + file_name);
-		
-		byte[] bArray = fileToByteArray(file);			
-		Color[] cArray = new Color[1920*1080];
+		byte[] bArray = fileToByteArray(file);
+		int width = 0, height = 0;
+		if (bArray.length == 6220800) {
+			width = 1920;
+			height = 1080;
+		} else {
+			width = 1280;
+			height = 720;
+		}
+		Color[] cArray = new Color[width*height];
 		for (int i=0, cIndex = 0; i+2 < bArray.length; i+=3, cIndex++) {
-			int ch_1 = (int)(bArray[i+2] & 0xff);
-			int ch_2 = (int)(bArray[i+1] & 0xff);
-			int ch_3 = (int)(bArray[i] & 0xff);
+			int ch_1 = (int)(bArray[i+2] & 0xff);	//R
+			int ch_2 = (int)(bArray[i+1] & 0xff);	//B
+			int ch_3 = (int)(bArray[i] & 0xff); 	//G
 			cArray[cIndex] = new Color(ch_1, ch_3, ch_2); // RBG -> RGB
 		}
-		BufferedImage image = new BufferedImage(1920, 1080, BufferedImage.TYPE_INT_RGB);
-		for (int y = 0; y < 1080; y++)
-			for (int x = 0; x < 1920; x++) {
-				image.setRGB(x, y, cArray[1920*y+x].getRGB());
+		BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+		for (int y = 0; y < height; y++)
+			for (int x = 0; x < width; x++) {
+				image.setRGB(x, y, cArray[width*y+x].getRGB());
 			}
 		return image;
 	}

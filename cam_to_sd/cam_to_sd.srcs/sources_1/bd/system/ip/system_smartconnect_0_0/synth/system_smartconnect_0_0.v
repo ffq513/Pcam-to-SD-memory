@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2020 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "bd_919a,Vivado 2018.2.2" *)
 (* CHECK_LICENSE_TYPE = "system_smartconnect_0_0,bd_919a,{}" *)
-(* CORE_GENERATION_INFO = "system_smartconnect_0_0,bd_919a,{x_ipProduct=Vivado 2018.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=smartconnect,x_ipVersion=1.0,x_ipCoreRevision=9,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,NUM_MI=6,NUM_SI=1,NUM_CLKS=1,HAS_ARESETN=1,ADVANCED_PROPERTIES=0,Component_Name=system_smartconnect_0_0}" *)
+(* CORE_GENERATION_INFO = "system_smartconnect_0_0,bd_919a,{x_ipProduct=Vivado 2018.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=smartconnect,x_ipVersion=1.0,x_ipCoreRevision=9,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,NUM_MI=7,NUM_SI=1,NUM_CLKS=1,HAS_ARESETN=1,ADVANCED_PROPERTIES=0,Component_Name=system_smartconnect_0_0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_smartconnect_0_0 (
   aclk,
@@ -208,10 +208,29 @@ module system_smartconnect_0_0 (
   M05_AXI_rdata,
   M05_AXI_rresp,
   M05_AXI_rvalid,
-  M05_AXI_rready
+  M05_AXI_rready,
+  M06_AXI_awaddr,
+  M06_AXI_awprot,
+  M06_AXI_awvalid,
+  M06_AXI_awready,
+  M06_AXI_wdata,
+  M06_AXI_wstrb,
+  M06_AXI_wvalid,
+  M06_AXI_wready,
+  M06_AXI_bresp,
+  M06_AXI_bvalid,
+  M06_AXI_bready,
+  M06_AXI_araddr,
+  M06_AXI_arprot,
+  M06_AXI_arvalid,
+  M06_AXI_arready,
+  M06_AXI_rdata,
+  M06_AXI_rresp,
+  M06_AXI_rvalid,
+  M06_AXI_rready
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.aclk, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, ASSOCIATED_BUSIF M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI:S00_AXI, ASSOCIATED_CLKEN s_sc_aclken" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.aclk, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, ASSOCIATED_BUSIF M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI:M06_AXI:S00_AXI, ASSOCIATED_CLKEN s_sc_aclken" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.aclk CLK" *)
 input wire aclk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.aresetn, POLARITY ACTIVE_LOW" *)
@@ -535,6 +554,46 @@ input wire M05_AXI_rvalid;
 THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M05_AXI RREADY" *)
 output wire M05_AXI_rready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI AWADDR" *)
+output wire [8 : 0] M06_AXI_awaddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI AWPROT" *)
+output wire [2 : 0] M06_AXI_awprot;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI AWVALID" *)
+output wire M06_AXI_awvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI AWREADY" *)
+input wire M06_AXI_awready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI WDATA" *)
+output wire [31 : 0] M06_AXI_wdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI WSTRB" *)
+output wire [3 : 0] M06_AXI_wstrb;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI WVALID" *)
+output wire M06_AXI_wvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI WREADY" *)
+input wire M06_AXI_wready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI BRESP" *)
+input wire [1 : 0] M06_AXI_bresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI BVALID" *)
+input wire M06_AXI_bvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI BREADY" *)
+output wire M06_AXI_bready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI ARADDR" *)
+output wire [8 : 0] M06_AXI_araddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI ARPROT" *)
+output wire [2 : 0] M06_AXI_arprot;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI ARVALID" *)
+output wire M06_AXI_arvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI ARREADY" *)
+input wire M06_AXI_arready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI RDATA" *)
+input wire [31 : 0] M06_AXI_rdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI RRESP" *)
+input wire [1 : 0] M06_AXI_rresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI RVALID" *)
+input wire M06_AXI_rvalid;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M06_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_T\
+HREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M06_AXI RREADY" *)
+output wire M06_AXI_rready;
 
   bd_919a inst (
     .aclk(aclk),
@@ -690,6 +749,25 @@ output wire M05_AXI_rready;
     .M05_AXI_rdata(M05_AXI_rdata),
     .M05_AXI_rresp(M05_AXI_rresp),
     .M05_AXI_rvalid(M05_AXI_rvalid),
-    .M05_AXI_rready(M05_AXI_rready)
+    .M05_AXI_rready(M05_AXI_rready),
+    .M06_AXI_awaddr(M06_AXI_awaddr),
+    .M06_AXI_awprot(M06_AXI_awprot),
+    .M06_AXI_awvalid(M06_AXI_awvalid),
+    .M06_AXI_awready(M06_AXI_awready),
+    .M06_AXI_wdata(M06_AXI_wdata),
+    .M06_AXI_wstrb(M06_AXI_wstrb),
+    .M06_AXI_wvalid(M06_AXI_wvalid),
+    .M06_AXI_wready(M06_AXI_wready),
+    .M06_AXI_bresp(M06_AXI_bresp),
+    .M06_AXI_bvalid(M06_AXI_bvalid),
+    .M06_AXI_bready(M06_AXI_bready),
+    .M06_AXI_araddr(M06_AXI_araddr),
+    .M06_AXI_arprot(M06_AXI_arprot),
+    .M06_AXI_arvalid(M06_AXI_arvalid),
+    .M06_AXI_arready(M06_AXI_arready),
+    .M06_AXI_rdata(M06_AXI_rdata),
+    .M06_AXI_rresp(M06_AXI_rresp),
+    .M06_AXI_rvalid(M06_AXI_rvalid),
+    .M06_AXI_rready(M06_AXI_rready)
   );
 endmodule

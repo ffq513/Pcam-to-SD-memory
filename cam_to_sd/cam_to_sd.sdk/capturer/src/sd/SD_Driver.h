@@ -15,35 +15,32 @@
 
 #include <string>
 
+#define CONFIG_DATA_AMOUNT 2
+
 class SD_Driver {
 
 private:
-	std::string base_file_name;
-	std::string file_ext;
-	int file_counter;
+	u32 *file_counter;
 	FATFS fatfs;
+	const std::string CONFIG_FILE_NAME = "config.txt";
+	const std::string FILE_EXT = ".bin";
+	const std::string BASE_FILE_NAME = "cap";
 
 	int SD_Init();
 	void get_error_msg(FRESULT rc);
+	void set_counter();
+	void update_counter();
 
 public:
 	SD_Driver();
 	virtual ~SD_Driver() { }
-	void set_base_file_name(std::string new_bfn) { base_file_name = new_bfn; }
-	void set_file_ext(std::string new_ext) { file_ext = new_ext; }
-	std::string get_base_file_name() { return base_file_name; }
-	std::string get_file_ext() { return file_ext; }
 	int SD_Transfer_read(char *FileName,u32 DestinationAddress,u32 ByteLength);
 	int SD_Transfer_write(u32 SourceAddress,u32 ByteLength);
+	int SD_Transfer_write(char *FileName, u32 SourceAddress,u32 ByteLength);
+	int get_resolution();
 };
 
-SD_Driver::SD_Driver()
-{
-	base_file_name = "img";
-	file_ext = ".bin";
-	file_counter = 0;
-	SD_Init();
-}
+SD_Driver::SD_Driver(){	SD_Init(); }
 
 int SD_Driver::SD_Init()
 {
@@ -55,7 +52,20 @@ int SD_Driver::SD_Init()
         get_error_msg(rc);
         return XST_FAILURE;
     }
+    file_counter = new u32[2];
+    set_counter();
     return XST_SUCCESS;
+}
+
+void SD_Driver::set_counter() {
+	char *FileName = (char*) CONFIG_FILE_NAME.c_str();
+	if (SD_Transfer_read(FileName, (u32)file_counter, (u32)1) == XST_FAILURE){
+		xil_printf("Creando archivo de configuración ... \n");
+		file_counter[0] = 0;
+		file_counter[1] = 0; //Por defecto en 720p
+		SD_Transfer_write(FileName, (u32)file_counter, (u32)CONFIG_DATA_AMOUNT);
+		xil_printf("%d",CONFIG_DATA_AMOUNT);
+	}
 }
 
 void SD_Driver::get_error_msg (FRESULT rc)
@@ -66,43 +76,63 @@ void SD_Driver::get_error_msg (FRESULT rc)
 	{
 		case 1:
 			msg += "A hard error occurred in the low level disk I/O layer";
+			break;
 		case 2:
 			msg += "Assertion failed";
+			break;
 		case 3:
 			msg += "The physical drive cannot work";
+			break;
 		case 4:
 			msg += "Could not find the file";
+			break;
 		case 5:
 			msg += "Could not find the path";
+			break;
 		case 6:
 			msg += "The path name format is invalid";
+			break;
 		case 7:
 			msg += "Access denied due to prohibited access or directory full";
+			break;
 		case 8:
 			msg += "Access denied due to prohibited access";
+			break;
 		case 9:
 			msg += "The file/directory object is invalid";
+			break;
 		case 10:
 			msg += "The physical drive is write protected";
+			break;
 		case 11:
 			msg += "The logical drive number is invalid";
+			break;
 		case 12:
 			msg += "The volume has no work area";
+			break;
 		case 13:
 			msg += "There is no valid FAT volume";
+			break;
 		case 14:
 			msg += "The f_mkfs() aborted due to any problem";
+			break;
 		case 15:
 			msg += "Could not get a grant to access the volume within defined period";
+			break;
 		case 16:
 			msg += "The operation is rejected according to the file sharing policy";
+			break;
 		case 17:
 			msg += "LFN working buffer could not be allocated";
+			break;
 		case 18:
 			msg += "Number of open files > FF_FS_LOCK";
+			break;
 		case 19:
 			msg += "Given parameter is invalid";
+			break;
 	}
+	msg += "\n";
 	char * cstr = new char [msg.length()+1];
 	std::strcpy (cstr, msg.c_str());
 	xil_printf(cstr);
@@ -141,14 +171,11 @@ int SD_Driver::SD_Transfer_read(char *FileName, u32 DestinationAddress,u32 ByteL
     return XST_SUCCESS;
 }
 
-int SD_Driver::SD_Transfer_write(u32 SourceAddress,u32 ByteLength)
+int SD_Driver::SD_Transfer_write(char *FileName, u32 SourceAddress,u32 ByteLength)
 {
     FIL fil;
     FRESULT rc;
     UINT bw;
-    std::string file_name = base_file_name + std::to_string(file_counter) + file_ext;
-    file_counter++;
-    char *FileName = (char*) file_name.c_str();
 
     rc = f_open(&fil,FileName,FA_CREATE_ALWAYS | FA_WRITE);
     if(rc)
@@ -175,5 +202,21 @@ int SD_Driver::SD_Transfer_write(u32 SourceAddress,u32 ByteLength)
     }
     return XST_SUCCESS;
 }
+
+int SD_Driver::SD_Transfer_write(u32 SourceAddress,u32 ByteLength)
+{
+	std::string file_name = BASE_FILE_NAME + std::to_string(file_counter[0]) + FILE_EXT;
+	file_counter[0]++;
+    char *FileName = (char*) file_name.c_str();
+    update_counter();
+    return SD_Transfer_write(FileName, SourceAddress, ByteLength);
+}
+
+void SD_Driver::update_counter(){
+	char *FileName = (char*) CONFIG_FILE_NAME.c_str();
+	SD_Transfer_write(FileName, (u32)file_counter, (u32)CONFIG_DATA_AMOUNT);
+}
+
+int SD_Driver::get_resolution() { return file_counter[1]; }
 
 #endif /* SRC_SD_SDDRIVER_H_ */

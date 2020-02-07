@@ -6,7 +6,7 @@
 # Pixel clock tree underconstrained to 120 MHz to avoid pulse width errors on BUFIO/BUFR/OSERDESE2
 # The MMCM outputs 5x this frequency for DVI serial clock, and is divided back by a BUFR.
 # Period = 1/(5*120MHz) = 1.667 ns
-create_clock -period 1.667 -name video_dynclk [get_pins -regexp .*video_dynclk/.*/mmcm_adv_inst/CLKOUT0 -hierarchical]
+#create_clock -period 1.667 -name video_dynclk [get_pins -regexp .*video_dynclk/.*/mmcm_adv_inst/CLKOUT0 -hierarchical]
 # Uncomment below to disable underconstraining and live with the Pulse Width errors (line with BUFR clock further down needs to be commented)
 #create_clock -period 1.347 -name video_dynclk [get_pins -regexp .*video_dynclk/.*/mmcm_adv_inst/CLKOUT0 -hierarchical]
 

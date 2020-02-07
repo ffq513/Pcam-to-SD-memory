@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2020 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -208,7 +208,26 @@ ENTITY system_smartconnect_0_0 IS
     M05_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     M05_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
     M05_AXI_rvalid : IN STD_LOGIC;
-    M05_AXI_rready : OUT STD_LOGIC
+    M05_AXI_rready : OUT STD_LOGIC;
+    M06_AXI_awaddr : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
+    M06_AXI_awprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    M06_AXI_awvalid : OUT STD_LOGIC;
+    M06_AXI_awready : IN STD_LOGIC;
+    M06_AXI_wdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    M06_AXI_wstrb : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    M06_AXI_wvalid : OUT STD_LOGIC;
+    M06_AXI_wready : IN STD_LOGIC;
+    M06_AXI_bresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    M06_AXI_bvalid : IN STD_LOGIC;
+    M06_AXI_bready : OUT STD_LOGIC;
+    M06_AXI_araddr : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
+    M06_AXI_arprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    M06_AXI_arvalid : OUT STD_LOGIC;
+    M06_AXI_arready : IN STD_LOGIC;
+    M06_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    M06_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    M06_AXI_rvalid : IN STD_LOGIC;
+    M06_AXI_rready : OUT STD_LOGIC
   );
 END system_smartconnect_0_0;
 
@@ -370,11 +389,51 @@ ARCHITECTURE system_smartconnect_0_0_arch OF system_smartconnect_0_0 IS
       M05_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       M05_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
       M05_AXI_rvalid : IN STD_LOGIC;
-      M05_AXI_rready : OUT STD_LOGIC
+      M05_AXI_rready : OUT STD_LOGIC;
+      M06_AXI_awaddr : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
+      M06_AXI_awprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M06_AXI_awvalid : OUT STD_LOGIC;
+      M06_AXI_awready : IN STD_LOGIC;
+      M06_AXI_wdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      M06_AXI_wstrb : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      M06_AXI_wvalid : OUT STD_LOGIC;
+      M06_AXI_wready : IN STD_LOGIC;
+      M06_AXI_bresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+      M06_AXI_bvalid : IN STD_LOGIC;
+      M06_AXI_bready : OUT STD_LOGIC;
+      M06_AXI_araddr : OUT STD_LOGIC_VECTOR(8 DOWNTO 0);
+      M06_AXI_arprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      M06_AXI_arvalid : OUT STD_LOGIC;
+      M06_AXI_arready : IN STD_LOGIC;
+      M06_AXI_rdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      M06_AXI_rresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+      M06_AXI_rvalid : IN STD_LOGIC;
+      M06_AXI_rready : OUT STD_LOGIC
     );
   END COMPONENT bd_919a;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI RREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI RVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_rresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI RRESP";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_rdata: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI RDATA";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_arready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI ARREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_arvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI ARVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_arprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI ARPROT";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_araddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI ARADDR";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_bready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI BREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_bvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI BVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_bresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI BRESP";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_wready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI WREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_wvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI WVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_wstrb: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI WSTRB";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_wdata: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI WDATA";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_awready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI AWREADY";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_awvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI AWVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_awprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI AWPROT";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF M06_AXI_awaddr: SIGNAL IS "XIL_INTERFACENAME M06_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_T" & 
+"HREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0";
+  ATTRIBUTE X_INTERFACE_INFO OF M06_AXI_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 M06_AXI AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF M05_AXI_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M05_AXI RREADY";
   ATTRIBUTE X_INTERFACE_INFO OF M05_AXI_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M05_AXI RVALID";
   ATTRIBUTE X_INTERFACE_INFO OF M05_AXI_rresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 M05_AXI RRESP";
@@ -543,7 +602,7 @@ ARCHITECTURE system_smartconnect_0_0_arch OF system_smartconnect_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF S00_AXI_awid: SIGNAL IS "xilinx.com:interface:aximm:1.0 S00_AXI AWID";
   ATTRIBUTE X_INTERFACE_PARAMETER OF aresetn: SIGNAL IS "XIL_INTERFACENAME RST.aresetn, POLARITY ACTIVE_LOW";
   ATTRIBUTE X_INTERFACE_INFO OF aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 RST.aresetn RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME CLK.aclk, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, ASSOCIATED_BUSIF M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI:S00_AXI, ASSOCIATED_CLKEN s_sc_aclken";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME CLK.aclk, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN system_clk_wiz_0_0_clk_out1, ASSOCIATED_BUSIF M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI:M06_AXI:S00_AXI, ASSOCIATED_CLKEN s_sc_aclken";
   ATTRIBUTE X_INTERFACE_INFO OF aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 CLK.aclk CLK";
 BEGIN
   U0 : bd_919a
@@ -701,6 +760,25 @@ BEGIN
       M05_AXI_rdata => M05_AXI_rdata,
       M05_AXI_rresp => M05_AXI_rresp,
       M05_AXI_rvalid => M05_AXI_rvalid,
-      M05_AXI_rready => M05_AXI_rready
+      M05_AXI_rready => M05_AXI_rready,
+      M06_AXI_awaddr => M06_AXI_awaddr,
+      M06_AXI_awprot => M06_AXI_awprot,
+      M06_AXI_awvalid => M06_AXI_awvalid,
+      M06_AXI_awready => M06_AXI_awready,
+      M06_AXI_wdata => M06_AXI_wdata,
+      M06_AXI_wstrb => M06_AXI_wstrb,
+      M06_AXI_wvalid => M06_AXI_wvalid,
+      M06_AXI_wready => M06_AXI_wready,
+      M06_AXI_bresp => M06_AXI_bresp,
+      M06_AXI_bvalid => M06_AXI_bvalid,
+      M06_AXI_bready => M06_AXI_bready,
+      M06_AXI_araddr => M06_AXI_araddr,
+      M06_AXI_arprot => M06_AXI_arprot,
+      M06_AXI_arvalid => M06_AXI_arvalid,
+      M06_AXI_arready => M06_AXI_arready,
+      M06_AXI_rdata => M06_AXI_rdata,
+      M06_AXI_rresp => M06_AXI_rresp,
+      M06_AXI_rvalid => M06_AXI_rvalid,
+      M06_AXI_rready => M06_AXI_rready
     );
 END system_smartconnect_0_0_arch;
