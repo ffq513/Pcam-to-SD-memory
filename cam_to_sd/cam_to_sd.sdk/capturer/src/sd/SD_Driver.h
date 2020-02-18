@@ -15,12 +15,12 @@
 
 #include <string>
 
-#define CONFIG_DATA_AMOUNT 2
+#define CONFIG_DATA_AMOUNT 4
 
 class SD_Driver {
 
 private:
-	u32 *file_counter;
+	u32 *config_buffer; //File counter, resolution, white balance and gamma correction
 	FATFS fatfs;
 	const std::string CONFIG_FILE_NAME = "config.txt";
 	const std::string FILE_EXT = ".bin";
@@ -37,7 +37,8 @@ public:
 	int SD_Transfer_read(char *FileName,u32 DestinationAddress,u32 ByteLength);
 	int SD_Transfer_write(u32 SourceAddress,u32 ByteLength);
 	int SD_Transfer_write(char *FileName, u32 SourceAddress,u32 ByteLength);
-	int get_resolution();
+	int* get_config();
+
 };
 
 SD_Driver::SD_Driver(){	SD_Init(); }
@@ -52,18 +53,18 @@ int SD_Driver::SD_Init()
         get_error_msg(rc);
         return XST_FAILURE;
     }
-    file_counter = new u32[2];
+    config_buffer = new u32[CONFIG_DATA_AMOUNT];
     set_counter();
     return XST_SUCCESS;
 }
 
 void SD_Driver::set_counter() {
 	char *FileName = (char*) CONFIG_FILE_NAME.c_str();
-	if (SD_Transfer_read(FileName, (u32)file_counter, (u32)1) == XST_FAILURE){
+	if (SD_Transfer_read(FileName, (u32)config_buffer, (u32)1) == XST_FAILURE){
 		xil_printf("Creando archivo de configuración ... \n");
-		file_counter[0] = 0;
-		file_counter[1] = 0; //Por defecto en 720p
-		SD_Transfer_write(FileName, (u32)file_counter, (u32)CONFIG_DATA_AMOUNT);
+		for (int i = 0; i < CONFIG_DATA_AMOUNT; i++)
+			config_buffer[i] = 0; // Por defecto todo 0
+		SD_Transfer_write(FileName, (u32)config_buffer, (u32)CONFIG_DATA_AMOUNT);
 		xil_printf("%d",CONFIG_DATA_AMOUNT);
 	}
 }
@@ -205,8 +206,8 @@ int SD_Driver::SD_Transfer_write(char *FileName, u32 SourceAddress,u32 ByteLengt
 
 int SD_Driver::SD_Transfer_write(u32 SourceAddress,u32 ByteLength)
 {
-	std::string file_name = BASE_FILE_NAME + std::to_string(file_counter[0]) + FILE_EXT;
-	file_counter[0]++;
+	std::string file_name = BASE_FILE_NAME + std::to_string(config_buffer[0]) + FILE_EXT;
+	config_buffer[0]++;
     char *FileName = (char*) file_name.c_str();
     update_counter();
     return SD_Transfer_write(FileName, SourceAddress, ByteLength);
@@ -214,9 +215,15 @@ int SD_Driver::SD_Transfer_write(u32 SourceAddress,u32 ByteLength)
 
 void SD_Driver::update_counter(){
 	char *FileName = (char*) CONFIG_FILE_NAME.c_str();
-	SD_Transfer_write(FileName, (u32)file_counter, (u32)CONFIG_DATA_AMOUNT);
+	SD_Transfer_write(FileName, (u32)config_buffer, (u32)CONFIG_DATA_AMOUNT);
 }
 
-int SD_Driver::get_resolution() { return file_counter[1]; }
+int* SD_Driver::get_config() {
+	int *tmp;
+	tmp = new int[CONFIG_DATA_AMOUNT];
+	for (int i = 1; i < CONFIG_DATA_AMOUNT; i++)
+		tmp[i-1] = config_buffer[i];
+	return tmp;
+}
 
 #endif /* SRC_SD_SDDRIVER_H_ */

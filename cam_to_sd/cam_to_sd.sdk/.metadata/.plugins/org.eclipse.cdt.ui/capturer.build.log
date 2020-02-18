@@ -1,8 +1,8 @@
-16:33:19 **** Incremental Build of configuration Debug for project capturer ****
+09:24:26 **** Auto Build of configuration Debug for project capturer ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: No se hace nada para `main-build'.
 
-16:33:20 Build Finished (took 554ms)
+09:24:26 Build Finished (took 417ms)
 

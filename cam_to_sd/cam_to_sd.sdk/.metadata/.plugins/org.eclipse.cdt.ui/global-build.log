@@ -2338,3 +2338,448 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: No se hace nada para `main-build'.
+08:49:09 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:9:0:
+../src/sd/SD_Driver.h:40:5: error: expected unqualified-id before '[' token
+  int[] get_config();
+     ^
+../src/sd/SD_Driver.h:220:4: warning: decomposition declaration only available with -std=c++1z or -std=gnu++1z
+ int[] SD_Driver::get_config() {
+    ^
+../src/sd/SD_Driver.h:220:4: error: decomposition declaration cannot be declared with type 'int'
+ int[] SD_Driver::get_config() {
+    ^~
+../src/sd/SD_Driver.h:220:4: note: type must be cv-qualified 'auto' or reference to cv-qualified 'auto'
+../src/sd/SD_Driver.h:220:4: error: empty decomposition declaration
+../src/sd/SD_Driver.h:220:7: error: expected initializer before 'SD_Driver'
+ int[] SD_Driver::get_config() {
+       ^~~~~~~~~
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:105:15: error: 'class SD_Driver' has no member named 'get_resolution'
+  if (sd_store.get_resolution() == 0)
+               ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:50:38 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:9:0:
+../src/sd/SD_Driver.h:221:4: warning: decomposition declaration only available with -std=c++1z or -std=gnu++1z
+ int[] SD_Driver::get_config() {
+    ^
+../src/sd/SD_Driver.h:221:4: error: decomposition declaration cannot be declared with type 'int'
+ int[] SD_Driver::get_config() {
+    ^~
+../src/sd/SD_Driver.h:221:4: note: type must be cv-qualified 'auto' or reference to cv-qualified 'auto'
+../src/sd/SD_Driver.h:221:4: error: empty decomposition declaration
+../src/sd/SD_Driver.h:221:7: error: expected initializer before 'SD_Driver'
+ int[] SD_Driver::get_config() {
+       ^~~~~~~~~
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:105:15: error: 'class SD_Driver' has no member named 'get_resolution'
+  if (sd_store.get_resolution() == 0)
+               ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:50:44 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:9:0:
+../src/sd/SD_Driver.h: In member function 'int* SD_Driver::get_config()':
+../src/sd/SD_Driver.h:222:2: error: 'tmp' was not declared in this scope
+  tmp = new int[CONFIG_DATA_AMOUNT];
+  ^~~
+../src/sd/SD_Driver.h:222:2: note: suggested alternative: 'tm'
+  tmp = new int[CONFIG_DATA_AMOUNT];
+  ^~~
+  tm
+../src/sd/SD_Driver.h:225:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h: At global scope:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:105:15: error: 'class SD_Driver' has no member named 'get_resolution'
+  if (sd_store.get_resolution() == 0)
+               ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:51:09 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:9:0:
+../src/sd/SD_Driver.h: In member function 'int* SD_Driver::get_config()':
+../src/sd/SD_Driver.h:222:7: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+  int* tmp;
+       ^~~
+../src/sd/SD_Driver.h:226:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h: At global scope:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:105:15: error: 'class SD_Driver' has no member named 'get_resolution'
+  if (sd_store.get_resolution() == 0)
+               ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:51:18 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:9:0:
+../src/sd/SD_Driver.h: In member function 'int* SD_Driver::get_config()':
+../src/sd/SD_Driver.h:222:5: warning: decomposition declaration only available with -std=c++1z or -std=gnu++1z
+  int[] tmp;
+     ^
+../src/sd/SD_Driver.h:222:5: error: decomposition declaration cannot be declared with type 'int'
+  int[] tmp;
+     ^~
+../src/sd/SD_Driver.h:222:5: note: type must be cv-qualified 'auto' or reference to cv-qualified 'auto'
+../src/sd/SD_Driver.h:222:5: error: empty decomposition declaration
+../src/sd/SD_Driver.h:222:8: error: expected initializer before 'tmp'
+  int[] tmp;
+        ^~~
+../src/sd/SD_Driver.h:223:2: error: 'tmp' was not declared in this scope
+  tmp = new int[CONFIG_DATA_AMOUNT];
+  ^~~
+../src/sd/SD_Driver.h:223:2: note: suggested alternative: 'tm'
+  tmp = new int[CONFIG_DATA_AMOUNT];
+  ^~~
+  tm
+../src/sd/SD_Driver.h:226:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h: At global scope:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:105:15: error: 'class SD_Driver' has no member named 'get_resolution'
+  if (sd_store.get_resolution() == 0)
+               ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:51:37 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:9:0:
+../src/sd/SD_Driver.h: In member function 'int* SD_Driver::get_config()':
+../src/sd/SD_Driver.h:222:7: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+  int *tmp;
+       ^~~
+../src/sd/SD_Driver.h:226:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h: At global scope:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:105:15: error: 'class SD_Driver' has no member named 'get_resolution'
+  if (sd_store.get_resolution() == 0)
+               ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:53:16 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:9:0:
+../src/sd/SD_Driver.h: In member function 'int* SD_Driver::get_config()':
+../src/sd/SD_Driver.h:224:46: error: expected primary-expression before '}' token
+  for (int i = 1; i < CONFIG_DATA_AMOUNT; i++)}
+                                              ^
+../src/sd/SD_Driver.h:224:46: warning: no return statement in function returning non-void [-Wreturn-type]
+../src/sd/SD_Driver.h: At global scope:
+../src/sd/SD_Driver.h:225:3: error: 'tmp' does not name a type; did you mean 'tm'?
+   tmp[i-1] = file_counter[i];
+   ^~~
+   tm
+../src/sd/SD_Driver.h:226:2: error: expected unqualified-id before 'return'
+  return tmp;
+  ^~~~~~
+../src/sd/SD_Driver.h:227:1: error: expected declaration before '}' token
+ }
+ ^
+make: *** [src/main.o] Error 1
+08:53:35 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:105:15: error: 'class SD_Driver' has no member named 'get_resolution'
+  if (sd_store.get_resolution() == 0)
+               ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:54:23 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:105:15: error: 'class SD_Driver' has no member named 'get_resolution'
+  if (sd_store.get_resolution() == 0)
+               ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:54:48 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:105:15: error: 'class SD_Driver' has no member named 'get_resolution'
+  if (sd_store.get_resolution() == 0)
+               ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+08:57:55 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:111:3: error: 'default_white_balance' was not declared in this scope
+   default_white_balance = config[1];
+   ^~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:113:3: error: 'default_white_balance' was not declared in this scope
+   default_white_balance = 1;
+   ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+09:01:01 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:106:6: warning: variable 'default_gamma_correction' set but not used [-Wunused-but-set-variable]
+  int default_gamma_correction;
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:107:6: warning: variable 'default_white_balance' set but not used [-Wunused-but-set-variable]
+  int default_white_balance;
+      ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: capturer.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../capturer_bsp/ps7_cortexa9_0/lib -o "capturer.elf"  ./src/platform/platform.o  ./src/ov5640/OV5640.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: capturer.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size capturer.elf  |tee "capturer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 866714	   4696	20495008	21366418	1460692	capturer.elf
+'Finished building: capturer.elf.size'
+' '
+09:01:26 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: capturer.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../capturer_bsp/ps7_cortexa9_0/lib -o "capturer.elf"  ./src/platform/platform.o  ./src/ov5640/OV5640.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: capturer.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size capturer.elf  |tee "capturer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 866778	   4696	20495008	21366482	14606d2	capturer.elf
+'Finished building: capturer.elf.size'
+' '
+09:01:50 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'void pipeline_mode_change(digilent::AXI_VDMA<digilent::ScuGicInterruptController>&, digilent::OV5640&, digilent::VideoOutput&, digilent::Resolution, digilent::OV5640_cfg::mode_t)':
+../src/main.cc:79:36: error: invalid conversion from 'int' to 'digilent::OV5640_cfg::awb_t {aka digilent::OV5640_cfg::<unnamed enum>}' [-fpermissive]
+   cam.set_awb(default_white_balance);
+                                    ^
+In file included from ../src/main.cc:4:0:
+../src/ov5640/OV5640.h:741:7: note:   initializing argument 1 of 'digilent::Errc digilent::OV5640::set_awb(digilent::OV5640_cfg::awb_t)'
+  Errc set_awb(OV5640_cfg::awb_t awb)
+       ^~~~~~~
+make: *** [src/main.o] Error 1
+09:05:58 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'void pipeline_mode_change(digilent::AXI_VDMA<digilent::ScuGicInterruptController>&, digilent::OV5640&, digilent::VideoOutput&, digilent::Resolution, digilent::OV5640_cfg::mode_t)':
+../src/main.cc:79:15: error: no matching function for call to 'digilent::OV5640::set_awb()'
+   cam.set_awb();
+               ^
+In file included from ../src/main.cc:4:0:
+../src/ov5640/OV5640.h:741:7: note: candidate: digilent::Errc digilent::OV5640::set_awb(digilent::OV5640_cfg::awb_t)
+  Errc set_awb(OV5640_cfg::awb_t awb)
+       ^~~~~~~
+../src/ov5640/OV5640.h:741:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/main.o] Error 1
+09:06:17 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/main.cc: In function 'void pipeline_mode_change(digilent::AXI_VDMA<digilent::ScuGicInterruptController>&, digilent::OV5640&, digilent::VideoOutput&, digilent::Resolution, digilent::OV5640_cfg::mode_t)':
+../src/main.cc:79:36: error: invalid conversion from 'int' to 'digilent::OV5640_cfg::awb_t {aka digilent::OV5640_cfg::<unnamed enum>}' [-fpermissive]
+   cam.set_awb(default_white_balance);
+                                    ^
+In file included from ../src/main.cc:4:0:
+../src/ov5640/OV5640.h:741:7: note:   initializing argument 1 of 'digilent::Errc digilent::OV5640::set_awb(digilent::OV5640_cfg::awb_t)'
+  Errc set_awb(OV5640_cfg::awb_t awb)
+       ^~~~~~~
+make: *** [src/main.o] Error 1
+09:07:19 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../capturer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:15:0:
+../../capturer_bsp/ps7_cortexa9_0/include/xtime_l.h:89:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: capturer.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../capturer_bsp/ps7_cortexa9_0/lib -o "capturer.elf"  ./src/platform/platform.o  ./src/ov5640/OV5640.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: capturer.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size capturer.elf  |tee "capturer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 866842	   4696	20495008	21366546	1460712	capturer.elf
+'Finished building: capturer.elf.size'
+' '
+09:09:23 **** Incremental Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:10:03 **** Incremental Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:20:13 **** Incremental Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:20:17 **** Incremental Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:20:58 **** Incremental Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:21:49 **** Incremental Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+09:24:26 **** Auto Build of configuration Debug for project capturer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.

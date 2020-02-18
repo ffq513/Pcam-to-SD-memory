@@ -51,6 +51,10 @@ struct Measurements {
 const int BUFF_SZ_1080p = 6220800; //1920x1080x3
 const int BUFF_SZ_720p = 2764800; //1280x720x3
 
+Resolution default_resolution;
+int default_gamma_correction;
+OV5640_cfg::awb_t default_white_balance;
+
 void pipeline_mode_change(AXI_VDMA<ScuGicInterruptController>& vdma_driver, OV5640& cam, VideoOutput& vid, Resolution res, OV5640_cfg::mode_t mode)
 {
 	vdma_driver.resetWrite();
@@ -63,7 +67,7 @@ void pipeline_mode_change(AXI_VDMA<ScuGicInterruptController>& vdma_driver, OV56
 
 	{
 		vdma_driver.configureWrite(timing[static_cast<int>(res)].h_active, timing[static_cast<int>(res)].v_active);
-		Xil_Out32(GAMMA_BASE_ADDR, 1); // Set Gamma correction factor from 1 to 5 (higher is more white)
+		Xil_Out32(GAMMA_BASE_ADDR, default_gamma_correction); // Set Gamma correction factor from 1 to 5 (higher is more white)
 		cam.init();
 	}
 
@@ -72,7 +76,7 @@ void pipeline_mode_change(AXI_VDMA<ScuGicInterruptController>& vdma_driver, OV56
 		MIPI_CSI_2_RX_mWriteReg(XPAR_MIPI_CSI_2_RX_0_S_AXI_LITE_BASEADDR, CR_OFFSET, CR_ENABLE_MASK);
 		MIPI_D_PHY_RX_mWriteReg(XPAR_MIPI_D_PHY_RX_0_S_AXI_LITE_BASEADDR, CR_OFFSET, CR_ENABLE_MASK);
 		cam.set_mode(mode);
-		cam.set_awb(OV5640_cfg::awb_t::AWB_DISABLED);
+		cam.set_awb(default_white_balance);
 		//cam.set_awb(OV5640_cfg::awb_t::AWB_SIMPLE);
 		//cam.set_awb(OV5640_cfg::awb_t::AWB_ADVANCED);
 	}
@@ -100,12 +104,26 @@ int main()
 
 	// Variables para captura
 	int b_sz = 0;
-	Resolution default_resolution;
 	SD_Driver sd_store;
-	if (sd_store.get_resolution() == 0)
+
+	int* config = sd_store.get_config();
+	if (config[0] == 0)
 		default_resolution = Resolution::R1280_720_60_PP;
 	else
 		default_resolution = Resolution::R1920_1080_60_PP;
+
+	if (config[1] == 0)
+		default_white_balance = OV5640_cfg::awb_t::AWB_DISABLED;
+	else if (config[1] == 1)
+		default_white_balance = OV5640_cfg::awb_t::AWB_SIMPLE;
+	else
+		default_white_balance = OV5640_cfg::awb_t::AWB_ADVANCED;
+
+	if (config[2] <= 5 && config[2] >= 1)
+		default_gamma_correction = config[2];
+	else
+		default_gamma_correction = 1; //No gamma correction
+
 
 	XGpioPs input, output;
 	XGpioPs_Config *ConfigPtr;

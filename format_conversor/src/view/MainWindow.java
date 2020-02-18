@@ -118,11 +118,11 @@ public class MainWindow {
 		comboBox = new Combo(shell, SWT.NONE);
 		comboBox.setItems(extensions);
 		FormData fd_comboBox = new FormData();
-		fd_comboBox.left = new FormAttachment(lblFiles, -152);
+		fd_comboBox.left = new FormAttachment(lblFiles, 0, SWT.LEFT);
 		fd_comboBox.top = new FormAttachment(btnConvert, 2, SWT.TOP);
 		fd_comboBox.right = new FormAttachment(lblFiles, 0, SWT.RIGHT);
 		comboBox.setLayoutData(fd_comboBox);
-		comboBox.setText("png by default");
+		comboBox.setText("png");
 	}
 
 	/*
