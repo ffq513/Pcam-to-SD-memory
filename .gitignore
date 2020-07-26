@@ -1,0 +1,41 @@
+################# JAVA PROJECT #################
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+################# VIVADO PROJECT #################
+
+/cam_to_sd/cam_to_sd.runs/
+/cam_to_sd/cam_to_sd.cache/
+/cam_to_sd/cam_to_sd.sdk/webtalk/
+/cam_to_sd/cam_to_sd.sdk/.metadata/
+/cam_to_sd/cam_to_sd.sdk/.sdk/
+/cam_to_sd/cam_to_sd.sdk/RemoteSystemsTempFiles/
+/cam_to_sd/cam_to_sd.sdk/system_wrapper_hw_platform_0/
+/cam_to_sd/cam_to_sd.sdk/capturer_bsp/ps7_cortexa9_0/
+/cam_to_sd/cam_to_sd.sdk/fsbl/Debug/
+/cam_to_sd/cam_to_sd.sdk/capturer/Debug/
+//cam_to_sd/cam_to_sd.sdk/**/*.o
+//cam_to_sd/cam_to_sd.sdk/**/*.d
+//cam_to_sd/cam_to_sd.sdk/**/*.a
+
+# Journal files, log files, dump files #
+*.jou
+*.log
+*.backup.jou
+*.backup.log
+*.upgrade_log
+*.dmp
+vivado_pid*
+*~

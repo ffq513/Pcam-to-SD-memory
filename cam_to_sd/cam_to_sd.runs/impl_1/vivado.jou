@@ -2,11 +2,11 @@
 # Vivado v2018.2.2 (64-bit)
 # SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
 # IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Tue Feb  4 17:51:26 2020
-# Process ID: 15156
-# Current directory: C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/impl_1
+# Start of session at: Sun Jul 26 11:59:54 2020
+# Process ID: 17740
+# Current directory: D:/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/impl_1
 # Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
-# Log file: C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/impl_1/system_wrapper.vdi
-# Journal file: C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/impl_1\vivado.jou
+# Log file: D:/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/impl_1/system_wrapper.vdi
+# Journal file: D:/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source system_wrapper.tcl -notrace

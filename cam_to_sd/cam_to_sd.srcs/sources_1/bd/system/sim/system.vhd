@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
---Date        : Tue Feb  4 17:42:08 2020
+--Date        : Thu Feb 20 11:14:40 2020
 --Host        : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -1091,6 +1091,9 @@ architecture STRUCTURE of system is
     I2C0_SCL_I : in STD_LOGIC;
     I2C0_SCL_O : out STD_LOGIC;
     I2C0_SCL_T : out STD_LOGIC;
+    USB0_PORT_INDCTL : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    USB0_VBUS_PWRSELECT : out STD_LOGIC;
+    USB0_VBUS_PWRFAULT : in STD_LOGIC;
     M_AXI_GP0_ARVALID : out STD_LOGIC;
     M_AXI_GP0_AWVALID : out STD_LOGIC;
     M_AXI_GP0_BREADY : out STD_LOGIC;
@@ -1883,6 +1886,7 @@ architecture STRUCTURE of system is
   signal NLW_processing_system7_0_S_AXI_HP2_ARREADY_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_S_AXI_HP2_RLAST_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_S_AXI_HP2_RVALID_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_S_AXI_HP0_BID_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP0_BRESP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP0_RACOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -1898,6 +1902,7 @@ architecture STRUCTURE of system is
   signal NLW_processing_system7_0_S_AXI_HP2_RRESP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP2_WACOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_processing_system7_0_S_AXI_HP2_WCOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_clk_wiz_0_50M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_clk_wiz_0_50M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_vid_clk_dyn_mb_reset_UNCONNECTED : STD_LOGIC;
@@ -2505,7 +2510,10 @@ processing_system7_0: component system_processing_system7_0_0
       S_AXI_HP2_WREADY => axi_mem_intercon_1_M00_AXI_WREADY,
       S_AXI_HP2_WRISSUECAP1_EN => '0',
       S_AXI_HP2_WSTRB(7 downto 0) => axi_mem_intercon_1_M00_AXI_WSTRB(7 downto 0),
-      S_AXI_HP2_WVALID => axi_mem_intercon_1_M00_AXI_WVALID
+      S_AXI_HP2_WVALID => axi_mem_intercon_1_M00_AXI_WVALID,
+      USB0_PORT_INDCTL(1 downto 0) => NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED(1 downto 0),
+      USB0_VBUS_PWRFAULT => '0',
+      USB0_VBUS_PWRSELECT => NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED
     );
 rgb2dvi_0: component system_rgb2dvi_0_0
      port map (

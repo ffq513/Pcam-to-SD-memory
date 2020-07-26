@@ -79,7 +79,7 @@ public class MainWindow {
 	 */
 	protected void createContents() {
 		shell = new Shell(SWT.MIN | SWT.CLOSE | SWT.TITLE);
-		shell.setSize(332, 160);
+		shell.setSize(365, 160);
 		shell.setText("Conversor");
 		shell.setLayout(new FormLayout());
 
@@ -115,7 +115,7 @@ public class MainWindow {
 		btnSearch.setLayoutData(fd_btnSearch);
 		btnSearch.setText("Buscar");
 
-		comboBox = new Combo(shell, SWT.NONE);
+		comboBox = new Combo(shell, SWT.READ_ONLY);
 		comboBox.setItems(extensions);
 		FormData fd_comboBox = new FormData();
 		fd_comboBox.left = new FormAttachment(lblFiles, 0, SWT.LEFT);
@@ -195,7 +195,7 @@ public class MainWindow {
 	}
 
 	/*
-	 * This function ...
+	 * This function load files from a path
 	 * 
 	 * @param path
 	 */

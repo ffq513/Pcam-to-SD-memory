@@ -67,6 +67,9 @@ module system_processing_system7_0_0 (
   I2C0_SCL_I,
   I2C0_SCL_O,
   I2C0_SCL_T,
+  USB0_PORT_INDCTL,
+  USB0_VBUS_PWRSELECT,
+  USB0_VBUS_PWRFAULT,
   M_AXI_GP0_ARVALID,
   M_AXI_GP0_AWVALID,
   M_AXI_GP0_BREADY,
@@ -240,6 +243,12 @@ input wire I2C0_SCL_I;
 output wire I2C0_SCL_O;
 (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_0 SCL_T" *)
 output wire I2C0_SCL_T;
+(* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL" *)
+output wire [1 : 0] USB0_PORT_INDCTL;
+(* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT" *)
+output wire USB0_VBUS_PWRSELECT;
+(* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRFAULT" *)
+input wire USB0_VBUS_PWRFAULT;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARVALID" *)
 output wire M_AXI_GP0_ARVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWVALID" *)
@@ -780,9 +789,9 @@ inout wire PS_PORB;
     .TRACE_CLK_OUT(),
     .TRACE_CTL(),
     .TRACE_DATA(),
-    .USB0_PORT_INDCTL(),
-    .USB0_VBUS_PWRSELECT(),
-    .USB0_VBUS_PWRFAULT(1'B0),
+    .USB0_PORT_INDCTL(USB0_PORT_INDCTL),
+    .USB0_VBUS_PWRSELECT(USB0_VBUS_PWRSELECT),
+    .USB0_VBUS_PWRFAULT(USB0_VBUS_PWRFAULT),
     .USB1_PORT_INDCTL(),
     .USB1_VBUS_PWRSELECT(),
     .USB1_VBUS_PWRFAULT(1'B0),

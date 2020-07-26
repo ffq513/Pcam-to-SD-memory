@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
-| Date             : Tue Feb  4 17:59:36 2020
+| Date             : Thu Feb 20 11:23:53 2020
 | Host             : LAPTOP-OEOHUQ1P running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.035        |
+| Total On-Chip Power (W)  | 2.036        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.878        |
+| Dynamic (W)              | 1.879        |
 | Device Static (W)        | 0.157        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 61.5         |
@@ -65,9 +65,9 @@ Table of Contents
 | Block RAM                |     0.020 |       28 |       140 |           20.00 |
 | MMCM                     |     0.192 |        2 |         4 |           50.00 |
 | I/O                      |     0.088 |       23 |       125 |           18.40 |
-| PS7                      |     1.416 |        1 |       --- |             --- |
+| PS7                      |     1.417 |        1 |       --- |             --- |
 | Static Power             |     0.157 |          |           |                 |
-| Total                    |     2.035 |          |           |                 |
+| Total                    |     2.036 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -163,7 +163,7 @@ Table of Contents
 +-------------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                  | Power (W) |
 +-------------------------------------------------------------------------------------------------------+-----------+
-| system_wrapper                                                                                        |     1.878 |
+| system_wrapper                                                                                        |     1.879 |
 |   cam_gpio_tri_iobuf_0                                                                                |     0.006 |
 |   cam_iic_scl_iobuf                                                                                   |     0.006 |
 |   cam_iic_sda_iobuf                                                                                   |     0.006 |
@@ -253,7 +253,7 @@ Table of Contents
 |           U_SYNC                                                                                      |    <0.001 |
 |         SWITCH_N_EXT_BSCAN.bscan_inst                                                                 |    <0.001 |
 |         SWITCH_N_EXT_BSCAN.bscan_switch                                                               |    <0.001 |
-|   system_i                                                                                            |     1.858 |
+|   system_i                                                                                            |     1.859 |
 |     AXI_BayerToRGB_1                                                                                  |     0.002 |
 |       U0                                                                                              |     0.002 |
 |         LineBufferInst                                                                                |    <0.001 |
@@ -2759,8 +2759,8 @@ Table of Contents
 |             GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I                                                      |    <0.001 |
 |     clk_wiz_0                                                                                         |     0.087 |
 |       inst                                                                                            |     0.087 |
-|     processing_system7_0                                                                              |     1.417 |
-|       inst                                                                                            |     1.417 |
+|     processing_system7_0                                                                              |     1.418 |
+|       inst                                                                                            |     1.418 |
 |     rgb2dvi_0                                                                                         |     0.027 |
 |       U0                                                                                              |     0.027 |
 |         ClockSerializer                                                                               |     0.007 |

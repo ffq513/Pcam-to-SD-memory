@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/josen/Documents/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/synth_1'
+HD_PWD='D:/GitHub/Pcam_to_SD_Memory/cam_to_sd/cam_to_sd.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

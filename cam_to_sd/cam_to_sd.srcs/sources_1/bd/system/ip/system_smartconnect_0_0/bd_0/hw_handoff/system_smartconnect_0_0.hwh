@@ -1,57 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Feb  4 17:46:13 2020" VIVADOVERSION="2018.2.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Feb 20 11:15:23 2020" VIVADOVERSION="2018.2.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="bd_919a" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT CLKFREQUENCY="50000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m05_sc2axi" PORT="aclk"/>
-        <CONNECTION INSTANCE="m05_nodes_m05_ar_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m05_nodes_m05_aw_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m05_nodes_m05_w_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m05_nodes_m05_r_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m05_nodes_m05_b_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m05_exit_pipeline_m05_exit" PORT="aclk"/>
-        <CONNECTION INSTANCE="m04_sc2axi" PORT="aclk"/>
-        <CONNECTION INSTANCE="m04_nodes_m04_ar_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m04_nodes_m04_aw_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m04_nodes_m04_w_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m04_nodes_m04_r_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m04_nodes_m04_b_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m04_exit_pipeline_m04_exit" PORT="aclk"/>
-        <CONNECTION INSTANCE="m03_sc2axi" PORT="aclk"/>
-        <CONNECTION INSTANCE="m03_nodes_m03_ar_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m03_nodes_m03_aw_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m03_nodes_m03_w_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m03_nodes_m03_r_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m03_nodes_m03_b_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m03_exit_pipeline_m03_exit" PORT="aclk"/>
-        <CONNECTION INSTANCE="m02_sc2axi" PORT="aclk"/>
-        <CONNECTION INSTANCE="m02_nodes_m02_ar_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m02_nodes_m02_aw_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m02_nodes_m02_w_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m02_nodes_m02_r_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m02_nodes_m02_b_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m02_exit_pipeline_m02_exit" PORT="aclk"/>
-        <CONNECTION INSTANCE="m01_sc2axi" PORT="aclk"/>
-        <CONNECTION INSTANCE="m01_nodes_m01_ar_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m01_nodes_m01_aw_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m01_nodes_m01_w_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="m01_nodes_m01_r_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m01_nodes_m01_b_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="aclk"/>
-        <CONNECTION INSTANCE="m00_sc2axi" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_ar_la_out_swbd" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_aw_la_out_swbd" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_b_la_out_swbd" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_r_la_out_swbd" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_w_la_out_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="switchboards_i_nodes_i_aw_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="switchboards_i_nodes_i_w_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="switchboards_i_nodes_i_ar_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="switchboards_i_nodes_i_r_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="switchboards_i_nodes_i_b_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="switchboards_ar_la_in_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="switchboards_aw_la_in_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="switchboards_b_la_in_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="switchboards_r_la_in_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="switchboards_w_la_in_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="s00_entry_pipeline_s00_mmu" PORT="aclk"/>
+        <CONNECTION INSTANCE="s00_entry_pipeline_s00_si_converter" PORT="aclk"/>
+        <CONNECTION INSTANCE="s00_entry_pipeline_s00_transaction_regulator" PORT="aclk"/>
+        <CONNECTION INSTANCE="s00_axi2sc" PORT="aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_aw_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_w_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_b_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_aw_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_w_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="s00_nodes_s00_b_node" PORT="s_sc_aclk"/>
         <CONNECTION INSTANCE="switchboards_i_nodes_i_aw_node" PORT="m_sc_aclk"/>
         <CONNECTION INSTANCE="switchboards_i_nodes_i_ar_node" PORT="m_sc_aclk"/>
         <CONNECTION INSTANCE="switchboards_i_nodes_i_w_node" PORT="m_sc_aclk"/>
         <CONNECTION INSTANCE="switchboards_i_nodes_i_r_node" PORT="s_sc_aclk"/>
         <CONNECTION INSTANCE="switchboards_i_nodes_i_b_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="switchboards_ar_la_out_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="switchboards_aw_la_out_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="switchboards_b_la_out_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="switchboards_r_la_out_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="switchboards_w_la_out_swbd" PORT="aclk"/>
+        <CONNECTION INSTANCE="m00_sc2axi" PORT="aclk"/>
         <CONNECTION INSTANCE="m00_nodes_m00_ar_node" PORT="s_sc_aclk"/>
         <CONNECTION INSTANCE="m00_nodes_m00_aw_node" PORT="s_sc_aclk"/>
         <CONNECTION INSTANCE="m00_nodes_m00_w_node" PORT="s_sc_aclk"/>
@@ -88,30 +77,41 @@
         <CONNECTION INSTANCE="m05_nodes_m05_w_node" PORT="s_sc_aclk"/>
         <CONNECTION INSTANCE="m05_nodes_m05_r_node" PORT="m_sc_aclk"/>
         <CONNECTION INSTANCE="m05_nodes_m05_b_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_axi2sc" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_ar_la_in_swbd" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_aw_la_in_swbd" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_b_la_in_swbd" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_r_la_in_swbd" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_w_la_in_swbd" PORT="aclk"/>
-        <CONNECTION INSTANCE="switchboards_i_nodes_i_aw_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="switchboards_i_nodes_i_w_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="switchboards_i_nodes_i_ar_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="switchboards_i_nodes_i_r_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="switchboards_i_nodes_i_b_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_entry_pipeline_s00_mmu" PORT="aclk"/>
-        <CONNECTION INSTANCE="s00_entry_pipeline_s00_si_converter" PORT="aclk"/>
-        <CONNECTION INSTANCE="s00_entry_pipeline_s00_transaction_regulator" PORT="aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_aw_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_w_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_b_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_aw_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_w_node" PORT="m_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="s_sc_aclk"/>
-        <CONNECTION INSTANCE="s00_nodes_s00_b_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m01_sc2axi" PORT="aclk"/>
+        <CONNECTION INSTANCE="m01_nodes_m01_ar_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m01_nodes_m01_aw_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m01_nodes_m01_w_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m01_nodes_m01_r_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m01_nodes_m01_b_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="aclk"/>
+        <CONNECTION INSTANCE="m02_sc2axi" PORT="aclk"/>
+        <CONNECTION INSTANCE="m02_nodes_m02_ar_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m02_nodes_m02_aw_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m02_nodes_m02_w_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m02_nodes_m02_r_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m02_nodes_m02_b_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m02_exit_pipeline_m02_exit" PORT="aclk"/>
+        <CONNECTION INSTANCE="m03_sc2axi" PORT="aclk"/>
+        <CONNECTION INSTANCE="m03_nodes_m03_ar_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m03_nodes_m03_aw_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m03_nodes_m03_w_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m03_nodes_m03_r_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m03_nodes_m03_b_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m03_exit_pipeline_m03_exit" PORT="aclk"/>
+        <CONNECTION INSTANCE="m04_sc2axi" PORT="aclk"/>
+        <CONNECTION INSTANCE="m04_nodes_m04_ar_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m04_nodes_m04_aw_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m04_nodes_m04_w_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m04_nodes_m04_r_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m04_nodes_m04_b_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m04_exit_pipeline_m04_exit" PORT="aclk"/>
+        <CONNECTION INSTANCE="m05_sc2axi" PORT="aclk"/>
+        <CONNECTION INSTANCE="m05_nodes_m05_ar_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m05_nodes_m05_aw_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m05_nodes_m05_w_node" PORT="m_sc_aclk"/>
+        <CONNECTION INSTANCE="m05_nodes_m05_r_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m05_nodes_m05_b_node" PORT="s_sc_aclk"/>
+        <CONNECTION INSTANCE="m05_exit_pipeline_m05_exit" PORT="aclk"/>
         <CONNECTION INSTANCE="clk_map_psr_aclk" PORT="slowest_sync_clk"/>
       </CONNECTIONS>
     </PORT>
@@ -120,120 +120,25 @@
         <CONNECTION INSTANCE="clk_map_psr_aclk" PORT="aux_reset_in"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="10" NAME="M05_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M05_AXI_awprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M05_AXI_awvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M05_AXI_awready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="31" NAME="M05_AXI_wdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M05_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M05_AXI_wvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M05_AXI_wready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M05_AXI_bresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M05_AXI_bvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M05_AXI_bready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="10" NAME="M05_AXI_araddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M05_AXI_arprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M05_AXI_arvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M05_AXI_arready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="31" NAME="M05_AXI_rdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M05_AXI_rresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M05_AXI_rvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M05_AXI_rready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M04_AXI_awprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M04_AXI_awvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M04_AXI_awready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="31" NAME="M04_AXI_wdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M04_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M04_AXI_wvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M04_AXI_wready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M04_AXI_bresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M04_AXI_bvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M04_AXI_bready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M04_AXI_arprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M04_AXI_arvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M04_AXI_arready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="31" NAME="M04_AXI_rdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M04_AXI_rresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M04_AXI_rvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M04_AXI_rready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="8" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M03_AXI_awprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M03_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M03_AXI_bresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M03_AXI_bvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="8" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M03_AXI_arprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="31" NAME="M03_AXI_rdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M03_AXI_rresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M03_AXI_rvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="8" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M02_AXI_awprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M02_AXI_awvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M02_AXI_awready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M02_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M02_AXI_wvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M02_AXI_wready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M02_AXI_bvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M02_AXI_bready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="8" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M02_AXI_arprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M02_AXI_arvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M02_AXI_arready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M02_AXI_rvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M02_AXI_rready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M01_AXI_awprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M01_AXI_awvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M01_AXI_awready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M01_AXI_wvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M01_AXI_wready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M01_AXI_bvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M01_AXI_bready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M01_AXI_arprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M01_AXI_arvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M01_AXI_arready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M01_AXI_rvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M01_AXI_rready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M00_AXI_awprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M00_AXI_arprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="8" NAME="M06_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M06_AXI_awprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M06_AXI_awvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M06_AXI_awready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="M06_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M06_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M06_AXI_wvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M06_AXI_wready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M06_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M06_AXI_bvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M06_AXI_bready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="8" NAME="M06_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M06_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M06_AXI_arvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M06_AXI_arready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="M06_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M06_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M06_AXI_rvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M06_AXI_rready" SIGIS="undef"/>
     <PORT DIR="I" LEFT="11" NAME="S00_AXI_awid" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="I" LEFT="3" NAME="S00_AXI_awlen" RIGHT="0" SIGIS="undef"/>
@@ -272,25 +177,120 @@
     <PORT DIR="O" NAME="S00_AXI_rlast" SIGIS="undef"/>
     <PORT DIR="O" NAME="S00_AXI_rvalid" SIGIS="undef"/>
     <PORT DIR="I" NAME="S00_AXI_rready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="8" NAME="M06_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M06_AXI_awprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M06_AXI_awvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M06_AXI_awready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="31" NAME="M06_AXI_wdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="3" NAME="M06_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M06_AXI_wvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M06_AXI_wready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M06_AXI_bresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M06_AXI_bvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M06_AXI_bready" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="8" NAME="M06_AXI_araddr" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="2" NAME="M06_AXI_arprot" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M06_AXI_arvalid" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M06_AXI_arready" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="31" NAME="M06_AXI_rdata" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="1" NAME="M06_AXI_rresp" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" NAME="M06_AXI_rvalid" SIGIS="undef"/>
-    <PORT DIR="O" NAME="M06_AXI_rready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M00_AXI_awprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M00_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M01_AXI_awprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M01_AXI_awvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M01_AXI_awready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M01_AXI_wvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M01_AXI_wready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M01_AXI_bvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M01_AXI_bready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M01_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M01_AXI_arvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M01_AXI_arready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M01_AXI_rvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M01_AXI_rready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="8" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M02_AXI_awprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M02_AXI_awvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M02_AXI_awready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M02_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M02_AXI_wvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M02_AXI_wready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M02_AXI_bvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M02_AXI_bready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="8" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M02_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M02_AXI_arvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M02_AXI_arready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M02_AXI_rvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M02_AXI_rready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="8" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M03_AXI_awprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M03_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M03_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M03_AXI_bvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="8" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M03_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="M03_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M03_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M03_AXI_rvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M04_AXI_awprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M04_AXI_awvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M04_AXI_awready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="M04_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M04_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M04_AXI_wvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M04_AXI_wready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M04_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M04_AXI_bvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M04_AXI_bready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M04_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M04_AXI_arvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M04_AXI_arready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="M04_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M04_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M04_AXI_rvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M04_AXI_rready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="10" NAME="M05_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M05_AXI_awprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M05_AXI_awvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M05_AXI_awready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="M05_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="3" NAME="M05_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M05_AXI_wvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M05_AXI_wready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M05_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M05_AXI_bvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M05_AXI_bready" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="10" NAME="M05_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="M05_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M05_AXI_arvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M05_AXI_arready" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="M05_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="M05_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="M05_AXI_rvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="M05_AXI_rready" SIGIS="undef"/>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -801,36 +801,24 @@
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="clk_map_psr_aclk_interconnect_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="m05_nodes_m05_ar_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m05_nodes_m05_aw_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m05_nodes_m05_w_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m05_nodes_m05_r_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m05_nodes_m05_b_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m05_exit_pipeline_m05_exit" PORT="aresetn"/>
-            <CONNECTION INSTANCE="m04_nodes_m04_ar_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m04_nodes_m04_aw_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m04_nodes_m04_w_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m04_nodes_m04_r_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m04_nodes_m04_b_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m04_exit_pipeline_m04_exit" PORT="aresetn"/>
-            <CONNECTION INSTANCE="m03_nodes_m03_ar_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m03_nodes_m03_aw_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m03_nodes_m03_w_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m03_nodes_m03_r_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m03_nodes_m03_b_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m03_exit_pipeline_m03_exit" PORT="aresetn"/>
-            <CONNECTION INSTANCE="m02_nodes_m02_ar_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m02_nodes_m02_aw_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m02_nodes_m02_w_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m02_nodes_m02_r_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m02_nodes_m02_b_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m02_exit_pipeline_m02_exit" PORT="aresetn"/>
-            <CONNECTION INSTANCE="m01_nodes_m01_ar_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m01_nodes_m01_aw_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m01_nodes_m01_w_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="m01_nodes_m01_r_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m01_nodes_m01_b_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="aresetn"/>
+            <CONNECTION INSTANCE="switchboards_i_nodes_i_aw_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="switchboards_i_nodes_i_w_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="switchboards_i_nodes_i_ar_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="switchboards_i_nodes_i_r_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="switchboards_i_nodes_i_b_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_entry_pipeline_s00_mmu" PORT="aresetn"/>
+            <CONNECTION INSTANCE="s00_entry_pipeline_s00_si_converter" PORT="aresetn"/>
+            <CONNECTION INSTANCE="s00_entry_pipeline_s00_transaction_regulator" PORT="aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_aw_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_w_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_b_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_aw_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_w_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="s00_nodes_s00_b_node" PORT="s_sc_aresetn"/>
             <CONNECTION INSTANCE="switchboards_i_nodes_i_aw_node" PORT="m_sc_aresetn"/>
             <CONNECTION INSTANCE="switchboards_i_nodes_i_ar_node" PORT="m_sc_aresetn"/>
             <CONNECTION INSTANCE="switchboards_i_nodes_i_w_node" PORT="m_sc_aresetn"/>
@@ -872,24 +860,36 @@
             <CONNECTION INSTANCE="m05_nodes_m05_w_node" PORT="s_sc_aresetn"/>
             <CONNECTION INSTANCE="m05_nodes_m05_r_node" PORT="m_sc_aresetn"/>
             <CONNECTION INSTANCE="m05_nodes_m05_b_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="switchboards_i_nodes_i_aw_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="switchboards_i_nodes_i_w_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="switchboards_i_nodes_i_ar_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="switchboards_i_nodes_i_r_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="switchboards_i_nodes_i_b_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_entry_pipeline_s00_mmu" PORT="aresetn"/>
-            <CONNECTION INSTANCE="s00_entry_pipeline_s00_si_converter" PORT="aresetn"/>
-            <CONNECTION INSTANCE="s00_entry_pipeline_s00_transaction_regulator" PORT="aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_aw_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_w_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_b_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_ar_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_aw_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_w_node" PORT="m_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_r_node" PORT="s_sc_aresetn"/>
-            <CONNECTION INSTANCE="s00_nodes_s00_b_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m01_nodes_m01_ar_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m01_nodes_m01_aw_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m01_nodes_m01_w_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m01_nodes_m01_r_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m01_nodes_m01_b_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="aresetn"/>
+            <CONNECTION INSTANCE="m02_nodes_m02_ar_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m02_nodes_m02_aw_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m02_nodes_m02_w_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m02_nodes_m02_r_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m02_nodes_m02_b_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m02_exit_pipeline_m02_exit" PORT="aresetn"/>
+            <CONNECTION INSTANCE="m03_nodes_m03_ar_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m03_nodes_m03_aw_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m03_nodes_m03_w_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m03_nodes_m03_r_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m03_nodes_m03_b_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m03_exit_pipeline_m03_exit" PORT="aresetn"/>
+            <CONNECTION INSTANCE="m04_nodes_m04_ar_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m04_nodes_m04_aw_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m04_nodes_m04_w_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m04_nodes_m04_r_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m04_nodes_m04_b_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m04_exit_pipeline_m04_exit" PORT="aresetn"/>
+            <CONNECTION INSTANCE="m05_nodes_m05_ar_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m05_nodes_m05_aw_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m05_nodes_m05_w_node" PORT="m_sc_aresetn"/>
+            <CONNECTION INSTANCE="m05_nodes_m05_r_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m05_nodes_m05_b_node" PORT="s_sc_aresetn"/>
+            <CONNECTION INSTANCE="m05_exit_pipeline_m05_exit" PORT="aresetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst"/>
